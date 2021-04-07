@@ -5,17 +5,22 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour {
   private Rigidbody2D rb;
 
-  float movementSpeed = 10f;
-  float xMovement;
+  [SerializeField] float movementSpeed = 10f;
+  
+  bool isGrounded = false;
+  private float xMovement;
 
-  public float jumpForce = 10f;
+  [SerializeField] float jumpForce = 10f;
 
-  public float checkGroundRadius; 
-  public Transform groundChecker; 
-  public LayerMask groundLayer;
+  [SerializeField] float checkGroundRadius; 
+  [SerializeField] Transform groundChecker; 
+  [SerializeField] LayerMask groundLayer;
 
-  public float fallMultiplier = 2.5f;
-  public float lowJumpMultiplier = 2f;
+  [SerializeField] float fallMultiplier = 2.5f;
+  [SerializeField] float lowJumpMultiplier = 2f;
+
+  [SerializeField] float timeDifference;
+  float lastTimeGrounded;
    
   // Start is called before the first frame update
   void Start() {
@@ -27,35 +32,46 @@ public class PlayerMovement : MonoBehaviour {
     xMovement = Input.GetAxisRaw("Horizontal");
     Jump();
     changeFallSpeed();
+    IsGrounded();
   }
 
   private void FixedUpdate() {
-    Vector2 movement = new Vector2(xMovement *  movementSpeed , rb.velocity.y);
-    rb.velocity = movement;
+    move();
   }
 
   private void Jump() {
-    if (Input.GetButtonDown("Jump") && IsGrounded()) {
-    Vector2 movement = new Vector2(rb.velocity.x, jumpForce);
-    rb.velocity = movement;
+    if (Input.GetButtonDown("Jump") && (isGrounded || Time.time - lastTimeGrounded <= timeDifference)) {
+      Vector2 movement = new Vector2(rb.velocity.x, jumpForce);
+      rb.velocity = movement;
     }  
+  }
+
+  private void move() {
+    Vector2 movement = new Vector2(xMovement *  movementSpeed , rb.velocity.y);
+    rb.velocity = movement;
   }
 
   private void changeFallSpeed() {
     // if the player is falling
     if (rb.velocity.y < 0) { 
-        rb.velocity += Vector2.up * Physics2D.gravity.y * (fallMultiplier - 1) * Time.deltaTime;
+        rb.gravityScale = fallMultiplier;
     } else if (rb.velocity.y > 0 && !Input.GetButton("Jump")) { // Low jump.
-        rb.velocity += Vector2.up * Physics2D.gravity.y * (lowJumpMultiplier - 1) * Time.deltaTime;
-    }   
+        rb.gravityScale = lowJumpMultiplier;
+    } else  {
+      rb.gravityScale = 1;
+    }
   }
 
-  public bool IsGrounded() {
+  public void IsGrounded() {
     Collider2D collider = Physics2D.OverlapCircle(groundChecker.position, checkGroundRadius, groundLayer);
     if (collider != null) {
-      return true;
-    } 
-    return false;
+      isGrounded = true;
+    } else {
+        if(isGrounded) {
+          lastTimeGrounded = Time.time;
+        }
+        isGrounded = false;
+    }
   }
 }
 
