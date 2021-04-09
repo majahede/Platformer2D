@@ -7,6 +7,7 @@ public class PlayerMovement : MonoBehaviour {
 
   [SerializeField] float movementSpeed = 10f;
   
+  [SerializeField] Animator anim;
   bool isGrounded = false;
   private float xMovement;
 
@@ -33,6 +34,20 @@ public class PlayerMovement : MonoBehaviour {
     Jump();
     changeFallSpeed();
     IsGrounded();
+
+    if (Mathf.Abs(xMovement) > 0.05) { // Mathf.Abs gör om negtiv till positiv, därför gäller detta även när spelaren går åt vänster
+      anim.SetBool("isRunning", true);
+    } else {
+      anim.SetBool("isRunning", false);
+    }
+
+    if (xMovement > 0f) {
+      transform.localScale = new Vector3(1f, 1f, 1f);
+    } else if (xMovement < 0f){
+      transform.localScale = new Vector3(-1f, 1f, 1f);
+    }
+
+    anim.SetBool("isGrounded", isGrounded);
   }
 
   private void FixedUpdate() {
