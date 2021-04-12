@@ -4,12 +4,13 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour {
   private Rigidbody2D rb;
+  private Animator anim;
+  private float xMovement;
 
   [SerializeField] float movementSpeed = 10f;
   
-  [SerializeField] Animator anim;
-  bool isGrounded = false;
-  private float xMovement;
+  [SerializeField] bool isGrounded = false;
+ 
 
   [SerializeField] float jumpForce = 10f;
 
@@ -26,6 +27,7 @@ public class PlayerMovement : MonoBehaviour {
   // Start is called before the first frame update
   void Start() {
     rb = this.gameObject.GetComponent<Rigidbody2D>();
+    anim = this.gameObject.GetComponent<Animator>();
   }
 
   // Update is called once per frame
@@ -34,24 +36,11 @@ public class PlayerMovement : MonoBehaviour {
     Jump();
     changeFallSpeed();
     IsGrounded();
-
-    if (Mathf.Abs(xMovement) > 0.05) { // Mathf.Abs gör om negtiv till positiv, därför gäller detta även när spelaren går åt vänster
-      anim.SetBool("isRunning", true);
-    } else {
-      anim.SetBool("isRunning", false);
-    }
-
-    if (xMovement > 0f) {
-      transform.localScale = new Vector3(1f, 1f, 1f);
-    } else if (xMovement < 0f){
-      transform.localScale = new Vector3(-1f, 1f, 1f);
-    }
-
-    anim.SetBool("isGrounded", isGrounded);
+    flipSprite ();
   }
 
   private void FixedUpdate() {
-    move();
+    run();
   }
 
   private void Jump() {
@@ -61,9 +50,16 @@ public class PlayerMovement : MonoBehaviour {
     }  
   }
 
-  private void move() {
+  private void run() {
     Vector2 movement = new Vector2(xMovement *  movementSpeed , rb.velocity.y);
     rb.velocity = movement;
+     
+    if (Mathf.Abs(xMovement) > 0.05) { // Mathf.Abs gör om negtiv till positiv, därför gäller detta även när spelaren går åt vänster
+      anim.SetBool("isRunning", true);
+    } else {
+      anim.SetBool("isRunning", false);
+    }
+
   }
 
   private void changeFallSpeed() {
@@ -87,6 +83,18 @@ public class PlayerMovement : MonoBehaviour {
         }
         isGrounded = false;
     }
+  }
+
+  public void flipSprite () {
+   
+   // flip sprite
+    if (xMovement > 0f) {
+      transform.localScale = new Vector3(1f, 1f, 1f);
+    } else if (xMovement < 0f){
+      transform.localScale = new Vector3(-1f, 1f, 1f);
+    }
+
+    anim.SetBool("isGrounded", isGrounded);
   }
 }
 
