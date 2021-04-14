@@ -6,12 +6,13 @@ public class PlayerMovement : MonoBehaviour {
   private Rigidbody2D rb;
   private Animator anim;
   private float xMovement;
+ [SerializeField] float maxYVelocity;
 
   [SerializeField] float movementSpeed = 10f;
   
   [SerializeField] bool isGrounded = false;
  
-
+  [SerializeField] Player player;
   [SerializeField] float jumpForce = 10f;
 
   [SerializeField] float checkGroundRadius; 
@@ -23,6 +24,8 @@ public class PlayerMovement : MonoBehaviour {
 
   [SerializeField] float timeDifference;
   float lastTimeGrounded;
+
+
    
   // Start is called before the first frame update
   void Start() {
@@ -37,6 +40,8 @@ public class PlayerMovement : MonoBehaviour {
     changeFallSpeed();
     IsGrounded();
     flipSprite ();
+    HighFall();
+        
   }
 
   void FixedUpdate() {
@@ -73,13 +78,17 @@ public class PlayerMovement : MonoBehaviour {
     }
   }
 
-  public void IsFalling () {
-    if (rb.velocity.y < 0) { 
-      anim.SetBool("isFalling", true);
-    } else {
-      anim.SetBool("isFalling", false);
-    }     
-  } 
+  public void HighFall() {
+    
+    if (rb.velocity.y < maxYVelocity) {
+          maxYVelocity = rb.velocity.y;
+    }
+          
+    if (maxYVelocity <= -25 && rb.velocity.y ==  0) {
+          player.TakeDamage(10);
+            maxYVelocity = 0;
+        }
+  }
 
   public void IsGrounded() {
     Collider2D collider = Physics2D.OverlapCircle(groundChecker.position, checkGroundRadius, groundLayer);
