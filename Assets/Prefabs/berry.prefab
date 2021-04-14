@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 432489042174201602}
   - component: {fileID: 432489042174201600}
   - component: {fileID: 432489042174201603}
+  - component: {fileID: 4078830410502320888}
   m_Layer: 0
   m_Name: berry
   m_TagString: Untagged
@@ -109,3 +110,15 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.14425978, y: 0.14099726}
   m_EdgeRadius: 0
+--- !u!114 &4078830410502320888
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 432489042174201613}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8867fca0ed3fafd4183c333472c22808, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
