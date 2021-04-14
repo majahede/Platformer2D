@@ -39,18 +39,18 @@ public class PlayerMovement : MonoBehaviour {
     flipSprite ();
   }
 
-  private void FixedUpdate() {
+  void FixedUpdate() {
     run();
   }
 
-  private void Jump() {
+  public void Jump() {
     if (Input.GetButtonDown("Jump") && (isGrounded || Time.time - lastTimeGrounded <= timeDifference)) {
       Vector2 movement = new Vector2(rb.velocity.x, jumpForce);
       rb.velocity = movement;
     }  
   }
 
-  private void run() {
+  public void run() {
     Vector2 movement = new Vector2(xMovement *  movementSpeed , rb.velocity.y);
     rb.velocity = movement;
      
@@ -62,7 +62,7 @@ public class PlayerMovement : MonoBehaviour {
 
   }
 
-  private void changeFallSpeed() {
+  public void changeFallSpeed() {
     // if the player is falling
     if (rb.velocity.y < 0) { 
         rb.gravityScale = fallMultiplier;
@@ -72,6 +72,14 @@ public class PlayerMovement : MonoBehaviour {
       rb.gravityScale = 1;
     }
   }
+
+  public void IsFalling () {
+    if (rb.velocity.y < 0) { 
+      anim.SetBool("isFalling", true);
+    } else {
+      anim.SetBool("isFalling", false);
+    }     
+  } 
 
   public void IsGrounded() {
     Collider2D collider = Physics2D.OverlapCircle(groundChecker.position, checkGroundRadius, groundLayer);
