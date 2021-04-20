@@ -25,12 +25,15 @@ public class PlayerMovement : MonoBehaviour {
   [SerializeField] float timeDifference;
   float lastTimeGrounded;
 
+ 
+
 
    
   // Start is called before the first frame update
   void Start() {
     rb = this.gameObject.GetComponent<Rigidbody2D>();
     anim = this.gameObject.GetComponent<Animator>();
+    
   }
 
   // Update is called once per frame
@@ -78,6 +81,8 @@ public class PlayerMovement : MonoBehaviour {
     }
   }
 
+
+
   public void HighFall() {
     
     if (rb.velocity.y < maxYVelocity) {
@@ -85,7 +90,7 @@ public class PlayerMovement : MonoBehaviour {
     }
           
     if (maxYVelocity <= -25 && rb.velocity.y ==  0) {
-          player.TakeDamage(10);
+          player.TakeDamage(20);
             maxYVelocity = 0;
         }
   }
