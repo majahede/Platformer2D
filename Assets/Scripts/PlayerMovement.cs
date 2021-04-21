@@ -24,6 +24,7 @@ public class PlayerMovement : MonoBehaviour {
 
   [SerializeField] float timeDifference;
   float lastTimeGrounded;
+  private bool facingRight = true;
 
  
 
@@ -42,7 +43,7 @@ public class PlayerMovement : MonoBehaviour {
     Jump();
     changeFallSpeed();
     IsGrounded();
-    flipSprite ();
+    Flip ();
     HighFall();
         
   }
@@ -107,13 +108,17 @@ public class PlayerMovement : MonoBehaviour {
     }
   }
 
-  public void flipSprite () {
-   
+  public void Flip () {
+
    // flip sprite
-    if (xMovement > 0f) {
-      transform.localScale = new Vector3(1f, 1f, 1f);
-    } else if (xMovement < 0f){
-      transform.localScale = new Vector3(-1f, 1f, 1f);
+    if (xMovement > 0f && !facingRight) {
+     transform.Rotate (0f, 180f, 0);
+     facingRight = true;
+    //transform.localScale = new Vector3(1f, 1f, 1f);
+    } else if (xMovement < 0f && facingRight) {
+     transform.Rotate (0f, 180f, 0);
+     //transform.localScale = new Vector3(-1f, 1f, 1f);
+     facingRight = false;
     }
 
     anim.SetBool("isGrounded", isGrounded);

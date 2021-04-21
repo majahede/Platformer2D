@@ -41,15 +41,12 @@ public class Player : MonoBehaviour {
       
     }
   
-
-
     public void TakeDamage(int damage) {
       currentHealth -= damage;
       healthBar.SetHealth(currentHealth);
     }
 
      
-
     private void playerDead () {
       if (currentHealth <= 0) {
         UnityEditor.EditorApplication.isPlaying = false;
