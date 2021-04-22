@@ -12,35 +12,19 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField]
     private float maxYVelocity;
 
-    [SerializeField]
     public float movementSpeed = 10f;
 
     [SerializeField]
     private bool isGrounded = false;
 
-    [SerializeField]
     public Player player;
-
-    [SerializeField]
     public float jumpForce = 10f;
-
-    [SerializeField]
     public float checkGroundRadius;
-
-    [SerializeField]
     public Transform groundChecker;
-
-    [SerializeField]
     public LayerMask groundLayer;
-
-    [SerializeField]
     public float fallMultiplier = 2.5f;
-    [SerializeField]
     public float lowJumpMultiplier = 2f;
-
-    [SerializeField]
     public float timeDifference;
-
     private float lastTimeGrounded;
     private bool facingRight = true;
 

@@ -17,8 +17,8 @@ TagManager:
   - CameraBounds
   - Enemy
   - Player
-  - 
-  - 
+  - Bullet
+  - Interactable
   - 
   - 
   - 
@@ -60,4 +60,7 @@ TagManager:
     locked: 0
   - name: Player
     uniqueID: 2054386629
+    locked: 0
+  - name: Bullet
+    uniqueID: 2148928827
     locked: 0
