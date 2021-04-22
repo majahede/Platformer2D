@@ -392,7 +392,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 423838328}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -73.54616, y: 0.69342196, z: -7.3585024}
+  m_LocalPosition: {x: -73.83226, y: 0.693421, z: -7.3585024}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2118820655}
@@ -3807,17 +3807,6 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
---- !u!114 &889075492 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 227130338584629190, guid: 8c78590eb6fe65e44846cd9f22ef59fb, type: 3}
-  m_PrefabInstance: {fileID: 227130338264168664}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2a0dd606bd862eb44bbb1ca596e61f38, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &935670781
 GameObject:
   m_ObjectHideFlags: 0
@@ -3858,7 +3847,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 935670781}
-  m_BodyType: 1
+  m_BodyType: 2
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -3884,7 +3873,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0007443838, y: 0.0016638488}
+  m_Offset: {x: -0.0007443875, y: -0.00063584745}
   m_SpriteTilingProperty:
     border: {x: 0.049999997, y: 0.049999997, z: 0.049999997, w: 0.049999997}
     pivot: {x: 0.5, y: 0.5}
@@ -3895,7 +3884,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.13670683, y: 0.13045138}
+  m_Size: {x: 0.13670683, y: 0.13505077}
   m_EdgeRadius: 0
 --- !u!212 &935670785
 SpriteRenderer:
@@ -3956,8 +3945,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 935670781}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -80.87, y: -0.87, z: 0}
-  m_LocalScale: {x: 5.948789, y: 6.401158, z: 1}
+  m_LocalPosition: {x: -80.9401, y: -0.912, z: 0}
+  m_LocalScale: {x: 5.0719376, y: 5.08636, z: 1}
   m_Children:
   - {fileID: 1609289952}
   m_Father: {fileID: 0}
@@ -4303,11 +4292,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 432489042174201602, guid: df1827027566b744bb8f8988f4ec06d4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -33.14
+      value: -33.119
       objectReference: {fileID: 0}
     - target: {fileID: 432489042174201602, guid: df1827027566b744bb8f8988f4ec06d4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 6.22
+      value: 6.209
       objectReference: {fileID: 0}
     - target: {fileID: 432489042174201602, guid: df1827027566b744bb8f8988f4ec06d4, type: 3}
       propertyPath: m_LocalPosition.z
@@ -4945,7 +4934,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13cbe59ea113f3542b6f54800ea5c3e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 889075492}
 --- !u!61 &1929666349
 BoxCollider2D:
   m_ObjectHideFlags: 0

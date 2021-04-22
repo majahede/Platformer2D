@@ -7,31 +7,19 @@ public class Bullet : MonoBehaviour
 {
     public float speed = 10f;
     public Rigidbody2D rb;
-    private CapsuleCollider2D bodyCollider;
+    public int damage = 30;
     // Start is called before the first frame update
     void Start()
     {
         rb.velocity = transform.right * speed;
-        bodyCollider = this.gameObject.GetComponent<CapsuleCollider2D>();
-    }
-
-    void Update()
-    {
-        if (bodyCollider.IsTouchingLayers(LayerMask.GetMask("Enemy")))
-        {
-            Debug.Log("hej");
-        }
     }
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log(collision.name);
-        // Destroy(gameObject);
-    }
+        var enemy = collision.GetComponent<Enemy>();
+        enemy?.TakeDamage(damage);
 
-    void OnCollsionEnter2D(Collider2D collision)
-    {
         Debug.Log(collision.name);
-        // Destroy(gameObject);
+        Destroy(gameObject);
     }
 }
