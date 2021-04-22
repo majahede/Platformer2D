@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+
+This rule set can be used to:
+
+ 1) Enable/disable analyzer(s) by DEFAULT.
+ 2) Change DEFAULT severity (action) of the analyzer(s).
+ 
+Default configuration is applied once when analyzers are loaded.
+Therefore, it may be neccessary to restart IDE for changes to take effect.
+
+Although it is possible to edit ruleset manually, Visual Studio has built-in support for editing ruleset.
+Just add ruleset file to a solution and open it.
+
+-->
+<RuleSet Name="roslynator.ruleset" ToolsVersion="16.0">
+  
+  <!-- Specify default action that should be applied to all analyzers except those explicitly specified. -->
+  <!-- <IncludeAll Action="None,Hidden,Info,Warning,Error" /> -->
+
+  <!-- Specify zero or more paths to other rulesets that should be included. -->
+  <!-- <Include Path="" Action="Default,None,Hidden,Info,Warning,Error" /> -->
+
+  <Rules AnalyzerId="Roslynator.CSharp.Analyzers" RuleNamespace="Roslynator.CSharp.Analyzers" Action="Warning">
+    <!-- https://github.com/JosefPihrt/Roslynator/blob/master/src/Analyzers/README.md -->
+    <!-- Specify default action that should be applied to a specified analyzer. -->
+    <!-- <Rule Id="RCS...." Action="None,Hidden,Info,Warning,Error" /> -->
+
+    <!-- An unwanted rule can be disabled like this: <Rule Id="RCS1110" Action="None" />  -->
+    <Rule Id="RCS1110" Action="None" />
+  </Rules>
+
+  <Rules AnalyzerId="Roslynator.Formatting.Analyzers" RuleNamespace="Roslynator.Formatting.Analyzers">
+    <!-- http://pihrt.net/Roslynator/Analyzers -->
+
+    <!-- Specify default action that should be applied to a specified analyzer. -->
+    <Rule Id="RCS1110" Action="None" />
+    <Rule Id="RCS0001" Action="Info" /> <!-- Add empty line after embedded statement. -->
+    <Rule Id="RCS0002" Action="Info" /> <!-- Add empty line after #region. -->
+    <Rule Id="RCS0003" Action="Info" /> <!-- Add empty line after using directive list. -->
+    <Rule Id="RCS0004" Action="Info" /> <!-- Add empty line before closing brace of 'do' statement. -->
+    <Rule Id="RCS0005" Action="Info" /> <!-- Add empty line before #endregion. -->
+    <Rule Id="RCS0006" Action="Info" /> <!-- Add empty line before using directive list. -->
+    <Rule Id="RCS0007" Action="Info" /> <!-- Add empty line between accessors. -->
+    <Rule Id="RCS0008" Action="Info" /> <!-- Add empty line between block and statement. -->
+    <Rule Id="RCS0009" Action="Info" /> <!-- Add empty line between declaration and documentation comment. -->
+    <Rule Id="RCS0010" Action="Info" /> <!-- Add empty line between declarations. -->
+    <Rule Id="RCS0011" Action="Info" /> <!-- Add empty line between single-line accessors (or vice versa). -->
+    <!-- <Rule Id="RCS0012" Action="Info" /> Add empty line between single-line declarations. -->
+    <Rule Id="RCS0013" Action="Info" /> <!-- Add empty line between single-line declarations of different kind. -->
+    <Rule Id="RCS0014" Action="Info" /> <!-- Add empty line between switch sections. -->
+    <Rule Id="RCS0015" Action="Info" /> <!-- Add empty line between using directives with different root namespace (or vice versa). -->
+    <Rule Id="RCS0016" Action="Info" /> <!-- Add newline after attribute list. -->
+    <!-- <Rule Id="RCS0020" Action="Info" /> Add newline after opening brace of accessor. -->
+    <Rule Id="RCS0021" Action="Info" /> <!-- Add newline after opening brace of block. -->
+    <Rule Id="RCS0022" Action="Info" /> <!-- Add newline after opening brace of empty block. -->
+    <Rule Id="RCS0023" Action="Info" /> <!-- Add newline after opening brace of type declaration. -->
+    <Rule Id="RCS0024" Action="Info" /> <!-- Add newline after switch label. -->
+    <Rule Id="RCS0025" Action="Info" /> <!-- Add newline before accessor of full property. -->
+    <Rule Id="RCS0027" Action="Info" /> <!-- Add newline before binary operator instead of after it (or vice versa). -->
+    <Rule Id="RCS0028" Action="Info" /> <!-- Add newline before conditional operator instead of after it (or vice versa). -->
+    <Rule Id="RCS0029" Action="Info" /> <!--  	Add newline before constructor initializer. -->
+    <Rule Id="RCS0030" Action="Info" /> <!--  	Add newline before embedded statement. -->
+    <Rule Id="RCS0031" Action="Info" /> <!-- Add newline before enum member. -->
+    <Rule Id="RCS0032" Action="Info" /> <!-- Add newline before expression-body arrow instead of after it (or vice versa). -->
+    <Rule Id="RCS0033" Action="Info" /> <!-- Add newline before statement. -->
+    <Rule Id="RCS0034" Action="Info" /> <!--  	Add newline before type parameter constraint. -->
+    <Rule Id="RCS0036" Action="Info" /> <!--  	Remove empty line between single-line declarations of same kind. -->
+    <Rule Id="RCS0038" Action="Info" /> <!-- Remove empty line between using directives with same root namespace. -->
+    <Rule Id="RCS0039" Action="Info" /> <!--  	Remove newline before base list. -->
+    <Rule Id="RCS0041" Action="Info" /> <!--  	Remove newline between 'if' keyword and 'else' keyword. -->
+    <Rule Id="RCS0042" Action="Info" /> <!-- Remove newlines from accessor list of auto-property. -->
+    <Rule Id="RCS0043" Action="Info" /> <!-- Remove newlines from accessor with single-line expression. -->
+    <Rule Id="RCS0044" Action="Info" /> <!-- Use carriage return + linefeed as newline. -->
+    <!-- <Rule Id="RCS0045" Action="Info" /> Use linefeed as newline. -->
+    <Rule Id="RCS0046" Action="Info" /> <!-- Use spaces instead of tab. -->
+    <!-- <Rule Id="RCS0047" Action="Info" /> [deprecated] Wrap and indent each node in list. -->
+    <Rule Id="RCS0048" Action="Info" /> <!-- Remove newlines from initializer with single-line expression. -->
+    <Rule Id="RCS0049" Action="Info" /> <!-- Add empty line after top comment. -->
+    <Rule Id="RCS0050" Action="Info" /> <!-- Add empty line before top declaration. -->
+    <Rule Id="RCS0051" Action="Info" /> <!-- Add newline between closing brace and 'while' keyword (or vice versa). -->
+    <Rule Id="RCS0052" Action="Info" /> <!-- Add newline before equals sign instead of after it (or vice versa). -->
+    <Rule Id="RCS0053" Action="Info" /> <!-- Fix formatting of a list. -->
+    <Rule Id="RCS0054" Action="Info" /> <!-- Fix formatting of a call chain. -->
+    <Rule Id="RCS0055" Action="Info" /> <!-- Fix formatting of a binary expression chain. -->
+    <Rule Id="RCS0056" Action="Info" /> <!-- A line is too long. -->
+
+  </Rules>
+
+</RuleSet>

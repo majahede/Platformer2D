@@ -1,27 +1,31 @@
 using System.Collections;
 using System.Collections.Generic;
+
 using UnityEngine;
 using UnityEngine.UI;
 
 public class GameSession : MonoBehaviour
 {
+    [SerializeField]
+    public Text pickupCount;
 
-[SerializeField] Text pickupCount;
-[SerializeField] int pickups = 0;
+    [SerializeField]
+    private int pickups = 0;
 
-  void start() {
-    pickupCount.text = pickups.ToString();
-  }
+    void Start()
+    {
+        pickupCount.text = pickups.ToString();
+    }
 
-   private void OnTriggerEnter2D(Collider2D collision) {
-     Destroy(gameObject);
-   }
+    void OnTriggerEnter2D()
+    {
+        Destroy(gameObject);
+    }
 
-   public void AddPoint() {
-      pickups += 1;
-      pickupCount.text = pickups.ToString();
-   }
+    public void AddPoint()
+    {
+        pickups++;
+        pickupCount.text = pickups.ToString();
+    }
 }
-
-  
 
