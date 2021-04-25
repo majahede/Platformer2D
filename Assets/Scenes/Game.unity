@@ -3757,6 +3757,7 @@ GameObject:
   - component: {fileID: 935670785}
   - component: {fileID: 935670782}
   - component: {fileID: 935670783}
+  - component: {fileID: 935670784}
   m_Layer: 8
   m_Name: Enemy
   m_TagString: Enemy
@@ -3802,6 +3803,27 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0.0021884441}
   serializedVersion: 2
   m_Radius: 0.09015207
+--- !u!50 &935670784
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 935670781}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!212 &935670785
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3861,7 +3883,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 935670781}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -71.33, y: 2.39, z: 0}
+  m_LocalPosition: {x: -71.52, y: 2.97, z: 0}
   m_LocalScale: {x: 5, y: 5, z: 1}
   m_Children:
   - {fileID: 1609289952}

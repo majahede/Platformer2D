@@ -28,17 +28,22 @@ public class PlayerMovement : MonoBehaviour
     private float lastTimeGrounded;
     private bool facingRight = true;
 
-    // Start is called before the first frame update
+    /**
+     * Start is called before the first frame update
+     */
     void Start()
     {
         rb = this.gameObject.GetComponent<Rigidbody2D>();
         anim = this.gameObject.GetComponent<Animator>();
     }
 
-    // Update is called once per frame
+    /**
+     * Update is called once per frame.
+     */
     void Update()
     {
         xMovement = Input.GetAxisRaw("Horizontal");
+        Run();
         Jump();
         ChangeFallSpeed();
         IsGrounded();
@@ -46,27 +51,27 @@ public class PlayerMovement : MonoBehaviour
         HighFall();
     }
 
-    void FixedUpdate()
-    {
-        Run();
-    }
-
+    /**
+     * Makes player jump.
+     */
     public void Jump()
     {
+        // Check if jump button is pressed and if player is grounded. 
         if (Input.GetButtonDown("Jump") && (isGrounded || Time.time - lastTimeGrounded <= timeDifference))
         {
-            var movement = new Vector2(rb.velocity.x, jumpForce);
-            rb.velocity = movement;
+            rb.velocity = new Vector2(rb.velocity.x, jumpForce);
         }
     }
 
+    /**
+     * Makes player run.
+     */
     public void Run()
     {
-        var movement = new Vector2(xMovement * movementSpeed, rb.velocity.y);
-        rb.velocity = movement;
+        rb.velocity = new Vector2(xMovement * movementSpeed, rb.velocity.y);
 
         if (Mathf.Abs(xMovement) > 0.05)
-        { // Mathf.Abs gör om negtiv till positiv, därför gäller detta även när spelaren går åt vänster
+        {
             anim.SetBool("isRunning", true);
         }
         else
@@ -75,6 +80,9 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
+    /**
+     * Change gravity scale when falling.
+     */
     public void ChangeFallSpeed()
     {
         // if the player is falling
@@ -92,6 +100,9 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
+    /**
+     * Player takes damage when falling fromm heights.
+     */
     public void HighFall()
     {
         if (rb.velocity.y < maxYVelocity)
@@ -106,10 +117,14 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
+    /**
+     * Checks if player is grounded.
+     */
     public void IsGrounded()
     {
-        var collider = Physics2D.OverlapCircle(groundChecker.position, checkGroundRadius, groundLayer);
-        if (collider != null)
+        var groundCollider = Physics2D.OverlapCircle(groundChecker.position, checkGroundRadius, groundLayer);
+       // var enemyCollider = Physics2D.OverlapCircle(groundChecker.position, checkGroundRadius, groundLayer);
+        if (groundCollider != null)
         {
             isGrounded = true;
         }
@@ -123,19 +138,19 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
+    /**
+     * Rotates player when changing direction.
+     */
     public void Flip()
     {
-        // flip sprite
         if (xMovement > 0f && !facingRight)
         {
             transform.Rotate(0f, 180f, 0);
             facingRight = true;
-            //transform.localScale = new Vector3(1f, 1f, 1f);
         }
         else if (xMovement < 0f && facingRight)
         {
             transform.Rotate(0f, 180f, 0);
-            //transform.localScale = new Vector3(-1f, 1f, 1f);
             facingRight = false;
         }
 

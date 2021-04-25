@@ -19,8 +19,6 @@ public class Bullet : MonoBehaviour
     {
         var enemy = collision.GetComponent<Enemy>();
         enemy?.TakeDamage(damage);
-
-        Debug.Log(collision.name);
         Destroy(gameObject);
     }
 }
