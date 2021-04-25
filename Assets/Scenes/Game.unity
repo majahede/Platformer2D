@@ -392,7 +392,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 423838328}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -73.83226, y: 0.693421, z: -7.3585024}
+  m_LocalPosition: {x: -73.36307, y: 0.6934229, z: -7.3585024}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2118820655}
@@ -3811,7 +3811,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 935670781}
-  m_BodyType: 0
+  m_BodyType: 2
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -3883,7 +3883,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 935670781}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -71.52, y: 2.97, z: 0}
+  m_LocalPosition: {x: -81.26, y: -0.83, z: 0}
   m_LocalScale: {x: 5, y: 5, z: 1}
   m_Children:
   - {fileID: 1609289952}
@@ -5107,5 +5107,9 @@ PrefabInstance:
       propertyPath: healthBar
       value: 
       objectReference: {fileID: 1117179823}
+    - target: {fileID: 227130338584629191, guid: 8c78590eb6fe65e44846cd9f22ef59fb, type: 3}
+      propertyPath: enemyLayer.m_Bits
+      value: 256
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8c78590eb6fe65e44846cd9f22ef59fb, type: 3}

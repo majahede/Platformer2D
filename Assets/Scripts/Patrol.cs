@@ -23,8 +23,8 @@ public class Patrol : Enemy
     void Update()
     {
         IsGrounded();
-        Debug.Log(isGrounded);
-        transform.Translate(Vector2.right * movementSpeed * Time.deltaTime);
+        //Debug.Log(isGrounded);
+       // transform.Translate(Vector2.right * movementSpeed * Time.deltaTime);
 
         /*RaycastHit2D groundInfo = Physics2D.Raycast(groundChecker.position, Vector2.down, distance);
 

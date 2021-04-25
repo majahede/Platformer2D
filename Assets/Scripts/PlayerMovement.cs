@@ -22,6 +22,7 @@ public class PlayerMovement : MonoBehaviour
     public float checkGroundRadius;
     public Transform groundChecker;
     public LayerMask groundLayer;
+    public LayerMask enemyLayer;
     public float fallMultiplier = 2.5f;
     public float lowJumpMultiplier = 2f;
     public float timeDifference;
@@ -123,8 +124,8 @@ public class PlayerMovement : MonoBehaviour
     public void IsGrounded()
     {
         var groundCollider = Physics2D.OverlapCircle(groundChecker.position, checkGroundRadius, groundLayer);
-       // var enemyCollider = Physics2D.OverlapCircle(groundChecker.position, checkGroundRadius, groundLayer);
-        if (groundCollider != null)
+        var enemyCollider = Physics2D.OverlapCircle(groundChecker.position, checkGroundRadius, enemyLayer);
+        if (groundCollider != null || enemyCollider != null)
         {
             isGrounded = true;
         }
