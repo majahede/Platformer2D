@@ -6,7 +6,10 @@ using UnityEngine.SceneManagement;
 
 public class LoseCollider : MonoBehaviour
 {
-    void OnTriggerEnter2D() //When something passer through lose collider
+    /**
+     * Called when another objects enters a trigger collider attached to this object.
+     */
+    void OnTriggerEnter2D()
     {
         UnityEditor.EditorApplication.isPlaying = false;
     }

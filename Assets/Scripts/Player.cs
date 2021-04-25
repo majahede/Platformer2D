@@ -12,7 +12,9 @@ public class Player : MonoBehaviour
     private float curTime = 0;
     public float nextDamage = 1;
 
-    // Start is called before the first frame update
+    /**
+     * Start is called before the first frame update
+     */
     void Start()
     {
         currentHealth = maxHealth;
@@ -20,13 +22,18 @@ public class Player : MonoBehaviour
         bodyCollider = this.gameObject.GetComponent<CapsuleCollider2D>();
     }
 
-    // Update is called once per frame
+    /**
+     *  Update is called once per frame.
+     */
     void Update()
     {
         PlayerDead();
         EnemyCollision();
     }
 
+    /**
+     *  Checks if Player is colliding with enemy.
+     */
     private void EnemyCollision()
     {
         if (curTime <= 0)
@@ -44,12 +51,18 @@ public class Player : MonoBehaviour
         }
     }
 
+    /**
+     *  When called player takes damage.
+     */
     public void TakeDamage(int damage)
     {
         currentHealth -= damage;
         healthBar.SetHealth(currentHealth);
     }
 
+    /**
+     * If players health is below 0, player is dead.
+     */
     private void PlayerDead()
     {
         if (currentHealth <= 0)

@@ -17,7 +17,9 @@ public class Patrol : Enemy
     public float checkGroundRadius;
     public LayerMask groundLayer;
 
-
+    /**
+     * Update is called once per frame.
+     */
     void Update()
     {
         IsGrounded();
@@ -41,6 +43,9 @@ public class Patrol : Enemy
         }*/
     }
 
+    /**
+     * Check if object is grounded.
+     */
     public void IsGrounded()
     {
         var collider = Physics2D.OverlapCircle(groundChecker.position, checkGroundRadius, groundLayer);

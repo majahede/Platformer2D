@@ -7,8 +7,10 @@ public class Enemy : MonoBehaviour
 {
     public int health = 100;
     public int damage = 20;
-    // public float speed;
 
+    /**
+     * Makes the enemy take damage.
+     */
     public void TakeDamage(int damage)
     {
         health -= damage;
@@ -18,6 +20,9 @@ public class Enemy : MonoBehaviour
         }
     }
 
+    /**
+     * When called object gets destroyed.
+     */
     public void Die()
     {
         Destroy(gameObject);

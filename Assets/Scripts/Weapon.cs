@@ -8,7 +8,9 @@ public class Weapon : MonoBehaviour
     public Transform firePoint;
     public GameObject bullet;
 
-    // Update is called once per frame
+    /**
+     * Update is called once per frame.
+     */
     void Update()
     {
         if (Input.GetButtonDown("Fire1"))
@@ -19,7 +21,7 @@ public class Weapon : MonoBehaviour
 
     public void Shoot()
     {
-        // Spawns object at the chosen place (object, where, which rotation)
+        // Spawns object at the chosen place (The object to spawn, where to spawn object, which rotation)
         Instantiate(bullet, firePoint.position, firePoint.rotation);
     }
 }
