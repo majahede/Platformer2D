@@ -8,27 +8,25 @@ public class Patrol : Enemy
     public float movementSpeed = 5;
     public float distance = 2f;
 
-    private bool movingRight = true;
+    public bool movingRight = true;
     public Transform groundChecker;
-
-    [SerializeField]
-    private bool isGrounded = false;
-
-    public float checkGroundRadius;
-    public LayerMask groundLayer;
 
     /**
      * Update is called once per frame.
      */
     void Update()
     {
-        IsGrounded();
-        //Debug.Log(isGrounded);
-       // transform.Translate(Vector2.right * movementSpeed * Time.deltaTime);
+        Move();
+    }
 
-        /*RaycastHit2D groundInfo = Physics2D.Raycast(groundChecker.position, Vector2.down, distance);
+    public void Move()
+    {
+        transform.Translate(Vector2.right * movementSpeed * Time.deltaTime);
+        // A raycast with its origin, direction and length.
+        var layerMask = LayerMask.GetMask("Ground");
+        var groundInfo = Physics2D.Raycast(groundChecker.position, Vector2.down, distance, layerMask);
 
-        if (groundInfo.collider)
+        if (!groundInfo.collider)
         {
             if (movingRight)
             {
@@ -40,21 +38,6 @@ public class Patrol : Enemy
                 transform.eulerAngles = new Vector3(0, 0, 0);
                 movingRight = true;
             }
-        }*/
-    }
-
-    /**
-     * Check if object is grounded.
-     */
-    public void IsGrounded()
-    {
-        var collider = Physics2D.OverlapCircle(groundChecker.position, checkGroundRadius, groundLayer);
-        if (collider != null)
-        {
-            isGrounded = true;
-        } else 
-        {
-            isGrounded = false;
         }
     }
 }

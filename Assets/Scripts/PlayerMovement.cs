@@ -23,6 +23,10 @@ public class PlayerMovement : MonoBehaviour
     public Transform groundChecker;
     public LayerMask groundLayer;
     public LayerMask enemyLayer;
+
+    public int additionalJumps;
+    public int defaultAdditionalJumps = 1;
+
     public float fallMultiplier = 2.5f;
     public float lowJumpMultiplier = 2f;
     public float timeDifference;
@@ -53,14 +57,23 @@ public class PlayerMovement : MonoBehaviour
     }
 
     /**
+     * Update is called once per frame.
+     */
+    void FixedUpdate()
+    {
+        Run();
+    }
+
+    /**
      * Makes player jump.
      */
     public void Jump()
     {
         // Check if jump button is pressed and if player is grounded. 
-        if (Input.GetButtonDown("Jump") && (isGrounded || Time.time - lastTimeGrounded <= timeDifference))
+        if (Input.GetButtonDown("Jump") && (isGrounded || Time.time - lastTimeGrounded <= timeDifference || additionalJumps > 0))
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+            additionalJumps--;
         }
     }
 
@@ -128,6 +141,7 @@ public class PlayerMovement : MonoBehaviour
         if (groundCollider != null || enemyCollider != null)
         {
             isGrounded = true;
+            additionalJumps = defaultAdditionalJumps;
         }
         else
         {
@@ -138,6 +152,7 @@ public class PlayerMovement : MonoBehaviour
             isGrounded = false;
         }
     }
+
 
     /**
      * Rotates player when changing direction.
