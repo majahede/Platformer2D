@@ -94,6 +94,11 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
+    public void ClimbLadder()
+    {
+       // if ()
+    }
+
     /**
      * Change gravity scale when falling.
      */
@@ -152,7 +157,6 @@ public class PlayerMovement : MonoBehaviour
             isGrounded = false;
         }
     }
-
 
     /**
      * Rotates player when changing direction.

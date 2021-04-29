@@ -20,7 +20,7 @@ TagManager:
   - Player
   - Bullet
   - Interactable
-  - 
+  - Climbing
   - 
   - 
   - 
@@ -47,11 +47,11 @@ TagManager:
   - name: Background
     uniqueID: 24608085
     locked: 0
-  - name: Foreground
-    uniqueID: 1341237745
-    locked: 0
   - name: Climbing
     uniqueID: 2300360899
+    locked: 0
+  - name: Foreground
+    uniqueID: 1341237745
     locked: 0
   - name: Interactables
     uniqueID: 3585729479
