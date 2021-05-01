@@ -64,6 +64,14 @@ public class PlayerMovement : MonoBehaviour
         Run();
     }
 
+   void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.name == "Climbing")
+        {
+            Debug.Log(collision.name);
+        }
+    }
+
     /**
      * Makes player jump.
      */
