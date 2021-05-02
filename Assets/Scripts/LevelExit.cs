@@ -7,6 +7,8 @@ public class LevelExit : MonoBehaviour
 {
     [SerializeField] float LevelLoadDelay = 1f;
 
+    public SceneLoader sceneLoader;
+
     void OnTriggerEnter2D(Collider2D other)
     {
         StartCoroutine(LoadNextLevel());
@@ -15,7 +17,6 @@ public class LevelExit : MonoBehaviour
     IEnumerator LoadNextLevel()
     {
         yield return new WaitForSecondsRealtime(LevelLoadDelay);
-        var currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
-        SceneManager.LoadScene(currentSceneIndex + 1);
+        sceneLoader.LoadNextScene();
     }
 }
