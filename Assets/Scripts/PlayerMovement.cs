@@ -35,6 +35,8 @@ public class PlayerMovement : MonoBehaviour
     private CapsuleCollider2D bodyCollider;
     private bool facingRight = true;
 
+    float gravityScaleAtStart;
+
     /**
      * Start is called before the first frame update
      */
@@ -43,6 +45,7 @@ public class PlayerMovement : MonoBehaviour
         rb = this.gameObject.GetComponent<Rigidbody2D>();
         anim = this.gameObject.GetComponent<Animator>();
         bodyCollider = this.gameObject.GetComponent<CapsuleCollider2D>();
+        gravityScaleAtStart = rb.gravityScale;
     }
 
     /**
@@ -67,14 +70,6 @@ public class PlayerMovement : MonoBehaviour
     void FixedUpdate()
     {
         Run();
-    }
-
-   void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.name == "Climbing")
-        {
-            Debug.Log(collision.name);
-        }
     }
 
     /**
@@ -111,6 +106,8 @@ public class PlayerMovement : MonoBehaviour
     {
         if (!bodyCollider.IsTouchingLayers(LayerMask.GetMask("Climbing")))
         {
+            anim.SetBool("isClimbing", false);
+       //     rb.gravityScale = gravityScaleAtStart;
             return;
         }
 
@@ -118,6 +115,11 @@ public class PlayerMovement : MonoBehaviour
 
         Vector2 climbVelocity = new Vector2(rb.velocity.x, yMovement * climbSpeed);
         rb.velocity = climbVelocity;
+        rb.gravityScale = 0f;
+       // Debug.Log(Mathf.Abs(rb.velocity.y));
+
+       // bool hasVerticalSpeed = Mathf.Abs(rb.velocity.y) > Mathf.Epsilon;
+        anim.SetBool("isClimbing", true);
     }
 
     /**

@@ -392,7 +392,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 423838328}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -59.080772, y: 0.96343577, z: -7.3585024}
+  m_LocalPosition: {x: -61.598824, y: 0.9634248, z: -7.3585024}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2118820655}
@@ -577,8 +577,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.08426778, y: 0.8676952}
   m_AnchorMax: {x: 0.08426778, y: 0.8676952}
-  m_AnchoredPosition: {x: 205.8, y: 42.2}
-  m_SizeDelta: {x: 77.816, y: 47.3611}
+  m_AnchoredPosition: {x: 275.00256, y: 73}
+  m_SizeDelta: {x: 79.8212, y: 54.5731}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &744149089
 MonoBehaviour:
@@ -602,7 +602,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 30
+    m_FontSize: 40
     m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 0
@@ -742,27 +742,27 @@ CompositeCollider2D:
   m_ColliderPaths:
   - m_Collider: {fileID: 854580701}
     m_ColliderPaths:
-    - - X: -697999900
+    - - X: -697999959
+        Y: 48000100
+      - X: -702000041
+        Y: 48000100
+      - X: -702000100
+        Y: 48000041
+      - X: -702000100
+        Y: -8000041
+      - X: -702000041
+        Y: -8000100
+      - X: -697999959
+        Y: -8000100
+      - X: -697999900
         Y: -8000041
       - X: -697999900
-        Y: 32000043
-      - X: -697999959
-        Y: 32000102
-      - X: -702000041
-        Y: 32000102
-      - X: -702000100
-        Y: 32000043
-      - X: -702000100
-        Y: -8000041
-      - X: -702000041
-        Y: -8000100
-      - X: -697999959
-        Y: -8000100
+        Y: 48000041
   m_CompositePaths:
     m_Paths:
     - - {x: -69.800026, y: -0.80001}
-      - {x: -69.800026, y: 3.2000103}
-      - {x: -70.20001, y: 3.199975}
+      - {x: -69.800026, y: 4.80001}
+      - {x: -70.20001, y: 4.799975}
       - {x: -70.199974, y: -0.80001}
   m_VertexDistance: 0.0005
   m_OffsetDistance: 0.00005
@@ -910,15 +910,35 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
+  - first: {x: -88, y: 4, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 0
+      m_TileSpriteIndex: 0
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
+  - first: {x: -88, y: 5, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 0
+      m_TileSpriteIndex: 0
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
   m_AnimatedTiles: {}
   m_TileAssetArray:
-  - m_RefCount: 5
+  - m_RefCount: 7
     m_Data: {fileID: 11400000, guid: 586820834f37e634fb94e5c02d065c4c, type: 2}
   m_TileSpriteArray:
-  - m_RefCount: 5
+  - m_RefCount: 7
     m_Data: {fileID: 21300000, guid: bd2d4249f6035314ea10ea317c34adf7, type: 3}
   m_TileMatrixArray:
-  - m_RefCount: 5
+  - m_RefCount: 7
     m_Data:
       e00: 1
       e01: 0
@@ -937,13 +957,13 @@ Tilemap:
       e32: 0
       e33: 1
   m_TileColorArray:
-  - m_RefCount: 5
+  - m_RefCount: 7
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Origin: {x: -102, y: -2, z: 0}
-  m_Size: {x: 102, y: 6, z: 1}
+  m_Size: {x: 102, y: 8, z: 1}
   m_TileAnchor: {x: 0.5, y: 0.5, z: 0}
   m_TileOrientation: 0
   m_TileOrientationMatrix:
@@ -4882,8 +4902,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.10712594, y: 0.962634}
   m_AnchorMax: {x: 0.10712594, y: 0.962634}
-  m_AnchoredPosition: {x: 12, y: -6.399994}
-  m_SizeDelta: {x: 150.9875, y: 24.3253}
+  m_AnchoredPosition: {x: -29.0846, y: -15.445}
+  m_SizeDelta: {x: 233.1566, y: 42.416}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1117179822
 MonoBehaviour:
@@ -5032,10 +5052,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -6043,6 +6063,10 @@ PrefabInstance:
       propertyPath: healthBar
       value: 
       objectReference: {fileID: 1117179823}
+    - target: {fileID: 227130338584629191, guid: 8c78590eb6fe65e44846cd9f22ef59fb, type: 3}
+      propertyPath: movementSpeed
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 227130338584629191, guid: 8c78590eb6fe65e44846cd9f22ef59fb, type: 3}
       propertyPath: enemyLayer.m_Bits
       value: 256
