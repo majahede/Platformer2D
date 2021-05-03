@@ -8,6 +8,7 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody2D rb;
     private Animator anim;
     private float xMovement;
+    private float yMovement;
 
     [SerializeField]
     private float maxYVelocity;
@@ -31,6 +32,7 @@ public class PlayerMovement : MonoBehaviour
     public float lowJumpMultiplier = 2f;
     public float timeDifference;
     private float lastTimeGrounded;
+    private CapsuleCollider2D bodyCollider;
     private bool facingRight = true;
 
     /**
@@ -40,6 +42,7 @@ public class PlayerMovement : MonoBehaviour
     {
         rb = this.gameObject.GetComponent<Rigidbody2D>();
         anim = this.gameObject.GetComponent<Animator>();
+        bodyCollider = this.gameObject.GetComponent<CapsuleCollider2D>();
     }
 
     /**
@@ -48,12 +51,14 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         xMovement = Input.GetAxisRaw("Horizontal");
+        yMovement = Input.GetAxisRaw("Vertical");
         Run();
         Jump();
         ChangeFallSpeed();
         IsGrounded();
         Flip();
         HighFall();
+        ClimbLadder();
     }
 
     /**
@@ -104,7 +109,15 @@ public class PlayerMovement : MonoBehaviour
 
     public void ClimbLadder()
     {
-       // if ()
+        if (!bodyCollider.IsTouchingLayers(LayerMask.GetMask("Climbing")))
+        {
+            return;
+        }
+
+        float climbSpeed = 5f;
+
+        Vector2 climbVelocity = new Vector2(rb.velocity.x, yMovement * climbSpeed);
+        rb.velocity = climbVelocity;
     }
 
     /**
