@@ -35,7 +35,7 @@ public class PlayerMovement : MonoBehaviour
     private CapsuleCollider2D bodyCollider;
     private bool facingRight = true;
 
-    float gravityScaleAtStart;
+  //  float gravityScaleAtStart;
 
     /**
      * Start is called before the first frame update
@@ -45,7 +45,7 @@ public class PlayerMovement : MonoBehaviour
         rb = this.gameObject.GetComponent<Rigidbody2D>();
         anim = this.gameObject.GetComponent<Animator>();
         bodyCollider = this.gameObject.GetComponent<CapsuleCollider2D>();
-        gravityScaleAtStart = rb.gravityScale;
+      //  gravityScaleAtStart = rb.gravityScale;
     }
 
     /**
@@ -143,7 +143,7 @@ public class PlayerMovement : MonoBehaviour
     }
 
     /**
-     * Player takes damage when falling fromm heights.
+     * Player takes damage when falling from heights.
      */
     public void HighFall()
     {
