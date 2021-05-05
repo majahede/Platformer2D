@@ -74,7 +74,13 @@ public class Player : MonoBehaviour
         if (currentHealth <= 0)
         {
             anim.SetTrigger("die");
-            Time.timeScale = 0;
+            StartCoroutine(GameOverDelay(1f));
         }
+    }
+
+    private IEnumerator GameOverDelay(float time)
+    {
+        yield return new WaitForSecondsRealtime(time);
+        Time.timeScale = 0;
     }
 }
