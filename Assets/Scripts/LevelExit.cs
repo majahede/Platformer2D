@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class LevelExit : MonoBehaviour
 {
-    [SerializeField] float LevelLoadDelay = 1f;
+    private readonly float levelLoadDelay = 1f;
 
     public SceneLoader sceneLoader;
 
@@ -14,9 +14,9 @@ public class LevelExit : MonoBehaviour
         StartCoroutine(LoadNextLevel());
     }
 
-    IEnumerator LoadNextLevel()
+    private IEnumerator LoadNextLevel()
     {
-        yield return new WaitForSecondsRealtime(LevelLoadDelay);
+        yield return new WaitForSecondsRealtime(levelLoadDelay);
         sceneLoader.LoadNextScene();
     }
 }

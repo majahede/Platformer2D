@@ -35,8 +35,6 @@ public class PlayerMovement : MonoBehaviour
     private CapsuleCollider2D bodyCollider;
     private bool facingRight = true;
 
-  //  float gravityScaleAtStart;
-
     /**
      * Start is called before the first frame update
      */
@@ -107,18 +105,15 @@ public class PlayerMovement : MonoBehaviour
         if (!bodyCollider.IsTouchingLayers(LayerMask.GetMask("Climbing")))
         {
             anim.SetBool("isClimbing", false);
-       //     rb.gravityScale = gravityScaleAtStart;
             return;
         }
 
         float climbSpeed = 5f;
 
-        Vector2 climbVelocity = new Vector2(rb.velocity.x, yMovement * climbSpeed);
+        var climbVelocity = new Vector2(rb.velocity.x, yMovement * climbSpeed);
         rb.velocity = climbVelocity;
         rb.gravityScale = 0f;
-       // Debug.Log(Mathf.Abs(rb.velocity.y));
 
-       // bool hasVerticalSpeed = Mathf.Abs(rb.velocity.y) > Mathf.Epsilon;
         anim.SetBool("isClimbing", true);
     }
 
