@@ -22,7 +22,6 @@ public class Bullet : MonoBehaviour
      */
     void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log(collision.name);
         var enemy = collision.GetComponent<Enemy>();
 
         // If the hit object is of type enemy it takes damage.
