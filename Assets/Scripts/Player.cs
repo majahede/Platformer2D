@@ -11,6 +11,7 @@ public class Player : MonoBehaviour
     private CapsuleCollider2D bodyCollider;
     private float curTime = 0;
     public float nextDamage = 1;
+    private Animator anim;
 
     /**
      * Start is called before the first frame update
@@ -20,6 +21,7 @@ public class Player : MonoBehaviour
         currentHealth = maxHealth;
         healthBar.SetMaxHealth(maxHealth);
         bodyCollider = this.gameObject.GetComponent<CapsuleCollider2D>();
+        anim = this.gameObject.GetComponent<Animator>();
     }
 
     /**
@@ -29,6 +31,10 @@ public class Player : MonoBehaviour
     {
         PlayerDead();
         EnemyCollision();
+        if (Input.GetKeyDown(KeyCode.Alpha0))
+        {
+            TakeDamage(50);
+        }
     }
 
     /**
@@ -67,7 +73,8 @@ public class Player : MonoBehaviour
     {
         if (currentHealth <= 0)
         {
-            UnityEditor.EditorApplication.isPlaying = false;
+            anim.SetTrigger("die");
+            Time.timeScale = 0;
         }
     }
 }
