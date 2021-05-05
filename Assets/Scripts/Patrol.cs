@@ -5,44 +5,41 @@ using UnityEngine;
 
 public class Patrol : Enemy
 {
-    public float movementSpeed = 5;
-    public float distance = 2f;
+    Rigidbody2D rb;
+    [SerializeField] float movementSpeed = 1f;
+    private bool isFacingRight = true;
 
-    public bool movingRight = true;
-    public Transform groundChecker;
-
-    /**
-     * Update is called once per frame.
-     */
-    void Update()
+    void Start ()
     {
-        Move();
+        rb = GetComponent<Rigidbody2D>();
     }
 
-    public void Move()
+    void Update ()
     {
-        transform.Translate(Vector2.right * movementSpeed * Time.deltaTime);
-        // A raycast with its origin, direction and length.
-        var layerMask = LayerMask.GetMask("Ground");
-        var groundInfo = Physics2D.Raycast(groundChecker.position, Vector2.down, distance, layerMask);
-
-        if (!groundInfo.collider)
+        if (isFacingRight)
         {
-            if (movingRight)
-            {
-                transform.eulerAngles = new Vector3(0, -180, 0);
-                movingRight = false;
-            }
-            else
-            {
-                transform.eulerAngles = new Vector3(0, 0, 0);
-                movingRight = true;
-            }
+            rb.velocity = new Vector2(movementSpeed, 0f);
+        }
+        else
+        {
+            rb.velocity = new Vector2(-movementSpeed, 0f);
         }
     }
 
-    void OnCollisionEnter2D(Collision2D other) 
+    void OnTriggerExit2D(Collider2D collision)
     {
-        Debug.Log(other);
+        if (collision.name == "Foreground")
+        {
+            if (isFacingRight)
+            {
+                transform.Rotate(0f, 180f, 0);
+                isFacingRight = false;
+            }
+            else
+            {
+                transform.Rotate(0f, 180f, 0);
+                isFacingRight = true;
+            }
+        }
     }
 }
