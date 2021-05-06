@@ -53,11 +53,9 @@ public class PlayerMovement : MonoBehaviour
     {
         xMovement = Input.GetAxisRaw("Horizontal");
         yMovement = Input.GetAxisRaw("Vertical");
-        Run();
         Jump();
         ChangeFallSpeed();
         IsGrounded();
-        Flip();
         HighFall();
         ClimbLadder();
     }
@@ -68,6 +66,7 @@ public class PlayerMovement : MonoBehaviour
     void FixedUpdate()
     {
         Run();
+        Flip();
     }
 
     /**

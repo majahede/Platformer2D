@@ -13,6 +13,7 @@ public class Player : MonoBehaviour
     public float nextDamage = 1;
     private Animator anim;
 
+
     /**
      * Start is called before the first frame update
      */

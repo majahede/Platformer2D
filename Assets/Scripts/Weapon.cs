@@ -23,16 +23,18 @@ public class Weapon : MonoBehaviour
 
     public void Shoot()
     {
-        if (!Input.GetButtonDown("Fire1"))
-        {
-            anim.SetBool("isShooting", false);
-            return;
-        }
-        if (Input.GetButtonDown("Fire1"))
-        {
-            // Spawns object at the chosen place (The object to spawn, where to spawn object, which rotation)
-            Instantiate(bullet, firePoint.position, firePoint.rotation);
-            anim.SetBool("isShooting", true);
+        if (!PauseMenu.GameIsPaused) {
+            if (!Input.GetButtonDown("Fire1"))
+            {
+                anim.SetBool("isShooting", false);
+                return;
+            }
+            if (Input.GetButtonDown("Fire1"))
+            {
+                // Spawns object at the chosen place (The object to spawn, where to spawn object, which rotation)
+                Instantiate(bullet, firePoint.position, firePoint.rotation);
+                anim.SetBool("isShooting", true);
+            }
         }
     }
 }
