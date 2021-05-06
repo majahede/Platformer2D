@@ -70,13 +70,15 @@ public class Player : MonoBehaviour
     /**
      * If players health is below 0, player is dead.
      */
-    private void PlayerDead()
+    public bool PlayerDead()
     {
         if (currentHealth <= 0)
         {
             anim.SetTrigger("die");
             StartCoroutine(GameOverDelay(1f));
+            return true;
         }
+        return false;
     }
 
     private IEnumerator GameOverDelay(float time)
