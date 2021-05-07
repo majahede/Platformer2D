@@ -7,8 +7,16 @@ public class SceneLoader : MonoBehaviour
 {
     public void LoadNextScene()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         Time.timeScale = 1f;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        PauseMenu.GameIsPaused = false;
+    }
+
+    public void LoadActiveScene()
+    {
+        Time.timeScale = 1f;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        PauseMenu.GameIsPaused = false;
     }
 
     public void LoadMainMenu()

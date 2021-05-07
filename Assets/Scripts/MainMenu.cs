@@ -9,7 +9,6 @@ public class MainMenu : MonoBehaviour
 
     public void NewGame()
     {
-        Debug.Log("hej");
         sceneLoader.LoadNextScene();
     }
 
