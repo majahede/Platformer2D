@@ -2,10 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[System.Serializable]
 public class PlayerData
 {
-    public int health;
+    public int currentHealth;
     public int level;
 
-    
+    public PlayerData (Player player)
+    {
+        level = player.level;
+        currentHealth = player.currentHealth;
+    }
+
 }

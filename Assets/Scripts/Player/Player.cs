@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
-
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
@@ -12,7 +12,7 @@ public class Player : MonoBehaviour
     private float curTime = 0;
     public float nextDamage = 1;
     private Animator anim;
-
+    public int level;
 
     /**
      * Start is called before the first frame update
@@ -23,6 +23,7 @@ public class Player : MonoBehaviour
         healthBar.SetMaxHealth(maxHealth);
         bodyCollider = this.gameObject.GetComponent<CapsuleCollider2D>();
         anim = this.gameObject.GetComponent<Animator>();
+        level = SceneManager.GetActiveScene().buildIndex;
     }
 
     /**
