@@ -6,12 +6,16 @@ using UnityEngine.SceneManagement;
 public class LevelExit : MonoBehaviour
 {
     private readonly float levelLoadDelay = 1f;
+    public Player player;
+    public GameSession gameSession;
 
     public SceneLoader sceneLoader;
 
     void OnTriggerEnter2D(Collider2D other)
     {
         StartCoroutine(LoadNextLevel());
+        player.SavePlayer();
+        gameSession.SavePickups();
     }
 
     private IEnumerator LoadNextLevel()

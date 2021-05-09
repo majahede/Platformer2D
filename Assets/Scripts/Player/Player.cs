@@ -6,23 +6,24 @@ using UnityEngine.SceneManagement;
 public class Player : MonoBehaviour
 {
     public int maxHealth = 100;
-    public int currentHealth = 0;
+    public int currentHealth = 100;
     public HealthBar healthBar;
     private CapsuleCollider2D bodyCollider;
     private float curTime = 0;
     public float nextDamage = 1;
     private Animator anim;
-    public int level;
+    public int level = 1;
 
     /**
      * Start is called before the first frame update
      */
     void Start()
     {
-        currentHealth = maxHealth;
         healthBar.SetMaxHealth(maxHealth);
+        healthBar.SetHealth(GameControl.Control.currentHealth);
         bodyCollider = this.gameObject.GetComponent<CapsuleCollider2D>();
         anim = this.gameObject.GetComponent<Animator>();
+        currentHealth = GameControl.Control.currentHealth;
         level = SceneManager.GetActiveScene().buildIndex;
     }
 
@@ -37,6 +38,12 @@ public class Player : MonoBehaviour
         {
             TakeDamage(50);
         }
+    }
+
+    // Save data to game control
+    public void SavePlayer()
+    {
+        GameControl.Control.currentHealth = currentHealth;
     }
 
     /**

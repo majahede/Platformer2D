@@ -6896,6 +6896,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameControl
       objectReference: {fileID: 0}
+    - target: {fileID: 3436229924963854831, guid: dd98cfc566eb040498616284c7482780, type: 3}
+      propertyPath: level
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3436229924963854831, guid: dd98cfc566eb040498616284c7482780, type: 3}
+      propertyPath: currentHealth
+      value: 100
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dd98cfc566eb040498616284c7482780, type: 3}
 --- !u!1 &1545053225
@@ -7617,7 +7625,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 100
-  currentHealth: 0
+  currentHealth: 100
   healthBar: {fileID: 1175286726}
   nextDamage: 1
   level: 0

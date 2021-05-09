@@ -5561,7 +5561,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 100
-  currentHealth: 0
+  currentHealth: 100
   healthBar: {fileID: 1117179823}
   nextDamage: 1
   level: 0
@@ -7316,6 +7316,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24e490e59f0de9149ad0cbfd45134e10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 867954938}
   sceneLoader: {fileID: 996302387}
 --- !u!4 &1875512918 stripped
 Transform:
@@ -8088,11 +8089,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3436229924963854831, guid: dd98cfc566eb040498616284c7482780, type: 3}
       propertyPath: level
-      value: 50
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3436229924963854831, guid: dd98cfc566eb040498616284c7482780, type: 3}
       propertyPath: currentHealth
-      value: 50
+      value: 100
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dd98cfc566eb040498616284c7482780, type: 3}

@@ -4,20 +4,19 @@ using UnityEngine;
 
 public class GameControl : MonoBehaviour
 {
-    public static GameControl control;
+    public static GameControl Control;
 
-    public int currentHealth;
-    public int level;
-  
-  
+    public int currentHealth = 100;
+    public int pickups;
+
     void Awake()
     {
-        if (control == null)
+        if (Control == null)
         {
             DontDestroyOnLoad(gameObject);
-            control = this;
+            Control = this;
         }
-        else if(control != this)
+        else if (Control != this)
         {
             Destroy(gameObject);
         }

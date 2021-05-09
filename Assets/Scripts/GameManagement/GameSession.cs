@@ -10,14 +10,20 @@ public class GameSession : MonoBehaviour
     public Text pickupCount;
 
     [SerializeField]
-    private int pickups = 0;
+    public int pickups;
 
     /**
      * Start is called before the first frame update
      */
     void Start()
     {
+        pickups = GameControl.Control.pickups;
         pickupCount.text = pickups.ToString();
+    }
+
+    public void SavePickups()
+    {
+        GameControl.Control.pickups = pickups;
     }
 
     /**
