@@ -11,6 +11,6 @@ public class LoseCollider : MonoBehaviour
      */
     void OnTriggerEnter2D()
     {
-        UnityEditor.EditorApplication.isPlaying = false;
+        Application.Quit();
     }
 }
