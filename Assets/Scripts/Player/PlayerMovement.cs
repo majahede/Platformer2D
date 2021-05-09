@@ -20,7 +20,7 @@ public class PlayerMovement : MonoBehaviour
 
     public Player player;
     public float jumpForce = 10f;
-    public float checkGroundRadius;
+    public float checkGroundRadius = 0.05f;
     public Transform groundChecker;
     public LayerMask groundLayer;
     public LayerMask enemyLayer;
