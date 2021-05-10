@@ -7,6 +7,9 @@ TagManager:
   - Ground
   - Enemy
   - Turn
+  - Pickup
+  - LifePickup
+  - Ammunition
   layers:
   - Default
   - TransparentFX

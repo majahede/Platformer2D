@@ -27,14 +27,6 @@ public class GameSession : MonoBehaviour
     }
 
     /**
-     * Called when another objects enters a trigger collider attached to this object.
-     */
-    void OnTriggerEnter2D()
-    {
-        Destroy(gameObject);
-    }
-
-    /**
      * Add point to pickup counter.
      */
     public void AddPoint()

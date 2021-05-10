@@ -74,6 +74,17 @@ public class Player : MonoBehaviour
         currentHealth -= damage;
         healthBar.SetHealth(currentHealth);
     }
+    
+     /**
+     *  When called player pick up healing object.
+     */
+    public void IncreaseHealth(int health)
+    {
+        currentHealth += health;
+        healthBar.SetHealth(currentHealth);
+    }
+
+
 
     /**
      * If players health is below 0, player is dead.

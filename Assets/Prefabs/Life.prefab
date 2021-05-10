@@ -11,10 +11,10 @@ GameObject:
   - component: {fileID: 432489042174201602}
   - component: {fileID: 432489042174201600}
   - component: {fileID: 432489042174201603}
-  - component: {fileID: 4078830410502320888}
+  - component: {fileID: 6210953165406455698}
   m_Layer: 11
-  m_Name: Pickup
-  m_TagString: Pickup
+  m_Name: Life
+  m_TagString: LifePickup
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 432489042174201613}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -30.7, y: -4, z: 0}
-  m_LocalScale: {x: 5, y: 5, z: 5}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -74,7 +74,7 @@ SpriteRenderer:
   m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.4943605, g: 1, b: 0.43867922, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -110,7 +110,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.14425978, y: 0.14099726}
   m_EdgeRadius: 0
---- !u!114 &4078830410502320888
+--- !u!114 &6210953165406455698
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -119,6 +119,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 432489042174201613}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a85347741cd321240bda77038ee51e60, type: 3}
+  m_Script: {fileID: 11500000, guid: faf549fce6dd92e4eb37aa241df8c4d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
