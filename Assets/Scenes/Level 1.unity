@@ -7317,6 +7317,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 867954938}
+  gameSession: {fileID: 434972185}
   sceneLoader: {fileID: 996302387}
 --- !u!4 &1875512918 stripped
 Transform:
