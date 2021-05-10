@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameControl : MonoBehaviour
 {
@@ -17,6 +18,14 @@ public class GameControl : MonoBehaviour
             Control = this;
         }
         else if (Control != this)
+        {
+            Destroy(gameObject);
+        }
+    }
+
+    void Update()
+    {
+        if (SceneManager.GetActiveScene().buildIndex == 0 && Control != null)
         {
             Destroy(gameObject);
         }
