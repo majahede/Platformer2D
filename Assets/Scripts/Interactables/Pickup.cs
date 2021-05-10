@@ -6,7 +6,6 @@ using UnityEngine.UI;
 
 public class Pickup : MonoBehaviour
 {
-
     public Player player;
     /**
      * Called when another objects enters a trigger collider attached to this object.

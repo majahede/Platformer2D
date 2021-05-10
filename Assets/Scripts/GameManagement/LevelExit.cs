@@ -11,7 +11,7 @@ public class LevelExit : MonoBehaviour
 
     public SceneLoader sceneLoader;
 
-    void OnTriggerEnter2D(Collider2D other)
+    void OnTriggerEnter2D()
     {
         StartCoroutine(LoadNextLevel());
         player.SavePlayer();

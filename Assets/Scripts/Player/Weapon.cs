@@ -8,8 +8,9 @@ public class Weapon : MonoBehaviour
     public Transform firePoint;
     public GameObject bullet;
     private Animator anim;
+    private int ammo = 10;
 
-    void Start() 
+    void Start()
     {
         anim = this.gameObject.GetComponent<Animator>();
     }
@@ -23,17 +24,20 @@ public class Weapon : MonoBehaviour
 
     public void Shoot()
     {
-        if (!PauseMenu.GameIsPaused) {
+        if (!PauseMenu.GameIsPaused) 
+        {
             if (!Input.GetButtonDown("Fire1"))
             {
                 anim.SetBool("isShooting", false);
                 return;
             }
-            if (Input.GetButtonDown("Fire1"))
+
+            if (Input.GetButtonDown("Fire1") && ammo > 0)
             {
                 // Spawns object at the chosen place (The object to spawn, where to spawn object, which rotation)
                 Instantiate(bullet, firePoint.position, firePoint.rotation);
                 anim.SetBool("isShooting", true);
+                ammo--;
             }
         }
     }
