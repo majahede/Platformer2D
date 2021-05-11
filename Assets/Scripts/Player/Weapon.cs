@@ -41,4 +41,9 @@ public class Weapon : MonoBehaviour
             }
         }
     }
+
+    public void AddBullets(int bullets)
+    {
+        ammo += bullets;
+    }
 }

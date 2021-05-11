@@ -27,6 +27,7 @@ public class Pickup : MonoBehaviour
 
         if (gameObject.tag == "Ammunition")
         {
+            weapon.AddBullets(10);
             Debug.Log("Ammo!!");
         }
 
