@@ -1,0 +1,4221 @@
+fileFormatVersion: 2
+guid: b18a7319dc717d544940ffbfbd637310
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -332859509670452422
+    second: underground tile HD_0
+  - first:
+      213: -6314206665233150232
+    second: underground tile HD_1
+  - first:
+      213: 3463292417394577040
+    second: underground tile HD_2
+  - first:
+      213: 6970137721424987744
+    second: underground tile HD_3
+  - first:
+      213: 1326332833210441375
+    second: underground tile HD_4
+  - first:
+      213: 5759494081918393108
+    second: underground tile HD_5
+  - first:
+      213: 2082818696172818479
+    second: underground tile HD_6
+  - first:
+      213: -3463101975181975194
+    second: underground tile HD_7
+  - first:
+      213: 6650420791148010186
+    second: underground tile HD_8
+  - first:
+      213: 4895968805500037858
+    second: underground tile HD_9
+  - first:
+      213: -2062155582494658775
+    second: underground tile HD_10
+  - first:
+      213: 2663005185004319866
+    second: underground tile HD_11
+  - first:
+      213: 3837512748338855566
+    second: underground tile HD_12
+  - first:
+      213: 1284222318778695149
+    second: underground tile HD_13
+  - first:
+      213: 5493975244838144640
+    second: underground tile HD_14
+  - first:
+      213: -9019668575704060825
+    second: underground tile HD_15
+  - first:
+      213: 9107044438285835408
+    second: underground tile HD_16
+  - first:
+      213: -8626670976084225785
+    second: underground tile HD_17
+  - first:
+      213: 5698808945945536696
+    second: underground tile HD_18
+  - first:
+      213: 6802161058341278798
+    second: underground tile HD_19
+  - first:
+      213: -4623143824640989187
+    second: underground tile HD_20
+  - first:
+      213: 8874563300464301025
+    second: underground tile HD_21
+  - first:
+      213: -5564256327078830715
+    second: underground tile HD_22
+  - first:
+      213: -1822580871167722921
+    second: underground tile HD_23
+  - first:
+      213: 6207103881577267660
+    second: underground tile HD_24
+  - first:
+      213: 7513762122598893660
+    second: underground tile HD_25
+  - first:
+      213: -1327151576390050376
+    second: underground tile HD_26
+  - first:
+      213: 607046671921498817
+    second: underground tile HD_27
+  - first:
+      213: 337625254047808402
+    second: underground tile HD_28
+  - first:
+      213: 2426821858817320932
+    second: underground tile HD_29
+  - first:
+      213: -3501706100397687453
+    second: underground tile HD_30
+  - first:
+      213: 8080830272159066810
+    second: underground tile HD_31
+  - first:
+      213: -203209279414178902
+    second: underground tile HD_32
+  - first:
+      213: -7991766960085916815
+    second: underground tile HD_33
+  - first:
+      213: -5594187385320301912
+    second: underground tile HD_34
+  - first:
+      213: -7871584565253215204
+    second: underground tile HD_35
+  - first:
+      213: -1820075756809573467
+    second: underground tile HD_36
+  - first:
+      213: 6237039746898376140
+    second: underground tile HD_37
+  - first:
+      213: 1516459038936670841
+    second: underground tile HD_38
+  - first:
+      213: 7964727833741350090
+    second: underground tile HD_39
+  - first:
+      213: 1131102924780821352
+    second: underground tile HD_40
+  - first:
+      213: -4019376088209538659
+    second: underground tile HD_41
+  - first:
+      213: 2465560389906142870
+    second: underground tile HD_42
+  - first:
+      213: 8416577405921815613
+    second: underground tile HD_43
+  - first:
+      213: -5355449388702622124
+    second: underground tile HD_44
+  - first:
+      213: 3527666641240868286
+    second: underground tile HD_45
+  - first:
+      213: 8481985188508842540
+    second: underground tile HD_46
+  - first:
+      213: 6556044996368905855
+    second: underground tile HD_47
+  - first:
+      213: -7930774346092325450
+    second: underground tile HD_48
+  - first:
+      213: -5063978484191856934
+    second: underground tile HD_49
+  - first:
+      213: -718225485324331068
+    second: underground tile HD_50
+  - first:
+      213: -5106763282177071626
+    second: underground tile HD_51
+  - first:
+      213: -6827926607679547524
+    second: underground tile HD_52
+  - first:
+      213: 1736745769716138431
+    second: underground tile HD_53
+  - first:
+      213: 5097065518856325358
+    second: underground tile HD_54
+  - first:
+      213: -107808349177192726
+    second: underground tile HD_55
+  - first:
+      213: 8997019667750366642
+    second: underground tile HD_56
+  - first:
+      213: -8786869360226197314
+    second: underground tile HD_57
+  - first:
+      213: -8949426546577736102
+    second: underground tile HD_58
+  - first:
+      213: -3735273406624447261
+    second: underground tile HD_59
+  - first:
+      213: -336541965867082885
+    second: underground tile HD_60
+  - first:
+      213: 8126489684866754419
+    second: underground tile HD_61
+  - first:
+      213: -563397432691442626
+    second: underground tile HD_62
+  - first:
+      213: -3932720886572386681
+    second: underground tile HD_63
+  - first:
+      213: 364235536192341304
+    second: underground tile HD_64
+  - first:
+      213: 1028757627965583730
+    second: underground tile HD_65
+  - first:
+      213: 7854229511179033384
+    second: underground tile HD_66
+  - first:
+      213: -7582002134269052610
+    second: underground tile HD_67
+  - first:
+      213: -5355723019774975293
+    second: underground tile HD_68
+  - first:
+      213: 8775147798188623599
+    second: underground tile HD_69
+  - first:
+      213: -3811957388698164258
+    second: underground tile HD_70
+  - first:
+      213: -4795293938017977089
+    second: underground tile HD_71
+  - first:
+      213: 5909251959654764961
+    second: underground tile HD_72
+  - first:
+      213: 2880215323081961399
+    second: underground tile HD_73
+  - first:
+      213: 5075001354509380716
+    second: underground tile HD_74
+  - first:
+      213: -1458412299185682432
+    second: underground tile HD_75
+  - first:
+      213: -5173647712528583826
+    second: underground tile HD_76
+  - first:
+      213: -8320241642406802399
+    second: underground tile HD_77
+  - first:
+      213: -6518707233223711053
+    second: underground tile HD_78
+  - first:
+      213: 8830926633055424577
+    second: underground tile HD_79
+  - first:
+      213: -3749291140821903517
+    second: underground tile HD_80
+  - first:
+      213: -1982157257560104054
+    second: underground tile HD_81
+  - first:
+      213: -2339527736130452945
+    second: underground tile HD_82
+  - first:
+      213: 5910119835033898099
+    second: underground tile HD_83
+  - first:
+      213: -2771790561739871660
+    second: underground tile HD_84
+  - first:
+      213: 5910036939467781622
+    second: underground tile HD_85
+  - first:
+      213: -2071700284164016125
+    second: underground tile HD_86
+  - first:
+      213: -598191547176335380
+    second: underground tile HD_87
+  - first:
+      213: 1721241852973732530
+    second: underground tile HD_88
+  - first:
+      213: -2903390465924782133
+    second: underground tile HD_89
+  - first:
+      213: 5315627026301441770
+    second: underground tile HD_90
+  - first:
+      213: -3168139365324541848
+    second: underground tile HD_91
+  - first:
+      213: -968140988198458080
+    second: underground tile HD_92
+  - first:
+      213: -5461877981569063069
+    second: underground tile HD_93
+  - first:
+      213: -1866747604776263453
+    second: underground tile HD_94
+  - first:
+      213: -8140390549607439040
+    second: underground tile HD_95
+  - first:
+      213: 3946358949796041868
+    second: underground tile HD_96
+  - first:
+      213: -5756928379027942859
+    second: underground tile HD_97
+  - first:
+      213: -1261705469103313557
+    second: underground tile HD_98
+  - first:
+      213: -4979318681914039742
+    second: underground tile HD_99
+  - first:
+      213: -918855062674832544
+    second: underground tile HD_100
+  - first:
+      213: 2609104052669796900
+    second: underground tile HD_101
+  - first:
+      213: 3249983925599581611
+    second: underground tile HD_102
+  - first:
+      213: -4774900319002602595
+    second: underground tile HD_103
+  - first:
+      213: 6164171914318751114
+    second: underground tile HD_104
+  - first:
+      213: 7878526425143340590
+    second: underground tile HD_105
+  - first:
+      213: -8795792206970463162
+    second: underground tile HD_106
+  - first:
+      213: -4476299829522290549
+    second: underground tile HD_107
+  - first:
+      213: 1323201938149148326
+    second: underground tile HD_108
+  - first:
+      213: -343335073487028647
+    second: underground tile HD_109
+  - first:
+      213: -4899312552776770024
+    second: underground tile HD_110
+  - first:
+      213: 5565959498051542415
+    second: underground tile HD_111
+  - first:
+      213: 3147347473586037168
+    second: underground tile HD_112
+  - first:
+      213: 2574207152999349231
+    second: underground tile HD_113
+  - first:
+      213: 7879457112534455729
+    second: underground tile HD_114
+  - first:
+      213: 5473695087258329672
+    second: underground tile HD_115
+  - first:
+      213: -728694347499958227
+    second: underground tile HD_116
+  - first:
+      213: -953451785270975331
+    second: underground tile HD_117
+  - first:
+      213: 1021415123375237329
+    second: underground tile HD_118
+  - first:
+      213: -1126523856186947846
+    second: underground tile HD_119
+  - first:
+      213: -4353548779928447860
+    second: underground tile HD_120
+  - first:
+      213: 160206785382327744
+    second: underground tile HD_121
+  - first:
+      213: 7154906736511980847
+    second: underground tile HD_122
+  - first:
+      213: -6191099254211925255
+    second: underground tile HD_123
+  - first:
+      213: 8445683205049025382
+    second: underground tile HD_124
+  - first:
+      213: 7782909619013990220
+    second: underground tile HD_125
+  - first:
+      213: -191868764129108474
+    second: underground tile HD_126
+  - first:
+      213: 4011076495663072125
+    second: underground tile HD_127
+  - first:
+      213: 5723845229356270606
+    second: underground tile HD_128
+  - first:
+      213: 7234278321676783717
+    second: underground tile HD_129
+  - first:
+      213: -8594892175791788096
+    second: underground tile HD_130
+  - first:
+      213: 8320183952905341816
+    second: underground tile HD_131
+  - first:
+      213: -4840028897489991923
+    second: underground tile HD_132
+  - first:
+      213: 7228864008539306473
+    second: underground tile HD_133
+  - first:
+      213: 100948763421026332
+    second: underground tile HD_134
+  - first:
+      213: 2519528011190964228
+    second: underground tile HD_135
+  - first:
+      213: 3852079575952636341
+    second: underground tile HD_136
+  - first:
+      213: 2604553013830256235
+    second: underground tile HD_137
+  - first:
+      213: 6504317042092874313
+    second: underground tile HD_138
+  - first:
+      213: 6815462588088981042
+    second: underground tile HD_139
+  - first:
+      213: -1848831945543145604
+    second: underground tile HD_140
+  - first:
+      213: -6570338302793557618
+    second: underground tile HD_141
+  - first:
+      213: -1531527364794913672
+    second: underground tile HD_142
+  - first:
+      213: 1144194640058410140
+    second: underground tile HD_143
+  - first:
+      213: 3859889602577609806
+    second: underground tile HD_144
+  - first:
+      213: -1530822503589547780
+    second: underground tile HD_145
+  - first:
+      213: -7312384060827406474
+    second: underground tile HD_146
+  - first:
+      213: -7798778135632202757
+    second: underground tile HD_147
+  - first:
+      213: -8501681369760017083
+    second: underground tile HD_148
+  - first:
+      213: -5938377078488336482
+    second: underground tile HD_149
+  - first:
+      213: 8895337473050109092
+    second: underground tile HD_150
+  - first:
+      213: -2577735611904394927
+    second: underground tile HD_151
+  - first:
+      213: -7564157824617110988
+    second: underground tile HD_152
+  - first:
+      213: -4528768495457728467
+    second: underground tile HD_153
+  - first:
+      213: 1204299492530867893
+    second: underground tile HD_154
+  - first:
+      213: -4334893618888770338
+    second: underground tile HD_155
+  - first:
+      213: -2272850535185834570
+    second: underground tile HD_156
+  - first:
+      213: 1722921207463864543
+    second: underground tile HD_157
+  - first:
+      213: -1621314250634631341
+    second: underground tile HD_158
+  - first:
+      213: -5706176079453399918
+    second: underground tile HD_159
+  - first:
+      213: -3050382124916005097
+    second: underground tile HD_160
+  - first:
+      213: 6526981628660682639
+    second: underground tile HD_161
+  - first:
+      213: 7876171919101735601
+    second: underground tile HD_162
+  - first:
+      213: -2481003337670292803
+    second: underground tile HD_163
+  - first:
+      213: 7341966518594449473
+    second: underground tile HD_164
+  - first:
+      213: 6832410041108404547
+    second: underground tile HD_165
+  - first:
+      213: -1309683004399381445
+    second: underground tile HD_166
+  - first:
+      213: 8452328454829355563
+    second: underground tile HD_167
+  - first:
+      213: 385485524995418757
+    second: underground tile HD_168
+  - first:
+      213: 6752848869829820885
+    second: underground tile HD_169
+  - first:
+      213: -2054369587763537365
+    second: underground tile HD_170
+  - first:
+      213: -3878067244157970676
+    second: underground tile HD_171
+  - first:
+      213: -5683348102480995374
+    second: underground tile HD_172
+  - first:
+      213: 7125563653210601787
+    second: underground tile HD_173
+  - first:
+      213: -4124924357614854680
+    second: underground tile HD_174
+  - first:
+      213: -207154474549301516
+    second: underground tile HD_175
+  - first:
+      213: 981810939944054058
+    second: underground tile HD_176
+  - first:
+      213: 4564314085964656517
+    second: underground tile HD_177
+  - first:
+      213: -1995733574909658760
+    second: underground tile HD_178
+  - first:
+      213: -1891138166278447487
+    second: underground tile HD_179
+  - first:
+      213: 8521045094085269247
+    second: underground tile HD_180
+  - first:
+      213: 789404873232324964
+    second: underground tile HD_181
+  - first:
+      213: 6532773044776228830
+    second: underground tile HD_182
+  - first:
+      213: -6184908426942051087
+    second: underground tile HD_183
+  - first:
+      213: -2059401298174660205
+    second: underground tile HD_184
+  - first:
+      213: -5929958149130862121
+    second: underground tile HD_185
+  - first:
+      213: -3201340103525961939
+    second: underground tile HD_186
+  - first:
+      213: -5497807662305744129
+    second: underground tile HD_187
+  - first:
+      213: -8909885629878038341
+    second: underground tile HD_188
+  - first:
+      213: -7190795170797842700
+    second: underground tile HD_189
+  - first:
+      213: -966196457743619117
+    second: underground tile HD_190
+  - first:
+      213: 8424259467418649530
+    second: underground tile HD_191
+  - first:
+      213: -4241779149265533084
+    second: underground tile HD_192
+  - first:
+      213: -3805923253538399558
+    second: underground tile HD_193
+  - first:
+      213: 7698199431168096683
+    second: underground tile HD_194
+  - first:
+      213: -1556512135097037550
+    second: underground tile HD_195
+  - first:
+      213: 4572590706572172525
+    second: underground tile HD_196
+  - first:
+      213: -3838499098012941987
+    second: underground tile HD_197
+  - first:
+      213: 9103867300439663828
+    second: underground tile HD_198
+  - first:
+      213: -8387376836021806640
+    second: underground tile HD_199
+  - first:
+      213: 941262834514139542
+    second: underground tile HD_200
+  - first:
+      213: -3563644819350035316
+    second: underground tile HD_201
+  - first:
+      213: 1917931398780427620
+    second: underground tile HD_202
+  - first:
+      213: 7241267401562884968
+    second: underground tile HD_203
+  - first:
+      213: 1985376282269617654
+    second: underground tile HD_204
+  - first:
+      213: -7287306018275128384
+    second: underground tile HD_205
+  - first:
+      213: 1304172010072240563
+    second: underground tile HD_206
+  - first:
+      213: -4956373938521225669
+    second: underground tile HD_207
+  - first:
+      213: 6405497864674021361
+    second: underground tile HD_208
+  - first:
+      213: 207689995420300850
+    second: underground tile HD_209
+  - first:
+      213: -5096827201697972458
+    second: underground tile HD_210
+  - first:
+      213: 2074254323581989428
+    second: underground tile HD_211
+  - first:
+      213: 5000642163530518766
+    second: underground tile HD_212
+  - first:
+      213: -9052970280898949828
+    second: underground tile HD_213
+  - first:
+      213: 8512659674146282568
+    second: underground tile HD_214
+  - first:
+      213: 5066814038335821310
+    second: underground tile HD_215
+  - first:
+      213: -4436437319273510725
+    second: underground tile HD_216
+  - first:
+      213: 3946604430250915724
+    second: underground tile HD_217
+  - first:
+      213: 6231085093345960050
+    second: underground tile HD_218
+  - first:
+      213: 883944875126048126
+    second: underground tile HD_219
+  - first:
+      213: -1921670871860688466
+    second: underground tile HD_220
+  - first:
+      213: -2952732719132067349
+    second: underground tile HD_221
+  - first:
+      213: 4011844106159991373
+    second: underground tile HD_222
+  - first:
+      213: 6748436736442974234
+    second: underground tile HD_223
+  - first:
+      213: 66253577732740200
+    second: underground tile HD_224
+  - first:
+      213: -2811710928808710189
+    second: underground tile HD_225
+  - first:
+      213: -6604339173848081955
+    second: underground tile HD_226
+  - first:
+      213: -3251362856922748265
+    second: underground tile HD_227
+  - first:
+      213: -9149612910011344954
+    second: underground tile HD_228
+  - first:
+      213: 3918061199100064910
+    second: underground tile HD_229
+  - first:
+      213: 3775014346560008644
+    second: underground tile HD_230
+  - first:
+      213: 2667050026781425535
+    second: underground tile HD_231
+  - first:
+      213: -4825002552416168651
+    second: underground tile HD_232
+  - first:
+      213: 2345312834616240655
+    second: underground tile HD_233
+  - first:
+      213: -4066247983976218590
+    second: underground tile HD_234
+  - first:
+      213: 8314601798975689777
+    second: underground tile HD_235
+  - first:
+      213: -6999195791847327402
+    second: underground tile HD_236
+  - first:
+      213: -2871972274311018876
+    second: underground tile HD_237
+  - first:
+      213: 3021425715605795486
+    second: underground tile HD_238
+  - first:
+      213: -6963852145395650686
+    second: underground tile HD_239
+  - first:
+      213: -3064552518782280065
+    second: underground tile HD_240
+  - first:
+      213: 7454211852476548297
+    second: underground tile HD_241
+  - first:
+      213: 8543480605956798043
+    second: underground tile HD_242
+  - first:
+      213: -6026539379894926762
+    second: underground tile HD_243
+  - first:
+      213: -7188381202127623085
+    second: underground tile HD_244
+  - first:
+      213: 6034912417602925310
+    second: underground tile HD_245
+  - first:
+      213: 8416165174842231050
+    second: underground tile HD_246
+  - first:
+      213: 1187388713853143276
+    second: underground tile HD_247
+  - first:
+      213: -1529066210659095927
+    second: underground tile HD_248
+  - first:
+      213: 5672938909510112888
+    second: underground tile HD_249
+  - first:
+      213: 6486179755349796625
+    second: underground tile HD_250
+  - first:
+      213: 1870561604295090869
+    second: underground tile HD_251
+  - first:
+      213: -7172984600151368531
+    second: underground tile HD_252
+  - first:
+      213: -3229050784758908137
+    second: underground tile HD_253
+  - first:
+      213: 5445188257307563407
+    second: underground tile HD_254
+  - first:
+      213: 7524978853530024504
+    second: underground tile HD_255
+  - first:
+      213: -5182510629214922960
+    second: underground tile HD_256
+  - first:
+      213: -7659597152933709710
+    second: underground tile HD_257
+  - first:
+      213: 2088051313728565007
+    second: underground tile HD_258
+  - first:
+      213: 8061366015217188483
+    second: underground tile HD_259
+  - first:
+      213: 6243735211801970863
+    second: underground tile HD_260
+  - first:
+      213: 4901670622954241815
+    second: underground tile HD_261
+  - first:
+      213: 8326329593202076118
+    second: underground tile HD_262
+  - first:
+      213: -2219005315922336336
+    second: underground tile HD_263
+  - first:
+      213: -2205374324595847266
+    second: underground tile HD_264
+  - first:
+      213: -6016415409263147543
+    second: underground tile HD_265
+  - first:
+      213: -2795462249867339815
+    second: underground tile HD_266
+  - first:
+      213: 2988934422797377915
+    second: underground tile HD_267
+  - first:
+      213: 5430626489040881252
+    second: underground tile HD_268
+  - first:
+      213: 5793841516701100789
+    second: underground tile HD_269
+  - first:
+      213: 5969468720918764182
+    second: underground tile HD_270
+  - first:
+      213: -2920216641614891151
+    second: underground tile HD_271
+  - first:
+      213: -171312375502163881
+    second: underground tile HD_272
+  - first:
+      213: 737889014679635634
+    second: underground tile HD_273
+  - first:
+      213: -7031499920840795645
+    second: underground tile HD_274
+  - first:
+      213: -1324536554140679514
+    second: underground tile HD_275
+  - first:
+      213: 2567191293193129794
+    second: underground tile HD_276
+  - first:
+      213: -8262567668571421655
+    second: underground tile HD_277
+  - first:
+      213: 1947940294860495448
+    second: underground tile HD_278
+  - first:
+      213: -6168205301556749858
+    second: underground tile HD_279
+  - first:
+      213: 6607953411104524634
+    second: underground tile HD_280
+  - first:
+      213: -5311517214128700154
+    second: underground tile HD_281
+  - first:
+      213: 1068722801561220380
+    second: underground tile HD_282
+  - first:
+      213: 218199115158417140
+    second: underground tile HD_283
+  - first:
+      213: 7545861957233054375
+    second: underground tile HD_284
+  - first:
+      213: 754768563456939112
+    second: underground tile HD_285
+  - first:
+      213: 605723995597005459
+    second: underground tile HD_286
+  - first:
+      213: -351565383421520800
+    second: underground tile HD_287
+  - first:
+      213: 7882186711050566269
+    second: underground tile HD_288
+  - first:
+      213: -3450730213471507338
+    second: underground tile HD_289
+  - first:
+      213: -397684071116432199
+    second: underground tile HD_290
+  - first:
+      213: 4034317865693324864
+    second: underground tile HD_291
+  - first:
+      213: -3636258138649054668
+    second: underground tile HD_292
+  - first:
+      213: 7260838809309778867
+    second: underground tile HD_293
+  - first:
+      213: 4062208252729303580
+    second: underground tile HD_294
+  - first:
+      213: 7960242192667841496
+    second: underground tile HD_295
+  - first:
+      213: 1908469394576416586
+    second: underground tile HD_296
+  - first:
+      213: 7056331771647554993
+    second: underground tile HD_297
+  - first:
+      213: -5122013377389821926
+    second: underground tile HD_298
+  - first:
+      213: -4931540596380470760
+    second: underground tile HD_299
+  - first:
+      213: -4381975613344451853
+    second: underground tile HD_300
+  - first:
+      213: -4603614656128834703
+    second: underground tile HD_301
+  - first:
+      213: -1585029151007765312
+    second: underground tile HD_302
+  - first:
+      213: -7618114822213274995
+    second: underground tile HD_303
+  - first:
+      213: -8826056565905530318
+    second: underground tile HD_304
+  - first:
+      213: 3741939339603097278
+    second: underground tile HD_305
+  - first:
+      213: -4481896449313808118
+    second: underground tile HD_306
+  - first:
+      213: -7540776912271255344
+    second: underground tile HD_307
+  - first:
+      213: 6722755510895127935
+    second: underground tile HD_308
+  - first:
+      213: -7343582326714401482
+    second: underground tile HD_309
+  - first:
+      213: 1983404288462023752
+    second: underground tile HD_310
+  - first:
+      213: 8265562460871549354
+    second: underground tile HD_311
+  - first:
+      213: -7989352623920720828
+    second: underground tile HD_312
+  - first:
+      213: 6858760571215980634
+    second: underground tile HD_313
+  - first:
+      213: 6114860899459793870
+    second: underground tile HD_314
+  - first:
+      213: -3099920171034474846
+    second: underground tile HD_315
+  - first:
+      213: 336029956557874595
+    second: underground tile HD_316
+  - first:
+      213: 1465309389198983478
+    second: underground tile HD_317
+  - first:
+      213: -4742770457273008842
+    second: underground tile HD_318
+  - first:
+      213: -7887255924175154748
+    second: underground tile HD_319
+  - first:
+      213: 7116635165298875754
+    second: underground tile HD_320
+  - first:
+      213: -606545665742687887
+    second: underground tile HD_321
+  - first:
+      213: -892980616586339480
+    second: underground tile HD_322
+  - first:
+      213: 6275766727179864910
+    second: underground tile HD_323
+  - first:
+      213: -6809976032864518682
+    second: underground tile HD_324
+  - first:
+      213: -4650801837839470870
+    second: underground tile HD_325
+  - first:
+      213: 9017314422273055457
+    second: underground tile HD_326
+  - first:
+      213: 939752802181894887
+    second: underground tile HD_327
+  - first:
+      213: -1104499006387159682
+    second: underground tile HD_328
+  - first:
+      213: -594557477304502043
+    second: underground tile HD_329
+  - first:
+      213: -4884814436784880391
+    second: underground tile HD_330
+  - first:
+      213: -395512528136386732
+    second: underground tile HD_331
+  - first:
+      213: -4031221291976927265
+    second: underground tile HD_332
+  - first:
+      213: -7348803655879445315
+    second: underground tile HD_333
+  - first:
+      213: 4883967086635674436
+    second: underground tile HD_334
+  - first:
+      213: 1219698721775452413
+    second: underground tile HD_335
+  - first:
+      213: 6943287288200153900
+    second: underground tile HD_336
+  - first:
+      213: -6223665460724690608
+    second: underground tile HD_337
+  - first:
+      213: -1872486138419450993
+    second: underground tile HD_338
+  - first:
+      213: -8077881498284728728
+    second: underground tile HD_339
+  - first:
+      213: -2827723564596854250
+    second: underground tile HD_340
+  - first:
+      213: 5718690237683435087
+    second: underground tile HD_341
+  - first:
+      213: 5371673485913125648
+    second: underground tile HD_342
+  - first:
+      213: 135268821940926163
+    second: underground tile HD_343
+  - first:
+      213: 5721803429136713233
+    second: underground tile HD_344
+  - first:
+      213: -2224800762618617501
+    second: underground tile HD_345
+  - first:
+      213: 9212168197456692208
+    second: underground tile HD_346
+  - first:
+      213: -6946266931656694794
+    second: underground tile HD_347
+  - first:
+      213: 4021746537424847495
+    second: underground tile HD_348
+  - first:
+      213: 3610371920538327051
+    second: underground tile HD_349
+  - first:
+      213: 445562681299192710
+    second: underground tile HD_350
+  - first:
+      213: -7913132399740849033
+    second: underground tile HD_351
+  - first:
+      213: -120570221860688603
+    second: underground tile HD_352
+  - first:
+      213: -1868946429186770197
+    second: underground tile HD_353
+  - first:
+      213: 5283536066696233712
+    second: underground tile HD_354
+  - first:
+      213: -9068892560551782470
+    second: underground tile HD_355
+  - first:
+      213: 1601320744953828906
+    second: underground tile HD_356
+  - first:
+      213: -1546828566045162045
+    second: underground tile HD_357
+  - first:
+      213: 5092621892895911713
+    second: underground tile HD_358
+  - first:
+      213: 5834378529900104280
+    second: underground tile HD_359
+  - first:
+      213: 7289444992965432701
+    second: underground tile HD_360
+  - first:
+      213: -8861890614614853797
+    second: underground tile HD_361
+  - first:
+      213: -1540671373951069992
+    second: underground tile HD_362
+  - first:
+      213: 25724810696817939
+    second: underground tile HD_363
+  - first:
+      213: -4845360273194566947
+    second: underground tile HD_364
+  - first:
+      213: -6625507501316321900
+    second: underground tile HD_365
+  - first:
+      213: 4210308379730430402
+    second: underground tile HD_366
+  - first:
+      213: -3581735786662395463
+    second: underground tile HD_367
+  - first:
+      213: -5990316423152283943
+    second: underground tile HD_368
+  - first:
+      213: 4878698890564622424
+    second: underground tile HD_369
+  - first:
+      213: -2344129226075838228
+    second: underground tile HD_370
+  - first:
+      213: 689030859024649913
+    second: underground tile HD_371
+  - first:
+      213: 3080411127902257571
+    second: underground tile HD_372
+  - first:
+      213: 4217295866651392169
+    second: underground tile HD_373
+  - first:
+      213: -1650191894388112777
+    second: underground tile HD_374
+  - first:
+      213: 3351495769620529254
+    second: underground tile HD_375
+  - first:
+      213: -6936784091780743899
+    second: underground tile HD_376
+  - first:
+      213: -6156323867468601625
+    second: underground tile HD_377
+  - first:
+      213: 357562670488685841
+    second: underground tile HD_378
+  - first:
+      213: 3412683081264356287
+    second: underground tile HD_379
+  - first:
+      213: 5584958094363723319
+    second: underground tile HD_380
+  - first:
+      213: 1493616294295336563
+    second: underground tile HD_381
+  - first:
+      213: 5698093755329515186
+    second: underground tile HD_382
+  - first:
+      213: 3047629710962413259
+    second: underground tile HD_383
+  - first:
+      213: -6951614894062714994
+    second: underground tile HD_384
+  - first:
+      213: -1330969464942613278
+    second: underground tile HD_385
+  - first:
+      213: 1968915949275718849
+    second: underground tile HD_386
+  - first:
+      213: -6205059286624058413
+    second: underground tile HD_387
+  - first:
+      213: -1781851470845966370
+    second: underground tile HD_388
+  - first:
+      213: 6847168359261913223
+    second: underground tile HD_389
+  - first:
+      213: 6319908864886466515
+    second: underground tile HD_390
+  - first:
+      213: -6854655826087769772
+    second: underground tile HD_391
+  - first:
+      213: -9030524461832032086
+    second: underground tile HD_392
+  - first:
+      213: -169521040255813239
+    second: underground tile HD_393
+  - first:
+      213: -1578960789293787761
+    second: underground tile HD_394
+  - first:
+      213: 1105341811911466079
+    second: underground tile HD_395
+  - first:
+      213: 1183238684313696184
+    second: underground tile HD_396
+  - first:
+      213: 6251582031564834554
+    second: underground tile HD_397
+  - first:
+      213: 2477927234418725559
+    second: underground tile HD_398
+  - first:
+      213: 1139460789214183431
+    second: underground tile HD_399
+  - first:
+      213: 5976700045772590681
+    second: underground tile HD_400
+  - first:
+      213: 2454917000942106729
+    second: underground tile HD_401
+  - first:
+      213: -6920802663042216777
+    second: underground tile HD_402
+  - first:
+      213: 8616337965220501615
+    second: underground tile HD_403
+  - first:
+      213: -305569956928990793
+    second: underground tile HD_404
+  - first:
+      213: -2284029515982169324
+    second: underground tile HD_405
+  - first:
+      213: 1627704073461771192
+    second: underground tile HD_406
+  - first:
+      213: 3050655925732753543
+    second: underground tile HD_407
+  - first:
+      213: -4786094938526810702
+    second: underground tile HD_408
+  - first:
+      213: -1318012791602321073
+    second: underground tile HD_409
+  - first:
+      213: -3574935365403149511
+    second: underground tile HD_410
+  - first:
+      213: 9023410532729661498
+    second: underground tile HD_411
+  - first:
+      213: -1786338307870102415
+    second: underground tile HD_412
+  - first:
+      213: -2016299728359199975
+    second: underground tile HD_413
+  - first:
+      213: -6913199547020173593
+    second: underground tile HD_414
+  - first:
+      213: -4116596286890070789
+    second: underground tile HD_415
+  - first:
+      213: -5372363388199279941
+    second: underground tile HD_416
+  - first:
+      213: -6100164004749755552
+    second: underground tile HD_417
+  - first:
+      213: 8398871232556164286
+    second: underground tile HD_418
+  - first:
+      213: 5552316889777534930
+    second: underground tile HD_419
+  - first:
+      213: 1098396497456003738
+    second: underground tile HD_420
+  - first:
+      213: -8384984033357178680
+    second: underground tile HD_421
+  - first:
+      213: -6010036586400303473
+    second: underground tile HD_422
+  - first:
+      213: 1654291868335752179
+    second: underground tile HD_423
+  - first:
+      213: -4477395756720325296
+    second: underground tile HD_424
+  - first:
+      213: 8065732377363029443
+    second: underground tile HD_425
+  - first:
+      213: -1138443287373587855
+    second: underground tile HD_426
+  - first:
+      213: 2052091314568172388
+    second: underground tile HD_427
+  - first:
+      213: 7137140020216569990
+    second: underground tile HD_428
+  - first:
+      213: -1063941962179301917
+    second: underground tile HD_429
+  - first:
+      213: -8102270773400943456
+    second: underground tile HD_430
+  - first:
+      213: 8515823948815766924
+    second: underground tile HD_431
+  - first:
+      213: 8248752027219578925
+    second: underground tile HD_432
+  - first:
+      213: -2696596949162196787
+    second: underground tile HD_433
+  - first:
+      213: -6801609119700043223
+    second: underground tile HD_434
+  - first:
+      213: -8045830551745061497
+    second: underground tile HD_435
+  - first:
+      213: 354933899736285431
+    second: underground tile HD_436
+  - first:
+      213: -3142650378163936626
+    second: underground tile HD_437
+  - first:
+      213: 3860200174631905543
+    second: underground tile HD_438
+  - first:
+      213: -2892334211510297778
+    second: underground tile HD_439
+  - first:
+      213: 6224819555576110609
+    second: underground tile HD_440
+  - first:
+      213: -3502045545964470709
+    second: underground tile HD_441
+  - first:
+      213: -232217598250308540
+    second: underground tile HD_442
+  - first:
+      213: -233983546421906746
+    second: underground tile HD_443
+  - first:
+      213: -7981881658075514843
+    second: underground tile HD_444
+  - first:
+      213: -5303369366260487333
+    second: underground tile HD_445
+  - first:
+      213: 8843969392376814111
+    second: underground tile HD_446
+  - first:
+      213: -7138953431254761607
+    second: underground tile HD_447
+  - first:
+      213: 5035337855285510405
+    second: underground tile HD_448
+  - first:
+      213: 3219280609759884925
+    second: underground tile HD_449
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 159
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: underground tile HD_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1920
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a336bfd1a02716bf0800000000000000
+      internalID: -332859509670452422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground tile HD_1
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1920
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8eecf58fd7e6f58a0800000000000000
+      internalID: -6314206665233150232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground tile HD_2
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1920
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09e8b14ba16101030800000000000000
+      internalID: 3463292417394577040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground tile HD_3
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1920
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06646190457eab060800000000000000
+      internalID: 6970137721424987744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground tile HD_4
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1920
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9e12714fa4186210800000000000000
+      internalID: 1326332833210441375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground tile HD_5
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 1920
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41bd5b63a55ddef40800000000000000
+      internalID: 5759494081918393108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground tile HD_6
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 1920
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f205ce4a198a7ec10800000000000000
+      internalID: 2082818696172818479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground tile HD_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1792
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66123541a1790ffc0800000000000000
+      internalID: -3463101975181975194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground tile HD_8
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1792
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acadf3f597a0b4c50800000000000000
+      internalID: 6650420791148010186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground tile HD_9
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1792
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ea293b40b9f1f340800000000000000
+      internalID: 4895968805500037858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground tile HD_10
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1792
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92f21d96c60c163e0800000000000000
+      internalID: -2062155582494658775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground tile HD_11
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1792
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a74b4374b15e4f420800000000000000
+      internalID: 2663005185004319866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground tile HD_12
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 1792
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8e35c93385914530800000000000000
+      internalID: 3837512748338855566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground tile HD_13
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 1792
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dedbe63156972d110800000000000000
+      internalID: 1284222318778695149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground tile HD_14
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 1792
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08a0e5970658e3c40800000000000000
+      internalID: 5493975244838144640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground tile HD_15
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 1792
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76ce769f733b3d280800000000000000
+      internalID: -9019668575704060825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground tile HD_16
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 1792
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09c59b95aa8b26e70800000000000000
+      internalID: 9107044438285835408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground tile HD_17
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1664
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 701d35c0478e74880800000000000000
+      internalID: -8626670976084225785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground tile HD_18
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1664
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b8e6e1fa8c361f40800000000000000
+      internalID: 5698808945945536696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground tile HD_19
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1664
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e445d637171266e50800000000000000
+      internalID: 6802161058341278798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground tile HD_20
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1664
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df7abba9f2b47dfb0800000000000000
+      internalID: -4623143824640989187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground tile HD_21
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1664
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e394e46d48c82b70800000000000000
+      internalID: 8874563300464301025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground tile HD_22
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 1664
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58d1f39e95ac7c2b0800000000000000
+      internalID: -5564256327078830715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground tile HD_23
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 1664
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75a30a7aa54e4b6e0800000000000000
+      internalID: -1822580871167722921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground tile HD_24
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 1664
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc18c59f710142650800000000000000
+      internalID: 6207103881577267660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground tile HD_25
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1664
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c58ca4447de364860800000000000000
+      internalID: 7513762122598893660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground tile HD_26
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 1664
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bddb2e3ca2059de0800000000000000
+      internalID: -1327151576390050376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground tile HD_27
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 1664
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cac6f95bb9ac6800800000000000000
+      internalID: 607046671921498817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground tile HD_28
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 1664
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29b78b6316c7fa400800000000000000
+      internalID: 337625254047808402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground tile HD_29
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 1664
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e7a5fb6f9dcda120800000000000000
+      internalID: 2426821858817320932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground tile HD_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1536
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36d3af1cad0776fc0800000000000000
+      internalID: -3501706100397687453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground tile HD_31
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1536
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abaa3468150e42070800000000000000
+      internalID: 8080830272159066810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground tile HD_32
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1536
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aab647dac3e0e2df0800000000000000
+      internalID: -203209279414178902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground tile HD_33
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1536
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1732060ca4a871190800000000000000
+      internalID: -7991766960085916815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground tile HD_34
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1536
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8aa130b56347d52b0800000000000000
+      internalID: -5594187385320301912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground tile HD_35
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 1536
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1c62a81b8382c290800000000000000
+      internalID: -7871584565253215204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground tile HD_36
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1536
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5aba01b0ebacdb6e0800000000000000
+      internalID: -1820075756809573467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground tile HD_37
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 1536
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc5bed3ca9a6e8650800000000000000
+      internalID: 6237039746898376140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground tile HD_38
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 1536
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 972204c167b8b0510800000000000000
+      internalID: 1516459038936670841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground tile HD_39
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 1536
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac4d1de04c5688e60800000000000000
+      internalID: 7964727833741350090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground tile HD_40
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 1536
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86b57f30e1c72bf00800000000000000
+      internalID: 1131102924780821352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground tile HD_41
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1408
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d91429b4ebe4838c0800000000000000
+      internalID: -4019376088209538659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground tile HD_42
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1408
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69611ac8c1e673220800000000000000
+      internalID: 2465560389906142870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground tile HD_43
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1408
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3c6c88ce80bdc470800000000000000
+      internalID: 8416577405921815613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground tile HD_44
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1408
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45e1cc5c72f9da5b0800000000000000
+      internalID: -5355449388702622124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground tile HD_45
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 1408
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb5482dae1ac4f030800000000000000
+      internalID: 3527666641240868286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground tile HD_46
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1408
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2ab137e69016b570800000000000000
+      internalID: 8481985188508842540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground tile HD_47
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 1408
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f76bb045030cbfa50800000000000000
+      internalID: 6556044996368905855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground tile HD_48
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 1408
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b5d26350ca30f190800000000000000
+      internalID: -7930774346092325450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground tile HD_49
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 1408
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad6f583166229b9b0800000000000000
+      internalID: -5063978484191856934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground tile HD_50
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 1408
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c75c96f9b95806f0800000000000000
+      internalID: -718225485324331068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground tile HD_51
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1280
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f5e3d50ad12129b0800000000000000
+      internalID: -5106763282177071626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground tile HD_52
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1280
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7792dc1de45e31a0800000000000000
+      internalID: -6827926607679547524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground tile HD_53
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1280
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb1c71d63192a1810800000000000000
+      internalID: 1736745769716138431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground tile HD_54
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1280
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee8c250851a6cb640800000000000000
+      internalID: 5097065518856325358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground tile HD_55
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 1280
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aeed87ba0ecf08ef0800000000000000
+      internalID: -107808349177192726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground tile HD_56
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 1280
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bda67538b5dbdc70800000000000000
+      internalID: 8997019667750366642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground tile HD_57
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1280
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb024f72fd4ce0680800000000000000
+      internalID: -8786869360226197314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground tile HD_58
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 1280
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5e78c3d8ff3dc380800000000000000
+      internalID: -8949426546577736102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground tile HD_59
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 1280
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e4cf2380a4a92cc0800000000000000
+      internalID: -3735273406624447261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground tile HD_60
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 1280
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7b1b787ddc545bf0800000000000000
+      internalID: -336541965867082885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground tile HD_61
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 1280
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 377eb59ff4717c070800000000000000
+      internalID: 8126489684866754419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground tile HD_62
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 1280
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3c3f0d15096e28f0800000000000000
+      internalID: -563397432691442626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground tile HD_63
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1152
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 786f71ba03b2c69c0800000000000000
+      internalID: -3932720886572386681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground tile HD_64
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1152
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83581555a460e0500800000000000000
+      internalID: 364235536192341304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground tile HD_65
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1152
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 271bcdeac91e64e00800000000000000
+      internalID: 1028757627965583730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground tile HD_66
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1152
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82b573e7024dffc60800000000000000
+      internalID: 7854229511179033384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground tile HD_67
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1152
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e39b3a4ea3157c690800000000000000
+      internalID: -7582002134269052610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground tile HD_68
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 1152
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c22ee21a46aca5b0800000000000000
+      internalID: -5355723019774975293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground tile HD_69
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 1152
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe685920e6697c970800000000000000
+      internalID: 8775147798188623599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground tile HD_70
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 1152
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed368bb93f4391bc0800000000000000
+      internalID: -3811957388698164258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground tile HD_71
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 1152
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffcbad6e191b37db0800000000000000
+      internalID: -4795293938017977089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground tile HD_72
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 1152
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a1d0874951e10250800000000000000
+      internalID: 5909251959654764961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground tile HD_73
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 1152
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bfefe8839498f720800000000000000
+      internalID: 2880215323081961399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground tile HD_74
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1024
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6c682ae7d60e6640800000000000000
+      internalID: 5075001354509380716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground tile HD_75
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 1024
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0080afaadbda2cbe0800000000000000
+      internalID: -1458412299185682432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground tile HD_76
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 1024
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e63b8bd01d28338b0800000000000000
+      internalID: -5173647712528583826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground tile HD_77
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 1024
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12c0eea0f40988c80800000000000000
+      internalID: -8320241642406802399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground tile HD_78
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 1024
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b66ee81f46e885a0800000000000000
+      internalID: -6518707233223711053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground tile HD_79
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 1024
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1401ec80cf0cd8a70800000000000000
+      internalID: 8830926633055424577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground tile HD_80
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 1024
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3679acf6297d7fbc0800000000000000
+      internalID: -3749291140821903517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground tile HD_81
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 1024
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a83ea26e976fd74e0800000000000000
+      internalID: -1982157257560104054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground tile HD_82
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 896
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2245c95be3588fd0800000000000000
+      internalID: -2339527736130452945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground tile HD_83
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 896
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37c8f234da6f40250800000000000000
+      internalID: 5910119835033898099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground tile HD_84
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 896
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45ae6bf6b2f9889d0800000000000000
+      internalID: -2771790561739871660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground tile HD_85
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 896
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f5f962a84ba40250800000000000000
+      internalID: 5910036939467781622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground tile HD_86
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 896
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 308f3516197df33e0800000000000000
+      internalID: -2071700284164016125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground tile HD_87
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 896
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce7c9ea05fbc2b7f0800000000000000
+      internalID: -598191547176335380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground tile HD_88
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 896
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b2d803885413e710800000000000000
+      internalID: 1721241852973732530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground tile HD_89
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 896
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc72c4a01c515b7d0800000000000000
+      internalID: -2903390465924782133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground tile HD_90
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 896
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae6d925fd96e4c940800000000000000
+      internalID: 5315627026301441770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground tile HD_91
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 896
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86036e268028804d0800000000000000
+      internalID: -3168139365324541848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground tile HD_92
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 896
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02d6fe196e87092f0800000000000000
+      internalID: -968140988198458080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground tile HD_93
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 896
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3676c0ef9e28334b0800000000000000
+      internalID: -5461877981569063069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground tile HD_94
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 768
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e0eff3a1faf716e0800000000000000
+      internalID: -1866747604776263453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground tile HD_95
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 768
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 045a3bdbce5870f80800000000000000
+      internalID: -8140390549607439040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground tile HD_96
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 768
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c84d6ce5e8844c630800000000000000
+      internalID: 3946358949796041868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground tile HD_97
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 768
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5329caa04284b10b0800000000000000
+      internalID: -5756928379027942859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground tile HD_98
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 768
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6dede68f858d7ee0800000000000000
+      internalID: -1261705469103313557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground tile HD_99
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 768
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2422c055a08e5eab0800000000000000
+      internalID: -4979318681914039742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground tile HD_100
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 640
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 063823550329f33f0800000000000000
+      internalID: -918855062674832544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground tile HD_101
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 640
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4225a61ff46653420800000000000000
+      internalID: 2609104052669796900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground tile HD_102
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 384
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba5b71349234a1d20800000000000000
+      internalID: 3249983925599581611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground tile HD_103
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 384
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9353f755752cbdb0800000000000000
+      internalID: -4774900319002602595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground tile HD_104
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 384
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a85a86762b98b8550800000000000000
+      internalID: 6164171914318751114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground tile HD_105
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 384
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2e623c9a06265d60800000000000000
+      internalID: 7878526425143340590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground tile HD_106
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 384
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64c506107911fe580800000000000000
+      internalID: -8795792206970463162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground tile HD_107
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 384
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b88ae21850df0e1c0800000000000000
+      internalID: -4476299829522290549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground tile HD_108
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 384
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a60d71f625fc5210800000000000000
+      internalID: 1323201938149148326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground tile HD_109
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 384
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95e7fd9d19a3c3bf0800000000000000
+      internalID: -343335073487028647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground tile HD_110
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 384
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81ed020e035220cb0800000000000000
+      internalID: -4899312552776770024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground tile HD_111
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 384
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8dd29b7ca24e3d40800000000000000
+      internalID: 5565959498051542415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground tile HD_112
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 384
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b1a1d31adf9dab20800000000000000
+      internalID: 3147347473586037168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground tile HD_113
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 256
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: febbbc454cb69b320800000000000000
+      internalID: 2574207152999349231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground tile HD_114
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 256
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b59a872f74795d60800000000000000
+      internalID: 7879457112534455729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground tile HD_115
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 256
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84265d45ea876fb40800000000000000
+      internalID: 5473695087258329672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground tile HD_116
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 256
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d201e6b0a5823e5f0800000000000000
+      internalID: -728694347499958227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground tile HD_117
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 256
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d94267427a8a4c2f0800000000000000
+      internalID: -953451785270975331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground tile HD_118
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 256
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d82efc94abcc2e00800000000000000
+      internalID: 1021415123375237329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground tile HD_119
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 256
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af649f87588cd50f0800000000000000
+      internalID: -1126523856186947846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground tile HD_120
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 256
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c84970463761593c0800000000000000
+      internalID: -4353548779928447860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground tile HD_121
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 256
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c52255f83b293200800000000000000
+      internalID: 160206785382327744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground tile HD_122
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 256
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2598deb4c55b4360800000000000000
+      internalID: 7154906736511980847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground tile HD_123
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 128
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fa2387b70cc41aa0800000000000000
+      internalID: -6191099254211925255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground tile HD_124
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 128
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6630e6ab028153570800000000000000
+      internalID: 8445683205049025382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground tile HD_125
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 128
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c47bc481013720c60800000000000000
+      internalID: 7782909619013990220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground tile HD_126
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 128
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60e57962068565df0800000000000000
+      internalID: -191868764129108474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground tile HD_127
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 128
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d738aea32d43aa730800000000000000
+      internalID: 4011076495663072125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground tile HD_128
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 128
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e04481de8ee2f6f40800000000000000
+      internalID: 5723845229356270606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground tile HD_129
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5609ad10ec1556460800000000000000
+      internalID: 7234278321676783717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground tile HD_130
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cf65239a1fc8b880800000000000000
+      internalID: -8594892175791788096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

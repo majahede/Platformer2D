@@ -24,7 +24,7 @@ public class Weapon : MonoBehaviour
 
     public void Shoot()
     {
-        if (!PauseMenu.GameIsPaused) 
+        if (!PauseMenu.GameIsPaused)
         {
             if (!Input.GetButtonDown("Fire1"))
             {
