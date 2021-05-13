@@ -4,22 +4,22 @@ using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.TestTools;
 
-public class PlayerTests
+public class NewTestScript
 {
+    // A Test behaves as an ordinary method
+    [Test]
+    public void NewTestScriptSimplePasses()
+    {
+        // Use the Assert class to test conditions
+    }
 
     // A UnityTest behaves like a coroutine in Play Mode. In Edit Mode you can use
     // `yield return null;` to skip a frame.
     [UnityTest]
-    public IEnumerator MoveRight()
+    public IEnumerator NewTestScriptWithEnumeratorPasses()
     {
         // Use the Assert class to test conditions.
         // Use yield to skip a frame.
-        var gameObject = new GameObject();
-        var player = gameObject.AddComponent<PlayerMovement>();
-
-        player.Run();
-        yield return new WaitForSeconds(5f);
-
-       /* Assert.AreEqual( expected:new Vector2(player.xMovement * 10, player.rb.velocity.y), actual:gameObject.transform.position); */
+        yield return null;
     }
 }
