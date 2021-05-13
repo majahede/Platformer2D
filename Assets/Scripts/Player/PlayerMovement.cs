@@ -88,7 +88,9 @@ public class PlayerMovement : MonoBehaviour
     public void Run()
     {
         rb.velocity = new Vector2(xMovement * movementSpeed, rb.velocity.y);
-
+        Debug.Log(xMovement);
+        Debug.Log(movementSpeed);
+        Debug.Log(rb.velocity.y);
         if (Mathf.Abs(xMovement) > 0.05)
         {
             anim.SetBool("isRunning", true);
