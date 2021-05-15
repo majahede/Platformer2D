@@ -16,10 +16,10 @@ public class PlayerTests
         // Use yield to skip a frame.
         var gameObject = new GameObject();
         var player = gameObject.AddComponent<PlayerMovement>();
-
+        var rb = player.GetComponent<Rigidbody2D>();
         player.Run();
         yield return new WaitForSeconds(5f);
 
-       /* Assert.AreEqual( expected:new Vector2(player.xMovement * 10, player.rb.velocity.y), actual:gameObject.transform.position); */
+       Assert.AreEqual( expected:new Vector2(1 * 10, rb.velocity.y), actual:gameObject.transform.position); 
     }
 }
