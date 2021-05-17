@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4311872620314281213}
   - component: {fileID: 4311872620314281212}
   - component: {fileID: 4311872620314281215}
+  - component: {fileID: -89181713555660557}
   m_Layer: 8
   m_Name: Enemy
   m_TagString: Enemy
@@ -73,8 +74,8 @@ SpriteRenderer:
   m_SortingLayerID: -649603887
   m_SortingLayer: 5
   m_SortingOrder: 0
-  m_Sprite: {fileID: 3770082369030442225, guid: 90edde7a4dd4db847b62355a9af034e6, type: 3}
-  m_Color: {r: 0.8301887, g: 0.512994, b: 0.512994, a: 1}
+  m_Sprite: {fileID: 3225832317793331946, guid: aeda699902d322d4ebc446744c06c0dd, type: 3}
+  m_Color: {r: 0.85882354, g: 0.9490196, b: 0.3529412, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -114,3 +115,22 @@ CapsuleCollider2D:
   m_Offset: {x: 0.0010715484, y: -0.0053585055}
   m_Size: {x: 0.1721367, y: 0.17213698}
   m_Direction: 0
+--- !u!95 &-89181713555660557
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4311872620314281153}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6e31dab8ac83e2d4489ea22557817537, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
