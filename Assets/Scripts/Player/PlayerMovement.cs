@@ -88,7 +88,6 @@ public class PlayerMovement : MonoBehaviour
     public void Run()
     {
         rb.velocity = new Vector2(xMovement * movementSpeed, rb.velocity.y);
-        Debug.Log(xMovement);
 
         if (Mathf.Abs(xMovement) > 0.05)
         {

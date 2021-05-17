@@ -7,7 +7,7 @@ public class Patrol : Enemy
 {
     private Rigidbody2D rb;
     public float movementSpeed = 1f;
-    private bool isFacingRight = true;
+    private bool isFacingLeft = true;
 
     void Start()
     {
@@ -16,13 +16,13 @@ public class Patrol : Enemy
 
     void Update()
     {
-        if (isFacingRight)
+        if (isFacingLeft)
         {
-            rb.velocity = new Vector2(movementSpeed, 0f);
+            rb.velocity = new Vector2(-movementSpeed, 0f);
         }
         else
         {
-            rb.velocity = new Vector2(-movementSpeed, 0f);
+            rb.velocity = new Vector2(movementSpeed, 0f);
         }
     }
 
@@ -30,15 +30,15 @@ public class Patrol : Enemy
     {
         if (collision.name == "Foreground")
         {
-            if (isFacingRight)
+            if (isFacingLeft)
             {
                 transform.Rotate(0f, 180f, 0);
-                isFacingRight = false;
+                isFacingLeft = false;
             }
             else
             {
                 transform.Rotate(0f, 180f, 0);
-                isFacingRight = true;
+                isFacingLeft = true;
             }
         }
     }
