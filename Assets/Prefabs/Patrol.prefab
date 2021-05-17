@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 1525671553872221259}
   - component: {fileID: 1525671553872221258}
   - component: {fileID: 1525671553872221263}
+  - component: {fileID: 5658390571847734547}
   m_Layer: 8
   m_Name: Patrol
   m_TagString: Enemy
@@ -137,7 +138,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 100
   damage: 20
-  movementSpeed: 1
+  movementSpeed: 0.8
 --- !u!61 &1525671553872221263
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -164,3 +165,22 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.018257141, y: 0.4425072}
   m_EdgeRadius: 0
+--- !u!95 &5658390571847734547
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1525671553872221253}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8064c221dfef57345b7d4c8a795bc1bd, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
