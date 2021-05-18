@@ -17,6 +17,7 @@ public class Pickup : MonoBehaviour
         // When player collide with the object, add point and destroy object.
         if (gameObject.tag == "Pickup")
         {
+            FindObjectOfType<AudioManager>().Play("Coin");
             FindObjectOfType<GameSession>().AddPoint();
         }
 
@@ -28,7 +29,6 @@ public class Pickup : MonoBehaviour
         if (gameObject.tag == "Ammunition")
         {
             weapon.AddBullets(10);
-            Debug.Log("Ammo!!");
         }
 
         Destroy(gameObject);
