@@ -23,11 +23,13 @@ public class Pickup : MonoBehaviour
 
         if (gameObject.tag == "LifePickup")
         {
+            FindObjectOfType<AudioManager>().Play("Heart");
             player.IncreaseHealth(10);
         }
 
         if (gameObject.tag == "Ammunition")
         {
+            FindObjectOfType<AudioManager>().Play("Ammunition");
             weapon.AddBullets(10);
         }
 
