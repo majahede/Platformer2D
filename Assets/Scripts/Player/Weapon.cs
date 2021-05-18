@@ -34,7 +34,7 @@ public class Weapon : MonoBehaviour
 
             if (Input.GetButtonDown("Fire1") && ammo > 0)
             {
-                // Spawns object at the chosen place (The object to spawn, where to spawn object, which rotation)
+                // Spawns a specific object at a chosen place.
                 Instantiate(bullet, firePoint.position, firePoint.rotation);
                 anim.SetBool("isShooting", true);
                 ammo--;
