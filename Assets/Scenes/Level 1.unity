@@ -1065,6 +1065,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   coinCount: {fileID: 744149089}
   coins: 0
+  ammunitionCount: {fileID: 675975516}
+  ammunition: 10
 --- !u!4 &434972186
 Transform:
   m_ObjectHideFlags: 0

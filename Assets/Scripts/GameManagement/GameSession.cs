@@ -30,6 +30,11 @@ public class GameSession : MonoBehaviour
         ammunitionCount.text = ammunition.ToString();
     }
 
+    void Update()
+    {
+        SavePickups();
+    }
+
     public void SavePickups()
     {
         GameControl.Control.coins = coins;
@@ -48,6 +53,12 @@ public class GameSession : MonoBehaviour
     public void AddAmmunition()
     {
         ammunition += 10;
+        ammunitionCount.text = ammunition.ToString();
+    }
+
+    public void RemoveAmmunition()
+    {
+        ammunition--;
         ammunitionCount.text = ammunition.ToString();
     }
 }

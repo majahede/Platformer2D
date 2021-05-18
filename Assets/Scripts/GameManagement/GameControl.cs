@@ -9,7 +9,7 @@ public class GameControl : MonoBehaviour
 
     public int currentHealth = 100;
     public int coins;
-    public int ammunition = 10;
+    public int ammunition;
 
     void Awake()
     {
