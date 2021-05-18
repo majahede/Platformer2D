@@ -15680,7 +15680,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxYVelocity: 0
-  movementSpeed: 10
+  movementSpeed: 9
   isGrounded: 0
   player: {fileID: 867954938}
   jumpForce: 10
@@ -28657,8 +28657,27 @@ MonoBehaviour:
   sounds:
   - name: Coin
     clip: {fileID: 8300000, guid: 52320e590bf774734a288886eba557ba, type: 3}
-    volume: 0.532
-    pitch: 1.5
+    volume: 0.371
+    pitch: 1.4
+    loop: 0
+    source: {fileID: 0}
+  - name: Heart
+    clip: {fileID: 8300000, guid: 29bde6326b4c34ad8a12da475f79b50a, type: 3}
+    volume: 0.8
+    pitch: 1.3
+    loop: 0
+    source: {fileID: 0}
+  - name: Ammunition
+    clip: {fileID: 8300000, guid: d8d04c6f80a1140db85ede568dab1f51, type: 3}
+    volume: 0.8
+    pitch: 1.11
+    loop: 0
+    source: {fileID: 0}
+  - name: Theme
+    clip: {fileID: 8300000, guid: d8b719ef1c3254c97b2c5b785c2d5fd3, type: 3}
+    volume: 0.541
+    pitch: 1
+    loop: 1
     source: {fileID: 0}
 --- !u!4 &1642240069
 Transform:

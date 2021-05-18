@@ -13,7 +13,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField]
     private float maxYVelocity;
 
-    public float movementSpeed = 10f;
+    public float movementSpeed = 9f;
 
     [SerializeField]
     private bool isGrounded = false;
@@ -107,7 +107,7 @@ public class PlayerMovement : MonoBehaviour
             return;
         }
 
-        float climbSpeed = 5f;
+        var climbSpeed = 5f;
 
         var climbVelocity = new Vector2(rb.velocity.x, yMovement * climbSpeed);
         rb.velocity = climbVelocity;
