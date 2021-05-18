@@ -8,7 +8,8 @@ public class GameControl : MonoBehaviour
     public static GameControl Control;
 
     public int currentHealth = 100;
-    public int pickups;
+    public int coins;
+    public int ammunition = 10;
 
     void Awake()
     {

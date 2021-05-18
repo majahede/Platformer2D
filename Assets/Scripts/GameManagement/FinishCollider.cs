@@ -7,7 +7,7 @@ public class FinishCollider : MonoBehaviour
     public SceneLoader sceneLoader;
 
     void OnTriggerEnter2D()
-        {
-            sceneLoader.LoadMainMenu();
-        }
+    {
+        sceneLoader.LoadMainMenu();
+    }
 }

@@ -7,32 +7,48 @@ using UnityEngine.UI;
 public class GameSession : MonoBehaviour
 {
     [SerializeField]
-    public Text pickupCount;
+    public Text coinCount;
 
     [SerializeField]
-    public int pickups;
+    public int coins;
+
+    [SerializeField]
+    public Text ammunitionCount;
+
+    [SerializeField]
+    public int ammunition;
 
     /**
      * Start is called before the first frame update
      */
     void Start()
     {
-        pickups = GameControl.Control.pickups;
-        pickupCount.text = pickups.ToString();
+        coins = GameControl.Control.coins;
+        coinCount.text = coins.ToString();
+
+        ammunition = GameControl.Control.ammunition;
+        ammunitionCount.text = ammunition.ToString();
     }
 
     public void SavePickups()
     {
-        GameControl.Control.pickups = pickups;
+        GameControl.Control.coins = coins;
+        GameControl.Control.ammunition = ammunition;
     }
 
     /**
      * Add point to pickup counter.
      */
-    public void AddPoint()
+    public void AddCoin()
     {
-        pickups++;
-        pickupCount.text = pickups.ToString();
+        coins++;
+        coinCount.text = coins.ToString();
+    }
+
+    public void AddAmmunition()
+    {
+        ammunition += 10;
+        ammunitionCount.text = ammunition.ToString();
     }
 }
 

@@ -8,7 +8,7 @@ public class Weapon : MonoBehaviour
     public Transform firePoint;
     public GameObject bullet;
     private Animator anim;
-    private int ammo = 10;
+    private int ammunition = 10;
 
     void Start()
     {
@@ -32,18 +32,18 @@ public class Weapon : MonoBehaviour
                 return;
             }
 
-            if (Input.GetButtonDown("Fire1") && ammo > 0)
+            if (Input.GetButtonDown("Fire1") && ammunition > 0)
             {
                 // Spawns a specific object at a chosen place.
                 Instantiate(bullet, firePoint.position, firePoint.rotation);
                 anim.SetBool("isShooting", true);
-                ammo--;
+                ammunition--;
             }
         }
     }
 
     public void AddBullets(int bullets)
     {
-        ammo += bullets;
+        ammunition += bullets;
     }
 }

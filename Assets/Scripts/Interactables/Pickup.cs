@@ -18,7 +18,7 @@ public class Pickup : MonoBehaviour
         if (gameObject.tag == "Pickup")
         {
             FindObjectOfType<AudioManager>().Play("Coin");
-            FindObjectOfType<GameSession>().AddPoint();
+            FindObjectOfType<GameSession>().AddCoin();
         }
 
         if (gameObject.tag == "LifePickup")
@@ -30,7 +30,8 @@ public class Pickup : MonoBehaviour
         if (gameObject.tag == "Ammunition")
         {
             FindObjectOfType<AudioManager>().Play("Ammunition");
-            weapon.AddBullets(10);
+            // weapon.AddBullets(10);
+            FindObjectOfType<GameSession>().AddAmmunition();
         }
 
         Destroy(gameObject);
