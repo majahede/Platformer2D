@@ -14,7 +14,7 @@ public class MainMenu : MonoBehaviour
 
     public void ResumeGame()
     {
-       // sceneLoader.LoadNextScene();
+        // sceneLoader.LoadNextScene();
     }
 
     public void QuitGame()
