@@ -309,7 +309,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &190096117
 RectTransform:
   m_ObjectHideFlags: 0
@@ -655,8 +655,8 @@ RectTransform:
   m_Father: {fileID: 1363175881}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMin: {x: 0.4925, y: 0}
+  m_AnchorMax: {x: 0.4925, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -1605,7 +1605,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 0.4925, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -1663,7 +1663,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1278018318
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1698,6 +1698,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 566468a282de8a841b507dfb552e154b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioMixer: {fileID: 24100000, guid: db71cfc2c8bb769409d354831dfccd69, type: 2}
 --- !u!1 &1279724694
 GameObject:
   m_ObjectHideFlags: 0
@@ -2655,9 +2656,9 @@ MonoBehaviour:
   m_HandleRect: {fileID: 468890116}
   m_Direction: 0
   m_MinValue: -80
-  m_MaxValue: 0
+  m_MaxValue: 20
   m_WholeNumbers: 0
-  m_Value: 0
+  m_Value: -40.6
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
@@ -3546,24 +3547,28 @@ MonoBehaviour:
     pitch: 1.4
     loop: 0
     source: {fileID: 0}
+    group: {fileID: 24300002, guid: db71cfc2c8bb769409d354831dfccd69, type: 2}
   - name: Heart
     clip: {fileID: 8300000, guid: 29bde6326b4c34ad8a12da475f79b50a, type: 3}
     volume: 0.8
     pitch: 1.3
     loop: 0
     source: {fileID: 0}
+    group: {fileID: 24300002, guid: db71cfc2c8bb769409d354831dfccd69, type: 2}
   - name: Ammunition
     clip: {fileID: 8300000, guid: d8d04c6f80a1140db85ede568dab1f51, type: 3}
     volume: 0.8
     pitch: 1.1
     loop: 0
     source: {fileID: 0}
+    group: {fileID: 24300002, guid: db71cfc2c8bb769409d354831dfccd69, type: 2}
   - name: Theme
     clip: {fileID: 8300000, guid: d8b719ef1c3254c97b2c5b785c2d5fd3, type: 3}
     volume: 0.4
     pitch: 1
     loop: 1
     source: {fileID: 0}
+    group: {fileID: 24300002, guid: db71cfc2c8bb769409d354831dfccd69, type: 2}
 --- !u!4 &2039640434
 Transform:
   m_ObjectHideFlags: 0
