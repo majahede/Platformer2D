@@ -1,0 +1,88 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4347061024938939096
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3338317895070627461}
+  - component: {fileID: 1843407115024035961}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3338317895070627461
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4347061024938939096}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1843407115024035961
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4347061024938939096}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5cccf7515ea582c45a07cb6820a078a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: Coin
+    clip: {fileID: 8300000, guid: 52320e590bf774734a288886eba557ba, type: 3}
+    volume: 0.4
+    pitch: 1.4
+    loop: 0
+    source: {fileID: 0}
+    group: {fileID: 24300002, guid: db71cfc2c8bb769409d354831dfccd69, type: 2}
+  - name: Heart
+    clip: {fileID: 8300000, guid: 29bde6326b4c34ad8a12da475f79b50a, type: 3}
+    volume: 0.8
+    pitch: 1.3
+    loop: 0
+    source: {fileID: 0}
+    group: {fileID: 24300002, guid: db71cfc2c8bb769409d354831dfccd69, type: 2}
+  - name: Ammunition
+    clip: {fileID: 8300000, guid: d8d04c6f80a1140db85ede568dab1f51, type: 3}
+    volume: 0.8
+    pitch: 1.1
+    loop: 0
+    source: {fileID: 0}
+    group: {fileID: 24300002, guid: db71cfc2c8bb769409d354831dfccd69, type: 2}
+  - name: Theme
+    clip: {fileID: 8300000, guid: d8b719ef1c3254c97b2c5b785c2d5fd3, type: 3}
+    volume: 0.3
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+    group: {fileID: 24300002, guid: db71cfc2c8bb769409d354831dfccd69, type: 2}
+  - name: Shoot
+    clip: {fileID: 8300000, guid: 7e26c9daf4c32483b9c2790e662d3f1b, type: 3}
+    volume: 0.829
+    pitch: 2.5
+    loop: 0
+    source: {fileID: 0}
+    group: {fileID: 24300002, guid: db71cfc2c8bb769409d354831dfccd69, type: 2}
+  - name: Hurt
+    clip: {fileID: 8300000, guid: 84e427d6b66ab4066b6a4dcd0ce819ee, type: 3}
+    volume: 1
+    pitch: 1.2
+    loop: 0
+    source: {fileID: 0}
+    group: {fileID: 24300002, guid: db71cfc2c8bb769409d354831dfccd69, type: 2}
