@@ -10,6 +10,8 @@ public class GameControl : MonoBehaviour
     public int currentHealth = 100;
     public int coins;
     public int ammunition;
+    public int slimeKills;
+    public int scorpioKills;
 
     void Awake()
     {

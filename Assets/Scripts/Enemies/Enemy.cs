@@ -25,6 +25,7 @@ public class Enemy : MonoBehaviour
     public void Die()
     {
         Destroy(gameObject);
+        FindObjectOfType<GameSession>().AddKill(gameObject.name);
     }
 }
 

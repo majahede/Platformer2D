@@ -15,7 +15,7 @@ public class LevelExit : MonoBehaviour
     {
         StartCoroutine(LoadNextLevel());
         player.SavePlayer();
-        gameSession.SavePickups();
+        gameSession.SaveProgress();
     }
 
     private IEnumerator LoadNextLevel()

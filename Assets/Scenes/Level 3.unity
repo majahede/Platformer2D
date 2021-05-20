@@ -386,6 +386,10 @@ RectTransform:
   - {fileID: 1587748225}
   - {fileID: 683286739}
   - {fileID: 956598411}
+  - {fileID: 147618210}
+  - {fileID: 1736504979}
+  - {fileID: 1831106532}
+  - {fileID: 1934057667}
   m_Father: {fileID: 1801730550}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -555,7 +559,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1525671553872221253, guid: ce383c5fe4c09604691be201c1f94eb4, type: 3}
       propertyPath: m_Name
-      value: Patrol (1)
+      value: Patrol
       objectReference: {fileID: 0}
     - target: {fileID: 1525671553872221262, guid: ce383c5fe4c09604691be201c1f94eb4, type: 3}
       propertyPath: m_RootOrder
@@ -692,7 +696,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1525671553872221253, guid: ce383c5fe4c09604691be201c1f94eb4, type: 3}
       propertyPath: m_Name
-      value: Patrol (2)
+      value: Patrol
       objectReference: {fileID: 0}
     - target: {fileID: 1525671553872221262, guid: ce383c5fe4c09604691be201c1f94eb4, type: 3}
       propertyPath: m_RootOrder
@@ -745,6 +749,81 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1525671553872221262, guid: ce383c5fe4c09604691be201c1f94eb4, type: 3}
   m_PrefabInstance: {fileID: 131524962}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &147618209
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 147618210}
+  - component: {fileID: 147618212}
+  - component: {fileID: 147618211}
+  m_Layer: 5
+  m_Name: Slime Kill
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &147618210
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 147618209}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 60180110}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -192, y: 481.15002}
+  m_SizeDelta: {x: 45.2516, y: 48.512}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &147618211
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 147618209}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 3225832317793331946, guid: aeda699902d322d4ebc446744c06c0dd, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &147618212
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 147618209}
+  m_CullTransparentMesh: 1
 --- !u!1 &174315421
 GameObject:
   m_ObjectHideFlags: 0
@@ -2294,7 +2373,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1525671553872221253, guid: ce383c5fe4c09604691be201c1f94eb4, type: 3}
       propertyPath: m_Name
-      value: Patrol (3)
+      value: Patrol
       objectReference: {fileID: 0}
     - target: {fileID: 1525671553872221262, guid: ce383c5fe4c09604691be201c1f94eb4, type: 3}
       propertyPath: m_RootOrder
@@ -2361,7 +2440,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4311872620314281153, guid: 765213a7daffaf7409f578b99020a1f7, type: 3}
       propertyPath: m_Name
-      value: Enemy (1)
+      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 4311872620314281214, guid: 765213a7daffaf7409f578b99020a1f7, type: 3}
       propertyPath: m_RootOrder
@@ -2550,7 +2629,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1525671553872221253, guid: ce383c5fe4c09604691be201c1f94eb4, type: 3}
       propertyPath: m_Name
-      value: Patrol (1)
+      value: Patrol
       objectReference: {fileID: 0}
     - target: {fileID: 1525671553872221262, guid: ce383c5fe4c09604691be201c1f94eb4, type: 3}
       propertyPath: m_RootOrder
@@ -3942,7 +4021,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4311872620314281153, guid: 765213a7daffaf7409f578b99020a1f7, type: 3}
       propertyPath: m_Name
-      value: Enemy (2)
+      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 4311872620314281214, guid: 765213a7daffaf7409f578b99020a1f7, type: 3}
       propertyPath: m_RootOrder
@@ -5268,6 +5347,20 @@ CompositeCollider2D:
       - X: -839974848
         Y: 23974846
     - - X: -207974848
+        Y: -25257
+      - X: -127974815
+        Y: -25257
+      - X: -127974756
+        Y: -25198
+      - X: -127974756
+        Y: 8025198
+      - X: -127974815
+        Y: 8025257
+      - X: -208025209
+        Y: 8025257
+      - X: -208025268
+        Y: 8025198
+      - X: -208025268
         Y: 8025157
       - X: -249211744
         Y: 8025157
@@ -5461,7 +5554,9 @@ CompositeCollider2D:
       - {x: -86.40252, y: 3.2024865}
       - {x: -86.40249, y: 2.3974845}
     - - {x: -20.797514, y: -8.002516}
-      - {x: -20.797514, y: 0.8025157}
+      - {x: -20.797457, y: -0.0025257}
+      - {x: -12.797476, y: -0.0024905}
+      - {x: -12.79751, y: 0.8025257}
       - {x: -24.921053, y: 0.802589}
       - {x: -24.866667, y: 0.8352226}
       - {x: -24.797485, y: 0.91070193}
@@ -15543,6 +15638,106 @@ Tilemap:
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
   - first: {x: -27, y: 0, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 11
+      m_TileSpriteIndex: 12
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
+  - first: {x: -26, y: 0, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 11
+      m_TileSpriteIndex: 12
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
+  - first: {x: -25, y: 0, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 11
+      m_TileSpriteIndex: 12
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
+  - first: {x: -24, y: 0, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 11
+      m_TileSpriteIndex: 12
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
+  - first: {x: -23, y: 0, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 11
+      m_TileSpriteIndex: 12
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
+  - first: {x: -22, y: 0, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 11
+      m_TileSpriteIndex: 12
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
+  - first: {x: -21, y: 0, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 11
+      m_TileSpriteIndex: 12
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
+  - first: {x: -20, y: 0, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 11
+      m_TileSpriteIndex: 12
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
+  - first: {x: -19, y: 0, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 11
+      m_TileSpriteIndex: 12
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
+  - first: {x: -18, y: 0, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 11
+      m_TileSpriteIndex: 12
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
+  - first: {x: -17, y: 0, z: 0}
     second:
       serializedVersion: 2
       m_TileIndex: 11
@@ -33506,7 +33701,7 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: 7f3a8749ae1e4c341bcbd47525fb6650, type: 2}
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: eeb2068085f445f4f96776eacc48384a, type: 2}
-  - m_RefCount: 41
+  - m_RefCount: 51
     m_Data: {fileID: 11400000, guid: 51582b121fea65240a2675d6a00ea057, type: 2}
   - m_RefCount: 42
     m_Data: {fileID: 11400000, guid: da3996fcbda75bc4caf33f871c6a1444, type: 2}
@@ -33589,7 +33784,7 @@ Tilemap:
     m_Data: {fileID: -3463101975181975194, guid: b18a7319dc717d544940ffbfbd637310, type: 3}
   - m_RefCount: 3
     m_Data: {fileID: -332859509670452422, guid: b18a7319dc717d544940ffbfbd637310, type: 3}
-  - m_RefCount: 41
+  - m_RefCount: 51
     m_Data: {fileID: -6314206665233150232, guid: b18a7319dc717d544940ffbfbd637310, type: 3}
   - m_RefCount: 2
     m_Data: {fileID: 5759494081918393108, guid: b18a7319dc717d544940ffbfbd637310, type: 3}
@@ -33646,7 +33841,7 @@ Tilemap:
   - m_RefCount: 3
     m_Data: {fileID: -4019376088209538659, guid: b18a7319dc717d544940ffbfbd637310, type: 3}
   m_TileMatrixArray:
-  - m_RefCount: 2790
+  - m_RefCount: 2800
     m_Data:
       e00: 1
       e01: 0
@@ -33665,7 +33860,7 @@ Tilemap:
       e32: 0
       e33: 1
   m_TileColorArray:
-  - m_RefCount: 2790
+  - m_RefCount: 2800
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
@@ -33942,6 +34137,85 @@ MonoBehaviour:
         m_Calls: []
   m_LegacyBlendHint: 0
   m_ComponentOwner: {fileID: 1575006485}
+--- !u!1 &1736504978
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1736504979}
+  - component: {fileID: 1736504981}
+  - component: {fileID: 1736504980}
+  m_Layer: 5
+  m_Name: Slime Kill Counter
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1736504979
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1736504978}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 60180110}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.08426778, y: 0.8676952}
+  m_AnchorMax: {x: 0.08426778, y: 0.8676952}
+  m_AnchoredPosition: {x: 677, y: 72.51294}
+  m_SizeDelta: {x: 79.8212, y: 54.5731}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1736504980
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1736504978}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 0.7536312, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 8a2b9e2a607dd2143b58c44bc32410b4, type: 3}
+    m_FontSize: 40
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 0
+    m_MaxSize: 50
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 0
+--- !u!222 &1736504981
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1736504978}
+  m_CullTransparentMesh: 1
 --- !u!1 &1738582103
 GameObject:
   m_ObjectHideFlags: 0
@@ -33983,7 +34257,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1525671553872221253, guid: ce383c5fe4c09604691be201c1f94eb4, type: 3}
       propertyPath: m_Name
-      value: Patrol (4)
+      value: Patrol
       objectReference: {fileID: 0}
     - target: {fileID: 1525671553872221262, guid: ce383c5fe4c09604691be201c1f94eb4, type: 3}
       propertyPath: m_RootOrder
@@ -66184,6 +66458,164 @@ MonoBehaviour:
   coins: 0
   ammunitionCount: {fileID: 1587748226}
   ammunition: 10
+  slimeKills: 0
+  slimeKillCount: {fileID: 1736504980}
+  scorpioKills: 0
+  scorpioKillCount: {fileID: 1934057668}
+--- !u!1 &1831106531
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1831106532}
+  - component: {fileID: 1831106534}
+  - component: {fileID: 1831106533}
+  m_Layer: 5
+  m_Name: Scorpio Kill
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1831106532
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1831106531}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 60180110}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -25.521484, y: 473.6}
+  m_SizeDelta: {x: 74.3156, y: 41.0279}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1831106533
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1831106531}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.8207547, g: 0.6221895, b: 0.3529412, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 3770082369030442225, guid: 90edde7a4dd4db847b62355a9af034e6, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1831106534
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1831106531}
+  m_CullTransparentMesh: 1
+--- !u!1 &1934057666
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1934057667}
+  - component: {fileID: 1934057669}
+  - component: {fileID: 1934057668}
+  m_Layer: 5
+  m_Name: Scorpio Kill Counter
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1934057667
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1934057666}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 60180110}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.08426778, y: 0.8676952}
+  m_AnchorMax: {x: 0.08426778, y: 0.8676952}
+  m_AnchoredPosition: {x: 868, y: 69.713}
+  m_SizeDelta: {x: 79.8212, y: 54.5731}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1934057668
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1934057666}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.7176471, g: 0.18431373, b: 0.123865, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 8a2b9e2a607dd2143b58c44bc32410b4, type: 3}
+    m_FontSize: 40
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 0
+    m_MaxSize: 50
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 0
+--- !u!222 &1934057669
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1934057666}
+  m_CullTransparentMesh: 1
 --- !u!1001 &1999284160
 PrefabInstance:
   m_ObjectHideFlags: 0

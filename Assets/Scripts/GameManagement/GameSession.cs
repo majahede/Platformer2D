@@ -18,6 +18,18 @@ public class GameSession : MonoBehaviour
     [SerializeField]
     public int ammunition;
 
+    [SerializeField]
+    public int slimeKills;
+
+    [SerializeField]
+    public Text slimeKillCount;
+
+    [SerializeField]
+    public int scorpioKills;
+
+    [SerializeField]
+    public Text scorpioKillCount;
+
     /**
      * Start is called before the first frame update
      */
@@ -28,17 +40,25 @@ public class GameSession : MonoBehaviour
 
         ammunition = GameControl.Control.ammunition;
         ammunitionCount.text = ammunition.ToString();
+
+        slimeKills = GameControl.Control.slimeKills;
+        slimeKillCount.text = slimeKills.ToString();
+
+        scorpioKills = GameControl.Control.scorpioKills;
+        scorpioKillCount.text = scorpioKills.ToString();
     }
 
     void Update()
     {
-        SavePickups();
+        SaveProgress();
     }
 
-    public void SavePickups()
+    public void SaveProgress()
     {
         GameControl.Control.coins = coins;
         GameControl.Control.ammunition = ammunition;
+        GameControl.Control.slimeKills = slimeKills;
+        GameControl.Control.scorpioKills = scorpioKills;
     }
 
     /**
@@ -60,6 +80,20 @@ public class GameSession : MonoBehaviour
     {
         ammunition--;
         ammunitionCount.text = ammunition.ToString();
+    }
+
+    public void AddKill(string type)
+    {
+        if (type == "Patrol")
+        {
+            scorpioKills++;
+            scorpioKillCount.text = scorpioKills.ToString();
+        }
+        else
+        {
+            slimeKills++;
+            slimeKillCount.text = slimeKills.ToString();
+        }
     }
 }
 
