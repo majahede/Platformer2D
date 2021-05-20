@@ -1479,7 +1479,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneLoader: {fileID: 1804858612}
-  gameOverMenuUI: {fileID: 0}
+  gameOverMenuUI: {fileID: 1743285653}
   player: {fileID: 288293846}
 --- !u!114 &779187009
 MonoBehaviour:
@@ -1494,7 +1494,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneLoader: {fileID: 1804858612}
-  pauseMenuUI: {fileID: 0}
+  pauseMenuUI: {fileID: 1080104548}
 --- !u!114 &779187010
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1664,12 +1664,36 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 779187009}
     - target: {fileID: 2669316093043165116, guid: 634de320a8b9fa745b76607f36eca73e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 80807573}
+    - target: {fileID: 2669316093043165116, guid: 634de320a8b9fa745b76607f36eca73e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: Resume
       objectReference: {fileID: 0}
     - target: {fileID: 2669316093043165116, guid: 634de320a8b9fa745b76607f36eca73e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: Play
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669316093043165116, guid: 634de320a8b9fa745b76607f36eca73e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: PauseMenu, Scripts
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669316093043165116, guid: 634de320a8b9fa745b76607f36eca73e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: MenuAudioManager, Scripts
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669316093043165119, guid: 634de320a8b9fa745b76607f36eca73e, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 80807573}
+    - target: {fileID: 2669316093043165119, guid: 634de320a8b9fa745b76607f36eca73e, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Play
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669316093043165119, guid: 634de320a8b9fa745b76607f36eca73e, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: MenuAudioManager, Scripts
       objectReference: {fileID: 0}
     - target: {fileID: 2669316093584400564, guid: 634de320a8b9fa745b76607f36eca73e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -1836,6 +1860,11 @@ PrefabInstance:
 --- !u!224 &1080104547 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 2669316093930541779, guid: 634de320a8b9fa745b76607f36eca73e, type: 3}
+  m_PrefabInstance: {fileID: 1080104546}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1080104548 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2669316093930541778, guid: 634de320a8b9fa745b76607f36eca73e, type: 3}
   m_PrefabInstance: {fileID: 1080104546}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1112655029
@@ -26509,7 +26538,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f99773f8fd2540b4e8687b71d1542eb8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameOverMenuUI: {fileID: 0}
+  gameOverMenuUI: {fileID: 1743285653}
 --- !u!61 &1398561076
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -49020,6 +49049,11 @@ PrefabInstance:
 --- !u!224 &1743285652 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 6420010665519973070, guid: 158e3131be872e34eab144b0661fd51a, type: 3}
+  m_PrefabInstance: {fileID: 1743285651}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1743285653 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6420010665519973069, guid: 158e3131be872e34eab144b0661fd51a, type: 3}
   m_PrefabInstance: {fileID: 1743285651}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1804858611
