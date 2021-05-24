@@ -39,7 +39,6 @@ public class Weapon : MonoBehaviour
                 Instantiate(bullet, firePoint.position, firePoint.rotation);
                 anim.SetBool("isShooting", true);
                 gameSession.RemoveAmmunition();
-                Debug.Log(gameSession.ammunition);
             }
         }
     }

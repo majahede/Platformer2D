@@ -12,6 +12,7 @@ public class LoseCollider : MonoBehaviour
      */
     void OnTriggerEnter2D()
     {
-        gameOverMenuUI.SetActive(true);
+        var player = FindObjectOfType<Player>();
+        player.currentHealth = 0;
     }
 }
