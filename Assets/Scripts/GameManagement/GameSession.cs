@@ -48,10 +48,6 @@ public class GameSession : MonoBehaviour
         scorpioKillCount.text = scorpioKills.ToString();
     }
 
-    void Update()
-    {
-        SaveProgress();
-    }
 
     public void SaveProgress()
     {
