@@ -6,7 +6,6 @@ using UnityEngine.SceneManagement;
 
 public class LoseCollider : MonoBehaviour
 {
-    public GameObject gameOverMenuUI;
     /**
      * Called when another objects enters a trigger collider attached to this object.
      */

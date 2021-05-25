@@ -73,16 +73,23 @@ MonoBehaviour:
     source: {fileID: 0}
     group: {fileID: 24300002, guid: db71cfc2c8bb769409d354831dfccd69, type: 2}
   - name: Shoot
-    clip: {fileID: 8300000, guid: 7e26c9daf4c32483b9c2790e662d3f1b, type: 3}
-    volume: 0.829
-    pitch: 2.5
+    clip: {fileID: 8300000, guid: b99da9a57308d4ba1bee1cf1d9038376, type: 3}
+    volume: 1
+    pitch: 2
     loop: 0
     source: {fileID: 0}
     group: {fileID: 24300002, guid: db71cfc2c8bb769409d354831dfccd69, type: 2}
   - name: Hurt
-    clip: {fileID: 8300000, guid: 84e427d6b66ab4066b6a4dcd0ce819ee, type: 3}
-    volume: 1
+    clip: {fileID: 8300000, guid: b9eff218e132a4e76be78840eca96fb2, type: 3}
+    volume: 0.5
     pitch: 1.2
+    loop: 0
+    source: {fileID: 0}
+    group: {fileID: 24300002, guid: db71cfc2c8bb769409d354831dfccd69, type: 2}
+  - name: Enemy
+    clip: {fileID: 8300000, guid: 3becec1909f194046945d85ac1077772, type: 3}
+    volume: 1
+    pitch: 0.9
     loop: 0
     source: {fileID: 0}
     group: {fileID: 24300002, guid: db71cfc2c8bb769409d354831dfccd69, type: 2}

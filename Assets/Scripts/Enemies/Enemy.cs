@@ -24,6 +24,7 @@ public class Enemy : MonoBehaviour
     */
     public void Die()
     {
+        FindObjectOfType<AudioManager>().Play("Enemy");
         Destroy(gameObject);
         FindObjectOfType<GameSession>().AddKill(gameObject.name);
     }
