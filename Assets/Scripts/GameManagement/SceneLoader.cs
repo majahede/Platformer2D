@@ -5,10 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class SceneLoader : MonoBehaviour
 {
+    public Animator transition;
+    public float transisitonTime = 1f;
+
     public void LoadNextScene()
     {
         Time.timeScale = 1f;
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex + 1));
         PauseMenu.GameIsPaused = false;
     }
 
@@ -22,5 +25,14 @@ public class SceneLoader : MonoBehaviour
     public void LoadMainMenu()
     {
         SceneManager.LoadScene(0);
+    }
+
+    IEnumerator LoadLevel(int sceneIndex)
+    {
+        transition.SetTrigger("Start");
+
+        yield return new WaitForSeconds(transisitonTime);
+
+        SceneManager.LoadScene(sceneIndex);
     }
 }

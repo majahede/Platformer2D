@@ -5,7 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class LevelExit : MonoBehaviour
 {
-    private readonly float levelLoadDelay = 1f;
     public Player player;
     public GameSession gameSession;
 
@@ -13,14 +12,8 @@ public class LevelExit : MonoBehaviour
 
     void OnTriggerEnter2D()
     {
-        StartCoroutine(LoadNextLevel());
+        sceneLoader.LoadNextScene();
         player.SavePlayer();
         gameSession.SaveProgress();
-    }
-
-    private IEnumerator LoadNextLevel()
-    {
-        yield return new WaitForSecondsRealtime(levelLoadDelay);
-        sceneLoader.LoadNextScene();
     }
 }
