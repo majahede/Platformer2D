@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    public int health = 100;
-    public int damage = 20;
+    private int health = 100;
 
     /**
     * Makes the enemy take damage.
@@ -20,13 +19,16 @@ public class Enemy : MonoBehaviour
     }
 
     /**
-    * When called object gets destroyed.
+    * Destroys game object when enemey health is below zero.
     */
     public void Die()
     {
-        FindObjectOfType<AudioManager>().Play("Enemy");
-        Destroy(gameObject);
-        FindObjectOfType<GameSession>().AddKill(gameObject.name);
+        if (health <= 0)
+        {
+            FindObjectOfType<AudioManager>().Play("Enemy");
+            Destroy(gameObject);
+            FindObjectOfType<GameSession>().AddKill(gameObject.name);
+        }
     }
 }
 

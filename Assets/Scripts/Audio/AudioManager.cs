@@ -4,17 +4,17 @@ using UnityEngine;
 
 public class AudioManager : MonoBehaviour
 {
-    public static AudioManager audioManager;
+    public static AudioManager Instance;
     public Sound[] sounds;
 
     void Awake()
     {
-        if (audioManager == null)
+        if (Instance == null)
         {
             DontDestroyOnLoad(gameObject);
-            audioManager = this;
+            Instance = this;
         }
-        else if (audioManager != this)
+        else if (Instance != this)
         {
             Destroy(gameObject);
             return;

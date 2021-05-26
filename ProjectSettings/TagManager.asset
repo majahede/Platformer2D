@@ -24,7 +24,7 @@ TagManager:
   - Bullet
   - Interactable
   - Climbing
-  - 
+  - Decoration
   - 
   - 
   - 
@@ -49,6 +49,9 @@ TagManager:
     locked: 0
   - name: Background
     uniqueID: 24608085
+    locked: 0
+  - name: Decorations
+    uniqueID: 2528696793
     locked: 0
   - name: Climbing
     uniqueID: 2300360899
