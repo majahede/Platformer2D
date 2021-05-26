@@ -71,7 +71,7 @@ public class Player : MonoBehaviour
      */
     public void TakeDamage(int damage)
     {
-        FindObjectOfType<AudioManager>().Play("Hurt");
+        FindObjectOfType<GameAudioManager>().Play("Hurt");
         currentHealth -= damage;
         healthBar.SetHealth(currentHealth);
     }

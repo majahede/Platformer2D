@@ -35,7 +35,7 @@ public class Weapon : MonoBehaviour
             if (Input.GetButtonDown("Fire1") && gameSession.ammunition > 0)
             {
                 // Spawns a specific object at a chosen place.
-                FindObjectOfType<AudioManager>().Play("Shoot");
+                FindObjectOfType<GameAudioManager>().Play("Shoot");
                 Instantiate(bullet, firePoint.position, firePoint.rotation);
                 anim.SetBool("isShooting", true);
                 gameSession.RemoveAmmunition();

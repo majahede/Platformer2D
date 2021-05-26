@@ -9,9 +9,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3338317895070627461}
-  - component: {fileID: 1843407115024035961}
+  - component: {fileID: 7545738515398173613}
   m_Layer: 0
-  m_Name: AudioManager
+  m_Name: GameAudioManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -31,7 +31,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1843407115024035961
+--- !u!114 &7545738515398173613
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -40,7 +40,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 4347061024938939096}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5cccf7515ea582c45a07cb6820a078a6, type: 3}
+  m_Script: {fileID: 11500000, guid: 45d458a20175b3d499970fe3aa05eb7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   sounds:
@@ -67,9 +67,9 @@ MonoBehaviour:
     group: {fileID: 24300002, guid: db71cfc2c8bb769409d354831dfccd69, type: 2}
   - name: Theme
     clip: {fileID: 8300000, guid: d8b719ef1c3254c97b2c5b785c2d5fd3, type: 3}
-    volume: 0.3
+    volume: 0.6
     pitch: 1
-    loop: 1
+    loop: 0
     source: {fileID: 0}
     group: {fileID: 24300002, guid: db71cfc2c8bb769409d354831dfccd69, type: 2}
   - name: Shoot

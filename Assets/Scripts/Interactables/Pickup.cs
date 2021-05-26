@@ -16,19 +16,19 @@ public class Pickup : MonoBehaviour
         // When player collide with the object, add point and destroy object.
         if (gameObject.tag == "Pickup")
         {
-            FindObjectOfType<AudioManager>().Play("Coin");
+            FindObjectOfType<GameAudioManager>().Play("Coin");
             FindObjectOfType<GameSession>().AddCoin();
         }
 
         if (gameObject.tag == "LifePickup")
         {
-            FindObjectOfType<AudioManager>().Play("Heart");
+            FindObjectOfType<GameAudioManager>().Play("Heart");
             player.IncreaseHealth(10);
         }
 
         if (gameObject.tag == "Ammunition")
         {
-            FindObjectOfType<AudioManager>().Play("Ammunition");
+            FindObjectOfType<GameAudioManager>().Play("Ammunition");
             FindObjectOfType<GameSession>().AddAmmunition();
         }
 
