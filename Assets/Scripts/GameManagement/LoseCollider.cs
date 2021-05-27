@@ -6,12 +6,18 @@ using UnityEngine.SceneManagement;
 
 public class LoseCollider : MonoBehaviour
 {
+    private Player player;
+
+    void Start()
+    {
+        player = FindObjectOfType<Player>();
+    }
+
     /**
      * Called when another objects enters a trigger collider attached to this object.
      */
     void OnTriggerEnter2D()
     {
-        var player = FindObjectOfType<Player>();
         player.currentHealth = 0;
     }
 }

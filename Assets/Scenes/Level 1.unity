@@ -528,14 +528,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cfc1d041d8dc54046ad21a712e2942a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coinCount: {fileID: 744149089}
   coins: 0
-  ammunitionCount: {fileID: 675975516}
   ammunition: 10
-  slimeKills: 0
-  slimeKillCount: {fileID: 1770555000}
-  scorpioKills: 0
-  scorpioKillCount: {fileID: 723607896}
+  enemyKills: 0
+  patrolKills: 0
+  coinCount: {fileID: 744149089}
+  ammunitionCount: {fileID: 675975516}
+  enemyKillCount: {fileID: 1770555000}
+  patrolKillCount: {fileID: 723607896}
 --- !u!4 &434972186
 Transform:
   m_ObjectHideFlags: 0
@@ -560,7 +560,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3338317895070627461, guid: 605f713439323ec43a372300f0108f40, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3338317895070627461, guid: 605f713439323ec43a372300f0108f40, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1413,7 +1413,7 @@ GameObject:
   - component: {fileID: 723607897}
   - component: {fileID: 723607896}
   m_Layer: 5
-  m_Name: Scorpio Kill Counter
+  m_Name: Patrol Kill Counter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15867,7 +15867,7 @@ GameObject:
   - component: {fileID: 982811157}
   - component: {fileID: 982811156}
   m_Layer: 5
-  m_Name: Slime Kill
+  m_Name: Enemy Kill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28157,7 +28157,7 @@ GameObject:
   - component: {fileID: 1401085846}
   - component: {fileID: 1401085845}
   m_Layer: 5
-  m_Name: Scorpio Kill
+  m_Name: Patrol Kill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28337,7 +28337,7 @@ Transform:
   - {fileID: 1761653468}
   - {fileID: 1866611310}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1454293622
 GameObject:
@@ -28700,7 +28700,7 @@ GameObject:
   - component: {fileID: 1770555001}
   - component: {fileID: 1770555000}
   m_Layer: 5
-  m_Name: Slime Kill Counter
+  m_Name: Enemy Kill Counter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -29228,7 +29228,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24e490e59f0de9149ad0cbfd45134e10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 867954938}
   gameSession: {fileID: 434972185}
   sceneLoader: {fileID: 820102197}
 --- !u!4 &1875512918 stripped

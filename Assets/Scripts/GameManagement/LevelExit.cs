@@ -5,10 +5,16 @@ using UnityEngine.SceneManagement;
 
 public class LevelExit : MonoBehaviour
 {
-    public Player player;
-    public GameSession gameSession;
+    private Player player;
+    private GameSession gameSession;
+    private SceneLoader sceneLoader;
 
-    public SceneLoader sceneLoader;
+    void Start() 
+    {
+        player = FindObjectOfType<Player>();
+        gameSession = FindObjectOfType<GameSession>();
+        sceneLoader = FindObjectOfType<SceneLoader>();
+    }
 
     void OnTriggerEnter2D()
     {

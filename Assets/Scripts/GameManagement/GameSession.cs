@@ -41,7 +41,6 @@ public class GameSession : MonoBehaviour
         patrolKillCount.text = patrolKills.ToString();
     }
 
-
     public void SaveProgress()
     {
         GameControl.Control.coins = coins;
@@ -83,10 +82,6 @@ public class GameSession : MonoBehaviour
             enemyKills++;
             enemyKillCount.text = enemyKills.ToString();
         }
-    }
-
-    public void SetValue(string type)
-    {
     }
 }
 

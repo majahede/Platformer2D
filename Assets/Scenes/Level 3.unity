@@ -828,7 +828,7 @@ GameObject:
   - component: {fileID: 147618212}
   - component: {fileID: 147618211}
   m_Layer: 5
-  m_Name: Slime Kill
+  m_Name: Enemy Kill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -900,7 +900,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3338317895070627461, guid: 605f713439323ec43a372300f0108f40, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3338317895070627461, guid: 605f713439323ec43a372300f0108f40, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1668,7 +1668,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24e490e59f0de9149ad0cbfd45134e10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 1455336500}
   gameSession: {fileID: 1801730551}
   sceneLoader: {fileID: 1469428924}
 --- !u!61 &507016513
@@ -5024,7 +5023,7 @@ Transform:
   - {fileID: 1210952569}
   - {fileID: 1455336496}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1167417804
 PrefabInstance:
@@ -35480,7 +35479,7 @@ GameObject:
   - component: {fileID: 1736504981}
   - component: {fileID: 1736504980}
   m_Layer: 5
-  m_Name: Slime Kill Counter
+  m_Name: Enemy Kill Counter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -67975,14 +67974,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cfc1d041d8dc54046ad21a712e2942a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coinCount: {fileID: 704385040}
   coins: 0
-  ammunitionCount: {fileID: 1587748226}
   ammunition: 10
-  slimeKills: 0
-  slimeKillCount: {fileID: 1736504980}
-  scorpioKills: 0
-  scorpioKillCount: {fileID: 1934057668}
+  enemyKills: 0
+  patrolKills: 0
+  coinCount: {fileID: 704385040}
+  ammunitionCount: {fileID: 1587748226}
+  enemyKillCount: {fileID: 1736504980}
+  patrolKillCount: {fileID: 1934057668}
 --- !u!1 &1831106531
 GameObject:
   m_ObjectHideFlags: 0
@@ -67995,7 +67994,7 @@ GameObject:
   - component: {fileID: 1831106534}
   - component: {fileID: 1831106533}
   m_Layer: 5
-  m_Name: Scorpio Kill
+  m_Name: Patrol Kill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -68070,7 +68069,7 @@ GameObject:
   - component: {fileID: 1934057669}
   - component: {fileID: 1934057668}
   m_Layer: 5
-  m_Name: Scorpio Kill Counter
+  m_Name: Patrol Kill Counter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
