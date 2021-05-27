@@ -27881,9 +27881,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee415a173b9fb04408f495cf5e591145, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneLoader: {fileID: 820102197}
   gameOverMenuUI: {fileID: 1952625873}
-  player: {fileID: 0}
 --- !u!1 &1248397748 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4311872620314281153, guid: 765213a7daffaf7409f578b99020a1f7, type: 3}

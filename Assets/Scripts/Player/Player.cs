@@ -1,18 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
-    public int maxHealth = 100;
-    public int currentHealth = 100;
-    public HealthBar healthBar;
+    private int maxHealth = 100;
+    private int currentHealth = 100;
+
+    [SerializeField]
+    private HealthBar healthBar;
+
     private CapsuleCollider2D bodyCollider;
-    private float curTime = 0;
-    public float nextDamage = 1;
     private Animator anim;
-    public int level = 1;
+    private float currentTime;
 
     /**
      * Start is called before the first frame update
@@ -24,7 +24,6 @@ public class Player : MonoBehaviour
         bodyCollider = this.gameObject.GetComponent<CapsuleCollider2D>();
         anim = this.gameObject.GetComponent<Animator>();
         currentHealth = GameControl.Control.currentHealth;
-        level = SceneManager.GetActiveScene().buildIndex;
     }
 
     /**
@@ -51,18 +50,20 @@ public class Player : MonoBehaviour
      */
     private void EnemyCollision()
     {
-        if (curTime <= 0)
+        float nextDamage = 1;
+
+        if (currentTime <= 0)
         {
             if (bodyCollider.IsTouchingLayers(LayerMask.GetMask("Enemy")))
             {
                 TakeDamage(20);
             }
 
-            curTime = nextDamage;
+            currentTime = nextDamage;
         }
         else
         {
-            curTime -= Time.deltaTime + Time.deltaTime;
+            currentTime -= Time.deltaTime + Time.deltaTime;
         }
     }
 
