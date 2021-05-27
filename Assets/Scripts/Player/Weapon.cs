@@ -8,6 +8,7 @@ public class Weapon : MonoBehaviour
     public Transform firePoint;
     public GameObject bullet;
     private Animator anim;
+    private bool isShooting;
 
     void Start()
     {
@@ -34,9 +35,6 @@ public class Weapon : MonoBehaviour
 
             if (Input.GetButtonDown("Fire1") && gameSession.GetAmmunition() > 0)
             {
-                //  Debug.Log("gamesession" + gameSession.ammunition)
-                // Debug.Log("control" + GameControl.Control.ammunition)
-
                 // Spawns a specific object at a chosen place.
                 FindObjectOfType<GameAudioManager>().Play("Shoot");
                 Instantiate(bullet, firePoint.position, firePoint.rotation);

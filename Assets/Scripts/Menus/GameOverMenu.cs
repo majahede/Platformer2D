@@ -4,10 +4,16 @@ using UnityEngine;
 
 public class GameOverMenu : MonoBehaviour
 {
-    public SceneLoader sceneLoader;
+    private SceneLoader sceneLoader;
     public GameObject gameOverMenuUI;
-    public Player player;
+    private Player player;
     private IEnumerator coroutine;
+
+    void Start()
+    {
+        player = FindObjectOfType<Player>();
+        sceneLoader = FindObjectOfType<SceneLoader>();
+    }
 
     // Update is called once per frame
     void Update()

@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1415716682}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.305, y: -0.22, z: 0}
+  m_LocalPosition: {x: 0.4, y: -0.1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 227130337672626870}
@@ -73,6 +73,9 @@ GameObject:
   - component: {fileID: 227130338584629242}
   - component: {fileID: 227130338584629240}
   - component: {fileID: 1240025739}
+  - component: {fileID: 4319725644985983142}
+  - component: {fileID: 6666855953998271729}
+  - component: {fileID: 303081931994493427}
   m_Layer: 9
   m_Name: Player
   m_TagString: Player
@@ -196,10 +199,71 @@ CapsuleCollider2D:
   m_GameObject: {fileID: 227130338584629189}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: f7cc3b64b672ff246b41e480028e255e, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.04201126, y: 0.015735745}
   m_Size: {x: 0.5430832, y: 0.7616036}
   m_Direction: 0
+--- !u!114 &4319725644985983142
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 227130338584629189}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17db11cfafd4a2a438ea2aaa9c2fc6c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  firePoint: {fileID: 1415716683}
+  bullet: {fileID: 6161904891964159315, guid: f70b00e013c28994daf7e4628819f67a, type: 3}
+--- !u!114 &6666855953998271729
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 227130338584629189}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6fe0766458a48248a82388475ebf95a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxYVelocity: 0
+  movementSpeed: 9
+  isGrounded: 0
+  player: {fileID: 0}
+  jumpForce: 10
+  checkGroundRadius: 0.05
+  groundChecker: {fileID: 227130336778096337}
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 256
+  additionalJumps: 0
+  defaultAdditionalJumps: 1
+  fallMultiplier: 2.5
+  lowJumpMultiplier: 2
+  timeDifference: 0
+--- !u!114 &303081931994493427
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 227130338584629189}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac36535316c2ebf409a629dc173a1a81, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
+  currentHealth: 100
+  healthBar: {fileID: 0}
+  nextDamage: 1
+  level: 0
