@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 432489042174201602}
   - component: {fileID: 432489042174201600}
   - component: {fileID: 432489042174201603}
-  - component: {fileID: 4078830410502320888}
   - component: {fileID: 5097732887566426790}
+  - component: {fileID: 3287457732166150146}
   m_Layer: 11
   m_Name: Pickup
   m_TagString: Pickup
@@ -72,7 +72,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -709237817
-  m_SortingLayer: 4
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_Sprite: {fileID: 6088342627132289551, guid: c06bbca5ab792454cbea863e7904f5fa, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -111,20 +111,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.37423897, y: 0.4072883}
   m_EdgeRadius: 0
---- !u!114 &4078830410502320888
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 432489042174201613}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a85347741cd321240bda77038ee51e60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  weapon: {fileID: 0}
 --- !u!95 &5097732887566426790
 Animator:
   serializedVersion: 3
@@ -144,3 +130,15 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &3287457732166150146
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 432489042174201613}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b06f5325b5a0df642992ee84e9a97909, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

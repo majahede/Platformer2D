@@ -344,14 +344,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cfc1d041d8dc54046ad21a712e2942a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coinCount: {fileID: 1329563369}
   coins: 0
-  ammunitionCount: {fileID: 1281441361}
   ammunition: 0
-  slimeKills: 0
-  slimeKillCount: {fileID: 678358163}
-  scorpioKills: 0
-  scorpioKillCount: {fileID: 314587000}
+  enemyKills: 0
+  patrolKills: 0
+  coinCount: {fileID: 1329563369}
+  ammunitionCount: {fileID: 1281441361}
+  enemyKillCount: {fileID: 678358163}
+  patrolKillCount: {fileID: 314587000}
 --- !u!4 &209089524
 Transform:
   m_ObjectHideFlags: 0
@@ -379,7 +379,7 @@ GameObject:
   - component: {fileID: 314587001}
   - component: {fileID: 314587000}
   m_Layer: 5
-  m_Name: Scorpio Counter
+  m_Name: Patrol Counter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -762,7 +762,7 @@ GameObject:
   - component: {fileID: 678358164}
   - component: {fileID: 678358163}
   m_Layer: 5
-  m_Name: 'Slime Counter '
+  m_Name: 'Enemy Counter '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1592,7 +1592,7 @@ GameObject:
   - component: {fileID: 1886393943}
   - component: {fileID: 1886393942}
   m_Layer: 5
-  m_Name: SlimeImage
+  m_Name: EnemyImage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1832,7 +1832,7 @@ GameObject:
   - component: {fileID: 2094610221}
   - component: {fileID: 2094610220}
   m_Layer: 5
-  m_Name: ScorpioImage
+  m_Name: PatrolImage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

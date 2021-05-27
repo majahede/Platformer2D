@@ -6,32 +6,25 @@ using UnityEngine.UI;
 
 public class Pickup : MonoBehaviour
 {
-    public Player player;
+    protected GameSession gameSession;
+    protected Player player;
+
+    void Start()
+    {
+        gameSession = FindObjectOfType<GameSession>();
+        player = FindObjectOfType<Player>();
+    }
 
     /**
      * Called when another objects enters a trigger collider attached to this object.
      */
-    void OnTriggerEnter2D()
+    public virtual void OnTriggerEnter2D()
     {
-        // When player collide with the object, add point and destroy object.
-        if (gameObject.tag == "Pickup")
-        {
-            FindObjectOfType<GameAudioManager>().Play("Coin");
-            FindObjectOfType<GameSession>().AddCoin();
-        }
-
-        if (gameObject.tag == "LifePickup")
-        {
-            FindObjectOfType<GameAudioManager>().Play("Heart");
-            player.IncreaseHealth(10);
-        }
-
-        if (gameObject.tag == "Ammunition")
-        {
-            FindObjectOfType<GameAudioManager>().Play("Ammunition");
-            FindObjectOfType<GameSession>().AddAmmunition();
-        }
-
         Destroy(gameObject);
+    }
+
+    public void PlaySound(string sound)
+    {
+        FindObjectOfType<GameAudioManager>().Play(sound);
     }
 }
