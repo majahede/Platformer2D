@@ -6,29 +6,22 @@ using UnityEngine.UI;
 
 public class GameSession : MonoBehaviour
 {
-    [SerializeField]
-    public Text coinCount;
+    public int coins;
+    public int ammunition;
+    public int enemyKills;
+    public int patrolKills;
 
     [SerializeField]
-    public int coins;
+    public Text coinCount;
 
     [SerializeField]
     public Text ammunitionCount;
 
     [SerializeField]
-    public int ammunition;
+    public Text enemyKillCount;
 
     [SerializeField]
-    public int slimeKills;
-
-    [SerializeField]
-    public Text slimeKillCount;
-
-    [SerializeField]
-    public int scorpioKills;
-
-    [SerializeField]
-    public Text scorpioKillCount;
+    public Text patrolKillCount;
 
     /**
      * Start is called before the first frame update
@@ -41,11 +34,11 @@ public class GameSession : MonoBehaviour
         ammunition = GameControl.Control.ammunition;
         ammunitionCount.text = ammunition.ToString();
 
-        slimeKills = GameControl.Control.slimeKills;
-        slimeKillCount.text = slimeKills.ToString();
+        enemyKills = GameControl.Control.enemyKills;
+        enemyKillCount.text = enemyKills.ToString();
 
-        scorpioKills = GameControl.Control.scorpioKills;
-        scorpioKillCount.text = scorpioKills.ToString();
+        patrolKills = GameControl.Control.patrolKills;
+        patrolKillCount.text = patrolKills.ToString();
     }
 
 
@@ -53,8 +46,8 @@ public class GameSession : MonoBehaviour
     {
         GameControl.Control.coins = coins;
         GameControl.Control.ammunition = ammunition;
-        GameControl.Control.slimeKills = slimeKills;
-        GameControl.Control.scorpioKills = scorpioKills;
+        GameControl.Control.enemyKills = enemyKills;
+        GameControl.Control.patrolKills = patrolKills;
     }
 
     /**
@@ -82,14 +75,18 @@ public class GameSession : MonoBehaviour
     {
         if (type == "Patrol")
         {
-            scorpioKills++;
-            scorpioKillCount.text = scorpioKills.ToString();
+            patrolKills++;
+            patrolKillCount.text = patrolKills.ToString();
         }
         else
         {
-            slimeKills++;
-            slimeKillCount.text = slimeKills.ToString();
+            enemyKills++;
+            enemyKillCount.text = enemyKills.ToString();
         }
+    }
+
+    public void SetValue(string type)
+    {
     }
 }
 
