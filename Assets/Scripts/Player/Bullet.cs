@@ -5,17 +5,18 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
-    public float speed = 10f;
-    public Rigidbody2D rb;
-    public int damage = 30;
+    private float speed = 10f;
+    private Rigidbody2D rb;
+    private int damage = 30;
 
     /**
      * Start is called before the first frame update.
      */
     void Start()
     {
+        rb = this.gameObject.GetComponent<Rigidbody2D>();
         rb.velocity = transform.right * speed;
-        Destroy(gameObject, 3f);
+        DestroyBullet(3f);
     }
 
     /**
@@ -27,6 +28,11 @@ public class Bullet : MonoBehaviour
 
         // If the hit object is of type enemy it takes damage.
         enemy?.TakeDamage(damage);
-        Destroy(gameObject);
+        DestroyBullet(0f);
+    }
+
+    public void DestroyBullet(float time)
+    {
+        Destroy(gameObject, time);
     }
 }
