@@ -6,22 +6,22 @@ using UnityEngine.UI;
 
 public class GameSession : MonoBehaviour
 {
-    public int coins;
-    public int ammunition;
-    public int enemyKills;
-    public int patrolKills;
+    private int coins;
+    private int ammunition;
+    private int enemyKills;
+    private int patrolKills;
 
     [SerializeField]
-    public Text coinCount;
+    private Text coinCount;
 
     [SerializeField]
-    public Text ammunitionCount;
+    private Text ammunitionCount;
 
     [SerializeField]
-    public Text enemyKillCount;
+    private Text enemyKillCount;
 
     [SerializeField]
-    public Text patrolKillCount;
+    private Text patrolKillCount;
 
     /**
      * Start is called before the first frame update
@@ -56,6 +56,11 @@ public class GameSession : MonoBehaviour
     {
         coins++;
         coinCount.text = coins.ToString();
+    }
+
+    public int GetAmmunition()
+    {
+        return ammunition;
     }
 
     public void AddAmmunition()

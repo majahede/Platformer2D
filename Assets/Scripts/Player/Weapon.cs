@@ -32,7 +32,7 @@ public class Weapon : MonoBehaviour
                 return;
             }
 
-            if (Input.GetButtonDown("Fire1") && gameSession.ammunition > 0)
+            if (Input.GetButtonDown("Fire1") && gameSession.GetAmmunition() > 0)
             {
                 //  Debug.Log("gamesession" + gameSession.ammunition)
                 // Debug.Log("control" + GameControl.Control.ammunition)
