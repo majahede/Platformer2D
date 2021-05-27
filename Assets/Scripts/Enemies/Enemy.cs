@@ -23,12 +23,9 @@ public class Enemy : MonoBehaviour
     */
     public void Die()
     {
-        if (health <= 0)
-        {
-            FindObjectOfType<GameAudioManager>().Play("Enemy");
-            Destroy(gameObject);
-            FindObjectOfType<GameSession>().AddKill(gameObject.name);
-        }
+        FindObjectOfType<GameAudioManager>().Play("Enemy");
+        Destroy(gameObject);
+        FindObjectOfType<GameSession>().AddKill(gameObject.name);
     }
 }
 

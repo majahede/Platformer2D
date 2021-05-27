@@ -5,10 +5,13 @@ using UnityEngine;
 
 public class Weapon : MonoBehaviour
 {
-    public Transform firePoint;
-    public GameObject bullet;
+    [SerializeField]
+    private Transform firePoint;
+
+    [SerializeField]
+    private GameObject bullet;
+
     private Animator anim;
-    private bool isShooting;
 
     void Start()
     {
@@ -25,6 +28,7 @@ public class Weapon : MonoBehaviour
     public void Shoot()
     {
         var gameSession = FindObjectOfType<GameSession>();
+
         if (!PauseMenu.GameIsPaused)
         {
             if (!Input.GetButtonDown("Fire1"))
