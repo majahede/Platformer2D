@@ -4,7 +4,12 @@ using UnityEngine;
 
 public class FinishCollider : MonoBehaviour
 {
-    public SceneLoader sceneLoader;
+    private SceneLoader sceneLoader;
+
+    void Start()
+    {
+        sceneLoader = FindObjectOfType<SceneLoader>();
+    }
 
     void OnTriggerEnter2D()
     {
