@@ -45,6 +45,16 @@ public class Player : MonoBehaviour
         GameControl.Control.currentHealth = currentHealth;
     }
 
+    public int GetCurrentHealth()
+    {
+        return currentHealth;
+    }
+
+    public void SetCurrentHealth(int value)
+    {
+        currentHealth = value;
+    }
+
     /**
      *  Checks if Player is colliding with enemy.
      */

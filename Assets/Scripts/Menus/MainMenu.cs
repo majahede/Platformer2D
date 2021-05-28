@@ -5,7 +5,12 @@ using UnityEngine;
 public class MainMenu : MonoBehaviour
 
 {
-    public SceneLoader sceneLoader;
+    private SceneLoader sceneLoader;
+
+    void Start()
+    {
+        sceneLoader = FindObjectOfType<SceneLoader>();
+    }
 
     public void NewGame()
     {

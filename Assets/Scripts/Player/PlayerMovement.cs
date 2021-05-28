@@ -7,32 +7,21 @@ public class PlayerMovement : MonoBehaviour
 {
     private Rigidbody2D rb;
     private Animator anim;
+    private Player player;
+    private CapsuleCollider2D bodyCollider;
+
+    [SerializeField]
+    private Transform groundChecker;
+
     private float xMovement;
     private float yMovement;
-
-    [SerializeField]
     private float maxYVelocity;
+    private float movementSpeed = 9f;
 
-    public float movementSpeed = 9f;
-
-    [SerializeField]
-    private bool isGrounded = false;
-
-    public Player player;
-    public float jumpForce = 10f;
-    public float checkGroundRadius = 0.05f;
-    public Transform groundChecker;
-    public LayerMask groundLayer;
-    public LayerMask enemyLayer;
-
-    public int additionalJumps;
-    public int defaultAdditionalJumps = 1;
-
-    public float fallMultiplier = 2.5f;
-    public float lowJumpMultiplier = 2f;
-    public float timeDifference;
+    private bool isGrounded;
     private float lastTimeGrounded;
-    private CapsuleCollider2D bodyCollider;
+    private int additionalJumps;
+    private int defaultAdditionalJumps = 1;
     private bool facingRight = true;
 
     /**
@@ -43,7 +32,7 @@ public class PlayerMovement : MonoBehaviour
         rb = this.gameObject.GetComponent<Rigidbody2D>();
         anim = this.gameObject.GetComponent<Animator>();
         bodyCollider = this.gameObject.GetComponent<CapsuleCollider2D>();
-      //  gravityScaleAtStart = rb.gravityScale;
+        player = this.gameObject.GetComponent<Player>();
     }
 
     /**
@@ -74,8 +63,10 @@ public class PlayerMovement : MonoBehaviour
      */
     public void Jump()
     {
+        float jumpForce = 10f;
+
         // Check if jump button is pressed and if player is grounded. 
-        if (Input.GetButtonDown("Jump") && (isGrounded || Time.time - lastTimeGrounded <= timeDifference || additionalJumps > 0))
+        if (Input.GetButtonDown("Jump") && (isGrounded || Time.time - lastTimeGrounded <= 0 || additionalJumps > 0))
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
             additionalJumps--;
@@ -107,10 +98,9 @@ public class PlayerMovement : MonoBehaviour
             return;
         }
 
-        var climbSpeed = 5f;
+        float climbSpeed = 5f;
 
-        var climbVelocity = new Vector2(rb.velocity.x, yMovement * climbSpeed);
-        rb.velocity = climbVelocity;
+        rb.velocity = new Vector2(rb.velocity.x, yMovement * climbSpeed);
         rb.gravityScale = 0f;
 
         anim.SetBool("isClimbing", true);
@@ -121,6 +111,9 @@ public class PlayerMovement : MonoBehaviour
      */
     public void ChangeFallSpeed()
     {
+        float fallMultiplier = 2.5f;
+        float lowJumpMultiplier = 2f;
+
         // if the player is falling
         if (rb.velocity.y < 0)
         {
@@ -158,8 +151,11 @@ public class PlayerMovement : MonoBehaviour
      */
     public void IsGrounded()
     {
-        var groundCollider = Physics2D.OverlapCircle(groundChecker.position, checkGroundRadius, groundLayer);
-        var enemyCollider = Physics2D.OverlapCircle(groundChecker.position, checkGroundRadius, enemyLayer);
+        float checkGroundRadius = 0.05f;
+
+        var groundCollider = Physics2D.OverlapCircle(groundChecker.position, checkGroundRadius, LayerMask.GetMask("Ground"));
+        var enemyCollider = Physics2D.OverlapCircle(groundChecker.position, checkGroundRadius, LayerMask.GetMask("Enemy"));
+
         if (groundCollider != null || enemyCollider != null)
         {
             isGrounded = true;

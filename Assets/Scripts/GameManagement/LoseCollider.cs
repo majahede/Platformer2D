@@ -18,6 +18,6 @@ public class LoseCollider : MonoBehaviour
      */
     void OnTriggerEnter2D()
     {
-        player.currentHealth = 0;
+        player.SetCurrentHealth(0);
     }
 }
