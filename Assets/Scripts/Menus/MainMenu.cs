@@ -5,9 +5,9 @@ using UnityEngine;
 public class MainMenu : MonoBehaviour
 
 {
-    private SceneLoader sceneLoader;
+    protected SceneLoader sceneLoader;
 
-    void Start()
+    public virtual void Start()
     {
         sceneLoader = FindObjectOfType<SceneLoader>();
     }
@@ -24,7 +24,7 @@ public class MainMenu : MonoBehaviour
         #elif UNITY_STANDALONE
             Application.Quit();
         #elif UNITY_WEBGL
-            Application.OpenURL("https://play.unity.com/mg/other/webglbuild2-1");
+            Application.OpenURL("https://play.unity.com/u/majhed-zt");
         #endif
     }
 }

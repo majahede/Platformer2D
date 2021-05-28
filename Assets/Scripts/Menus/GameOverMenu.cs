@@ -2,17 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GameOverMenu : MonoBehaviour
+public class GameOverMenu : MainMenu
 {
-    private SceneLoader sceneLoader;
-    public GameObject gameOverMenuUI;
     private Player player;
     private IEnumerator coroutine;
 
-    void Start()
+    [SerializeField]
+    private GameObject gameOverMenuUI;
+
+    public override void Start()
     {
+        base.Start();
         player = FindObjectOfType<Player>();
-        sceneLoader = FindObjectOfType<SceneLoader>();
     }
 
     // Update is called once per frame
@@ -41,17 +42,6 @@ public class GameOverMenu : MonoBehaviour
     public void LoadMainMenu()
     {
         sceneLoader.LoadMainMenu();
-    }
-
-    public void QuitGame()
-    {
-        #if UNITY_EDITOR
-            UnityEditor.EditorApplication.isPlaying = false;
-        #elif UNITY_STANDALONE
-            Application.Quit();
-        #elif UNITY_WEBGL
-            Application.OpenURL("https://play.unity.com/mg/other/webglbuild2-1");
-        #endif
     }
 
     private IEnumerator GameOverDelay(float time)

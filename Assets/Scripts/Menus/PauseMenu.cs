@@ -2,11 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PauseMenu : MonoBehaviour
+public class PauseMenu : MainMenu
 {
     public static bool GameIsPaused = false;
-    public SceneLoader sceneLoader;
-    public GameObject pauseMenuUI;
+
+    [SerializeField]
+    private GameObject pauseMenuUI;
 
     // Update is called once per frame
     void Update()
@@ -42,16 +43,5 @@ public class PauseMenu : MonoBehaviour
     {
         sceneLoader.LoadMainMenu();
         GameIsPaused = false;
-    }
-
-    public void QuitGame()
-    {
-        #if UNITY_EDITOR
-            UnityEditor.EditorApplication.isPlaying = false;
-        #elif UNITY_STANDALONE
-            Application.Quit();
-        #elif UNITY_WEBGL
-            Application.OpenURL("https://play.unity.com/mg/other/webglbuild2-1");
-        #endif
     }
 }
