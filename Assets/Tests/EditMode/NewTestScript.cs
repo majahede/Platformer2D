@@ -1,25 +1,60 @@
 using System.Collections;
 using System.Collections.Generic;
 using NUnit.Framework;
+using UnityEditor.SceneManagement;
 using UnityEngine;
 using UnityEngine.TestTools;
 
 public class NewTestScript
 {
-    // A Test behaves as an ordinary method
-    [Test]
-    public void NewTestScriptSimplePasses()
+    // Resets environment
+    [SetUp]
+    public void ResetScene()
     {
-        // Use the Assert class to test conditions
+
+        EditorSceneManager.NewScene(NewSceneSetup.EmptyScene);
+
     }
 
-    // A UnityTest behaves like a coroutine in Play Mode. In Edit Mode you can use
-    // `yield return null;` to skip a frame.
-    [UnityTest]
-    public IEnumerator NewTestScriptWithEnumeratorPasses()
+ /*  [Test]
+    public void PlayerTakesDamage()
     {
-        // Use the Assert class to test conditions.
-        // Use yield to skip a frame.
-        yield return null;
+      
+        var gameObject = new GameObject();
+        var player = gameObject.AddComponent<Player>(); 
+        var audiomanager = gameObject.AddComponent<GameAudioManager>(); 
+        var healthBar = gameObject.AddComponent<HealthBar>(); 
+        player.TakeDamage(50);
+        // Use the Assert class to test conditions
+
+        Assert.AreEqual(player.GetCurrentHealth(), 50);
+    }
+*/
+
+    [Test]
+    public void EnemyTakes30Damage()
+    {
+        var gameObject = new GameObject();
+        var enemy = gameObject.AddComponent<Enemy>(); 
+        enemy.TakeDamage(30);
+
+        Assert.AreEqual(enemy.GetHealth(), 70);
+    }
+
+    [Test]
+    public void BasicTest()
+    {
+        bool isActive = false;
+
+        Assert.AreEqual(false, isActive);
+    }
+
+    [Test]
+    public void CatchingErrors()
+    {
+        GameObject gameObject = new GameObject("test");
+
+        Assert.Throws<MissingComponentException>(
+            () => gameObject.GetComponent<Rigidbody>().velocity = Vector3.one);
     }
 }

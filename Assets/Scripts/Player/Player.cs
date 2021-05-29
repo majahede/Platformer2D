@@ -88,7 +88,7 @@ public class Player : MonoBehaviour
     }
 
     /**
-     *  When called player pick up healing object.
+     *  Called when player pick up healing object.
      */
     public void IncreaseHealth(int health)
     {

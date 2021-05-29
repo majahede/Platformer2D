@@ -24,8 +24,18 @@ public class Enemy : MonoBehaviour
     public void Die()
     {
         FindObjectOfType<GameAudioManager>().Play("Enemy");
-        Destroy(gameObject);
         FindObjectOfType<GameSession>().AddKill(gameObject.name);
+        Destroy(gameObject);
+    }
+
+    public int GetHealth()
+    {
+        return health;
+    }
+
+    public void SetHealth(int value)
+    {
+        health = value;
     }
 }
 
