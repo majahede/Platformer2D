@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Patrol : Enemy
+public class EnemyPatrol : Enemy
 {
     private Rigidbody2D rb;
     private readonly float movementSpeed = 1f;
