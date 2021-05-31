@@ -34,10 +34,6 @@ public class Player : MonoBehaviour
     {
         PlayerDead();
         EnemyCollision();
-        if (Input.GetKeyDown(KeyCode.Alpha0))
-        {
-            TakeDamage(50);
-        }
     }
 
     // Save data to game control
@@ -65,7 +61,7 @@ public class Player : MonoBehaviour
 
         if (currentTime <= 0)
         {
-            if (bodyCollider.IsTouchingLayers(LayerMask.GetMask("Enemy")))
+            if (bodyCollider.IsTouchingLayers(LayerMask.GetMask("Enemy")) && currentHealth > 0)
             {
                 TakeDamage(20);
             }
@@ -74,7 +70,7 @@ public class Player : MonoBehaviour
         }
         else
         {
-            currentTime -= Time.deltaTime + Time.deltaTime;
+            currentTime -= 0.01f;
         }
     }
 
