@@ -105,9 +105,10 @@ public class Player : MonoBehaviour
         if (currentHealth <= 0)
         {
             GameControl.IsGamePaused = true;
-            anim.SetTrigger("die");
+            anim.SetBool("isDead", true);
             return true;
         }
+        anim.SetBool("isDead", false);
         return false;
     }
 }
