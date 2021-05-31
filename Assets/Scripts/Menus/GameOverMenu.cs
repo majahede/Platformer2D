@@ -27,14 +27,9 @@ public class GameOverMenu : MainMenu
         }
     }
 
-    public void GameOver()
-    {
-        StartCoroutine(coroutine);
-        gameOverMenuUI.SetActive(true);
-    }
-
     public void Retry()
     {
+        GameControl.IsGamePaused = false;
         Time.timeScale = 1f;
         sceneLoader.LoadActiveScene();
     }
@@ -49,6 +44,5 @@ public class GameOverMenu : MainMenu
         yield return new WaitForSeconds(time);
         Time.timeScale = 0;
         gameOverMenuUI.SetActive(true);
-        PauseMenu.GameIsPaused = true;
     }
 }

@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class PauseMenu : MainMenu
 {
-    public static bool GameIsPaused = false;
-
     [SerializeField]
     private GameObject pauseMenuUI;
 
@@ -14,7 +12,7 @@ public class PauseMenu : MainMenu
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            if (GameIsPaused)
+            if (GameControl.IsGamePaused)
             {
                 Resume();
             }
@@ -29,19 +27,19 @@ public class PauseMenu : MainMenu
     {
         pauseMenuUI.SetActive(false);
         Time.timeScale = 1f;
-        GameIsPaused = false;
+        GameControl.IsGamePaused = false;
     }
 
     public void Pause()
     {
         pauseMenuUI.SetActive(true);
         Time.timeScale = 0f;
-        GameIsPaused = true;
+        GameControl.IsGamePaused = true;
     }
 
     public void LoadMainMenu()
     {
         sceneLoader.LoadMainMenu();
-        GameIsPaused = false;
+        GameControl.IsGamePaused = false;
     }
 }

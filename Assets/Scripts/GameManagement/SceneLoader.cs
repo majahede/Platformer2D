@@ -14,14 +14,14 @@ public class SceneLoader : MonoBehaviour
     {
         Time.timeScale = 1f;
         StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex + 1));
-        PauseMenu.GameIsPaused = false;
+        GameControl.IsGamePaused = false;
     }
 
     public void LoadActiveScene()
     {
         Time.timeScale = 1f;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-        PauseMenu.GameIsPaused = false;
+        GameControl.IsGamePaused = false;
     }
 
     public void LoadMainMenu()

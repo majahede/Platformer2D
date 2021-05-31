@@ -29,7 +29,7 @@ public class Weapon : MonoBehaviour
     {
         var gameSession = FindObjectOfType<GameSession>();
 
-        if (!PauseMenu.GameIsPaused)
+        if (!GameControl.IsGamePaused)
         {
             if (!Input.GetButtonDown("Fire1"))
             {

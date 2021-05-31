@@ -65,7 +65,7 @@ public class PlayerMovement : MonoBehaviour
         float jumpForce = 10f;
 
         // Check if jump button is pressed and if player is grounded. 
-        if (Input.GetButtonDown("Jump") && (isGrounded || Time.time - lastTimeGrounded <= 0 || additionalJumps > 0))
+        if (!GameControl.IsGamePaused && Input.GetButtonDown("Jump") && (isGrounded || Time.time - lastTimeGrounded <= 0 || additionalJumps > 0))
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
             additionalJumps--;
@@ -77,15 +77,18 @@ public class PlayerMovement : MonoBehaviour
      */
     public void Run()
     {
-        rb.velocity = new Vector2(xMovement * movementSpeed, rb.velocity.y);
+        if (!GameControl.IsGamePaused)
+        {
+            rb.velocity = new Vector2(xMovement * movementSpeed, rb.velocity.y);
 
-        if (Mathf.Abs(xMovement) > 0.05)
-        {
-            anim.SetBool("isRunning", true);
-        }
-        else
-        {
-            anim.SetBool("isRunning", false);
+            if (Mathf.Abs(xMovement) > 0.05)
+            {
+                anim.SetBool("isRunning", true);
+            }
+            else
+            {
+                anim.SetBool("isRunning", false);
+            }
         }
     }
 
@@ -175,18 +178,21 @@ public class PlayerMovement : MonoBehaviour
      */
     public void Flip()
     {
-        if (xMovement > 0f && !facingRight)
+        if (!GameControl.IsGamePaused)
         {
-            transform.Rotate(0f, 180f, 0);
-            facingRight = true;
-        }
-        else if (xMovement < 0f && facingRight)
-        {
-            transform.Rotate(0f, 180f, 0);
-            facingRight = false;
-        }
+            if (xMovement > 0f && !facingRight)
+            {
+                transform.Rotate(0f, 180f, 0);
+                facingRight = true;
+            }
+            else if (xMovement < 0f && facingRight)
+            {
+                transform.Rotate(0f, 180f, 0);
+                facingRight = false;
+            }
 
-        anim.SetBool("isGrounded", isGrounded);
+            anim.SetBool("isGrounded", isGrounded);
+        }
     }
 }
 

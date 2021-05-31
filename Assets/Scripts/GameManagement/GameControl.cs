@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class GameControl : MonoBehaviour
 {
     public static GameControl Control;
+    public static bool IsGamePaused = true;
 
     public int currentHealth = 100;
     public int coins;

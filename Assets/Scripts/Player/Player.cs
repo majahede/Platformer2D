@@ -24,6 +24,7 @@ public class Player : MonoBehaviour
         bodyCollider = this.gameObject.GetComponent<CapsuleCollider2D>();
         anim = this.gameObject.GetComponent<Animator>();
         currentHealth = GameControl.Control.currentHealth;
+        GameControl.IsGamePaused = false;
     }
 
     /**
@@ -103,6 +104,7 @@ public class Player : MonoBehaviour
     {
         if (currentHealth <= 0)
         {
+            GameControl.IsGamePaused = true;
             anim.SetTrigger("die");
             return true;
         }
