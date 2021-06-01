@@ -28,12 +28,14 @@ Just add ruleset file to a solution and open it.
 
     <!-- An unwanted rule can be disabled like this: <Rule Id="RCS1110" Action="None" />  -->
     <Rule Id="RCS1110" Action="None" />
+    <Rule Id="RCS1018" Action="None" />
   </Rules>
 
   <Rules AnalyzerId="Roslynator.Formatting.Analyzers" RuleNamespace="Roslynator.Formatting.Analyzers">
     <!-- http://pihrt.net/Roslynator/Analyzers -->
 
     <!-- Specify default action that should be applied to a specified analyzer. -->
+    <Rule Id="RCS1018" Action="None" />
     <Rule Id="RCS1110" Action="None" />
     <Rule Id="RCS0001" Action="Info" /> <!-- Add empty line after embedded statement. -->
     <Rule Id="RCS0002" Action="Info" /> <!-- Add empty line after #region. -->
