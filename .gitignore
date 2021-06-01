@@ -149,7 +149,9 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
- #Ignore all .meta file
+#Ignore all .meta file
  *.meta
+#But not source file with postfix. which is everything but a folder
+!*.*.meta
 
 # End of https://www.toptal.com/developers/gitignore/api/unity,vscode,macos,windows,linux
