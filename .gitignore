@@ -149,4 +149,7 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
+ #Ignore all .meta file
+ *.meta
+
 # End of https://www.toptal.com/developers/gitignore/api/unity,vscode,macos,windows,linux
