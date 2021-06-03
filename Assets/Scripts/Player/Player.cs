@@ -70,7 +70,7 @@ public class Player : MonoBehaviour
         }
         else
         {
-            currentTime -= 0.01f;
+            currentTime -= Time.deltaTime + Time.deltaTime + Time.deltaTime;
         }
     }
 
