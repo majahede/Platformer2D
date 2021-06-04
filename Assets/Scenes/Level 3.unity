@@ -2180,14 +2180,14 @@ PrefabInstance:
     - target: {fileID: 2669316094574021133, guid: 634de320a8b9fa745b76607f36eca73e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1469428924}
+      objectReference: {fileID: 60180112}
     - target: {fileID: 2669316094574021133, guid: 634de320a8b9fa745b76607f36eca73e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 2026317534}
     - target: {fileID: 2669316094574021133, guid: 634de320a8b9fa745b76607f36eca73e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: LoadMainMenu
+      value: LoadStartMenu
       objectReference: {fileID: 0}
     - target: {fileID: 2669316094574021133, guid: 634de320a8b9fa745b76607f36eca73e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
@@ -2195,7 +2195,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2669316094574021133, guid: 634de320a8b9fa745b76607f36eca73e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: SceneLoader, Scripts
+      value: PauseMenu, Scripts
       objectReference: {fileID: 0}
     - target: {fileID: 2669316094574021133, guid: 634de320a8b9fa745b76607f36eca73e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
@@ -4731,14 +4731,14 @@ PrefabInstance:
     - target: {fileID: 6420010666969908755, guid: 158e3131be872e34eab144b0661fd51a, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1469428924}
+      objectReference: {fileID: 60180111}
     - target: {fileID: 6420010666969908755, guid: 158e3131be872e34eab144b0661fd51a, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 2026317534}
     - target: {fileID: 6420010666969908755, guid: 158e3131be872e34eab144b0661fd51a, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: LoadMainMenu
+      value: LoadStartMenu
       objectReference: {fileID: 0}
     - target: {fileID: 6420010666969908755, guid: 158e3131be872e34eab144b0661fd51a, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
@@ -4746,7 +4746,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6420010666969908755, guid: 158e3131be872e34eab144b0661fd51a, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: SceneLoader, Scripts
+      value: GameOverMenu, Scripts
       objectReference: {fileID: 0}
     - target: {fileID: 6420010666969908755, guid: 158e3131be872e34eab144b0661fd51a, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName

@@ -3,13 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class PauseMenu : MonoBehaviour
+public class PauseMenu : MainMenu
 {
     [SerializeField]
     private GameObject pauseMenuUI;
-    
-    [SerializeField]
-    private SceneLoader sceneLoader;
 
     /**
      * Update is called once per frame.
@@ -57,19 +54,5 @@ public class PauseMenu : MonoBehaviour
         Time.timeScale = 1f;
         GameControl.IsGamePaused = false;
         sceneLoader.LoadMainMenu();
-    }
-
-    /*
-     * Quits application.
-     */
-    public void QuitGame()
-    {
-        #if UNITY_EDITOR
-            UnityEditor.EditorApplication.isPlaying = false;
-        #elif UNITY_STANDALONE
-            Application.Quit();
-        #elif UNITY_WEBGL
-            Application.OpenURL("https://play.unity.com/u/majhed-zt");
-        #endif
     }
 }

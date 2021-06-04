@@ -5,12 +5,12 @@ using UnityEngine;
 public class MainMenu : MonoBehaviour
 
 {
-    private SceneLoader sceneLoader;
+    protected SceneLoader sceneLoader;
 
     /**
      * Start is called before the first frame update.
      */
-    void Start()
+    public virtual void Start()
     {
         sceneLoader = FindObjectOfType<SceneLoader>();
     }

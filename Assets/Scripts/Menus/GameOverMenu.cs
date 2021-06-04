@@ -2,11 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GameOverMenu : MonoBehaviour
+public class GameOverMenu : MainMenu
 {
     private Player player;
     private IEnumerator coroutine;
-    private SceneLoader sceneLoader;
 
     [SerializeField]
     private GameObject gameOverMenuUI;
@@ -14,10 +13,10 @@ public class GameOverMenu : MonoBehaviour
     /**
      * Start is called before the first frame update.
      */
-    void Start()
+    public override void Start()
     {
+        base.Start();
         player = FindObjectOfType<Player>();
-        sceneLoader = FindObjectOfType<SceneLoader>();
     }
 
     /**
@@ -61,19 +60,5 @@ public class GameOverMenu : MonoBehaviour
         yield return new WaitForSeconds(time);
         Time.timeScale = 0;
         gameOverMenuUI.SetActive(true);
-    }
-
-    /**
-     * Quits application.
-     */
-    public void QuitGame()
-    {
-        #if UNITY_EDITOR
-            UnityEditor.EditorApplication.isPlaying = false;
-        #elif UNITY_STANDALONE
-            Application.Quit();
-        #elif UNITY_WEBGL
-            Application.OpenURL("https://play.unity.com/u/majhed-zt");
-        #endif
     }
 }
