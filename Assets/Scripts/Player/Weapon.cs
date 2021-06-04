@@ -13,6 +13,9 @@ public class Weapon : MonoBehaviour
 
     private Animator anim;
 
+    /**
+     * Start is called before the first frame update.
+     */
     void Start()
     {
         anim = this.gameObject.GetComponent<Animator>();
@@ -25,6 +28,9 @@ public class Weapon : MonoBehaviour
         Shoot();
     }
 
+    /**
+     * When pressing fire button, a bullet is spawned.
+     */
     public void Shoot()
     {
         var gameSession = FindObjectOfType<GameSession>();
@@ -39,8 +45,9 @@ public class Weapon : MonoBehaviour
 
             if (Input.GetButtonDown("Fire1") && gameSession.GetAmmunition() > 0)
             {
-                // Spawns a specific object at a chosen place.
                 FindObjectOfType<GameAudioManager>().Play("Shoot");
+
+                // Spawns a specific object at a chosen place.
                 Instantiate(bullet, firePoint.position, firePoint.rotation);
                 anim.SetBool("isShooting", true);
                 gameSession.RemoveAmmunition();

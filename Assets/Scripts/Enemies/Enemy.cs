@@ -7,8 +7,8 @@ public class Enemy : MonoBehaviour
     private int health = 100;
 
     /**
-    * Makes the enemy take damage.
-    */
+     * Makes the enemy take damage.
+     */
     public void TakeDamage(int damage)
     {
         health -= damage;
@@ -19,8 +19,8 @@ public class Enemy : MonoBehaviour
     }
 
     /**
-    * Destroys game object when enemey health is below zero.
-    */
+     * Destroys game object when health is below zero.
+     */
     public void Die()
     {
         FindObjectOfType<GameAudioManager>().Play("Enemy");
@@ -28,11 +28,17 @@ public class Enemy : MonoBehaviour
         Destroy(gameObject);
     }
 
+    /**
+     * Gets enemy health.
+     */
     public int GetHealth()
     {
         return health;
     }
 
+    /**
+     * Sets enemy health.
+     */
     public void SetHealth(int value)
     {
         health = value;

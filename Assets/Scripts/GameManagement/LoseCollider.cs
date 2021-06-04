@@ -8,6 +8,9 @@ public class LoseCollider : MonoBehaviour
 {
     private Player player;
 
+    /**
+     * Start is called before the first frame update.
+     */
     void Start()
     {
         player = FindObjectOfType<Player>();

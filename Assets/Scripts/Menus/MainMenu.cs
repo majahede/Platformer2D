@@ -5,18 +5,27 @@ using UnityEngine;
 public class MainMenu : MonoBehaviour
 
 {
-    protected SceneLoader sceneLoader;
+    private SceneLoader sceneLoader;
 
-    public virtual void Start()
+    /**
+     * Start is called before the first frame update.
+     */
+    void Start()
     {
         sceneLoader = FindObjectOfType<SceneLoader>();
     }
 
+    /**
+     * Starts a new game.
+     */
     public void NewGame()
     {
         sceneLoader.LoadNextScene();
     }
 
+    /**
+     * Quits application.
+     */
     public void QuitGame()
     {
         #if UNITY_EDITOR

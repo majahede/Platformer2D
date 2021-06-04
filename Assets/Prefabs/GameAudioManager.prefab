@@ -67,7 +67,7 @@ MonoBehaviour:
     group: {fileID: 24300002, guid: db71cfc2c8bb769409d354831dfccd69, type: 2}
   - name: Theme
     clip: {fileID: 8300000, guid: d8b719ef1c3254c97b2c5b785c2d5fd3, type: 3}
-    volume: 0.6
+    volume: 0.5
     pitch: 1
     loop: 1
     source: {fileID: 0}

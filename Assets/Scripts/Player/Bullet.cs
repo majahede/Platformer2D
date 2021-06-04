@@ -16,6 +16,7 @@ public class Bullet : MonoBehaviour
     {
         rb = this.gameObject.GetComponent<Rigidbody2D>();
         rb.velocity = transform.right * speed;
+
         DestroyBullet(3f);
     }
 
@@ -31,6 +32,9 @@ public class Bullet : MonoBehaviour
         DestroyBullet(0f);
     }
 
+    /**
+     * Removes Bullet object after an amount of time..
+     */
     public void DestroyBullet(float time)
     {
         Destroy(gameObject, time);

@@ -49,7 +49,7 @@ public class PlayerMovement : MonoBehaviour
     }
 
     /**
-     * Update is called once per frame.
+     * FixedUpdate is called every fixed frame-rate frame.
      */
     void FixedUpdate()
     {
@@ -92,6 +92,9 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
+    /**
+     * Makes player climb ladder.
+     */
     public void ClimbLadder()
     {
         if (!bodyCollider.IsTouchingLayers(LayerMask.GetMask("Climbing")))
@@ -122,7 +125,8 @@ public class PlayerMovement : MonoBehaviour
             rb.gravityScale = fallMultiplier;
         }
         else if (rb.velocity.y > 0 && !Input.GetButton("Jump"))
-        { // Low jump.
+        {
+            // Low jump.
             rb.gravityScale = lowJumpMultiplier;
         }
         else

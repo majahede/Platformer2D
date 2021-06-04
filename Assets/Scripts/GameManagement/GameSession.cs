@@ -24,7 +24,7 @@ public class GameSession : MonoBehaviour
     private Text patrolKillCount;
 
     /**
-     * Start is called before the first frame update
+     * Start is called before the first frame update.
      */
     void Start()
     {
@@ -41,6 +41,9 @@ public class GameSession : MonoBehaviour
         patrolKillCount.text = patrolKills.ToString();
     }
 
+    /**
+     * Saves progress to game control.
+     */
     public void SaveProgress()
     {
         GameControl.Control.coins = coins;
@@ -58,23 +61,35 @@ public class GameSession : MonoBehaviour
         coinCount.text = coins.ToString();
     }
 
+    /**
+     * Gets current ammunition count.
+     */
     public int GetAmmunition()
     {
         return ammunition;
     }
 
+    /**
+     * Adds ammunition.
+     */
     public void AddAmmunition()
     {
         ammunition += 10;
         ammunitionCount.text = ammunition.ToString();
     }
 
+    /**
+     * Removes ammunition.
+     */
     public void RemoveAmmunition()
     {
         ammunition--;
         ammunitionCount.text = ammunition.ToString();
     }
 
+    /**
+     * Add kill to count.
+     */
     public void AddKill(string type)
     {
         if (type == "Patrol")

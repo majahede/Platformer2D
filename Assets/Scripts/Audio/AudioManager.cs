@@ -6,6 +6,9 @@ public class AudioManager : MonoBehaviour
 {
     public Sound[] sounds;
 
+    /**
+     * Awake is called when the script instance is being loaded.
+     */
     public virtual void Awake()
     {
         foreach (var s in sounds)
@@ -19,6 +22,9 @@ public class AudioManager : MonoBehaviour
         }
     }
 
+    /**
+     * Plays a specific sound.
+     */
     public void Play(string name)
     {
         var s = Array.Find(sounds, sound => sound.name == name);

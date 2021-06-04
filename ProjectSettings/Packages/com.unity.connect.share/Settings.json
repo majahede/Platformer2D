@@ -6,7 +6,7 @@
             {
                 "type": "System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
                 "key": "buildOutputDirList",
-                "value": "{\"m_Value\":\"D:/Unity/WebGLBuild6;D:/Unity/WebGLBuild5;D:/Unity/WebGLBuild4;D:/Unity/WebGLBuild3;D:/Unity/WebGLbuild2;D:/Unity/WebGLBuild1;;;;\"}"
+                "value": "{\"m_Value\":\"D:/Unity/WebGLbuild8;D:/Unity/WebGLbuild7;D:/Unity/WebGLbuild6;D:/Unity/WebGLBuild6;D:/Unity/WebGLBuild5;D:/Unity/WebGLBuild4;D:/Unity/WebGLBuild3;D:/Unity/WebGLbuild2;D:/Unity/WebGLBuild1;\"}"
             },
             {
                 "type": "System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",

@@ -411,9 +411,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee415a173b9fb04408f495cf5e591145, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneLoader: {fileID: 1469428924}
   gameOverMenuUI: {fileID: 956598412}
-  player: {fileID: 0}
 --- !u!114 &60180112
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -426,8 +424,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 697fe1035668c994f8a1cb66f738d722, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneLoader: {fileID: 1469428924}
   pauseMenuUI: {fileID: 683286740}
+  sceneLoader: {fileID: 1469428924}
 --- !u!114 &60180113
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2182,7 +2180,7 @@ PrefabInstance:
     - target: {fileID: 2669316094574021133, guid: 634de320a8b9fa745b76607f36eca73e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 60180112}
+      objectReference: {fileID: 1469428924}
     - target: {fileID: 2669316094574021133, guid: 634de320a8b9fa745b76607f36eca73e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
@@ -2197,7 +2195,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2669316094574021133, guid: 634de320a8b9fa745b76607f36eca73e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: PauseMenu, Scripts
+      value: SceneLoader, Scripts
       objectReference: {fileID: 0}
     - target: {fileID: 2669316094574021133, guid: 634de320a8b9fa745b76607f36eca73e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
@@ -4733,7 +4731,7 @@ PrefabInstance:
     - target: {fileID: 6420010666969908755, guid: 158e3131be872e34eab144b0661fd51a, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 60180111}
+      objectReference: {fileID: 1469428924}
     - target: {fileID: 6420010666969908755, guid: 158e3131be872e34eab144b0661fd51a, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
@@ -4748,7 +4746,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6420010666969908755, guid: 158e3131be872e34eab144b0661fd51a, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: GameOverMenu, Scripts
+      value: SceneLoader, Scripts
       objectReference: {fileID: 0}
     - target: {fileID: 6420010666969908755, guid: 158e3131be872e34eab144b0661fd51a, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName

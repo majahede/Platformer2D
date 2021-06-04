@@ -7,6 +7,9 @@ public class GameAudioManager : AudioManager
 {
     public static GameAudioManager Instance;
 
+    /**
+     * Awake is called when the script instance is being loaded.
+     */
     public override void Awake()
     {
         base.Awake();
@@ -23,6 +26,9 @@ public class GameAudioManager : AudioManager
         }
     }
 
+    /**
+     * Start is called before the first frame update
+     */
     void Start()
     {
         Play("Theme");

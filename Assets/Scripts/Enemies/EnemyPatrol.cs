@@ -8,11 +8,17 @@ public class EnemyPatrol : Enemy
     private readonly float movementSpeed = 1f;
     private bool isFacingLeft = true;
 
+    /**
+     * Start is called before the first frame update.
+     */
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
     }
 
+    /**
+     * Update is called once per frame.
+     */
     void Update()
     {
         if (isFacingLeft)
@@ -25,8 +31,12 @@ public class EnemyPatrol : Enemy
         }
     }
 
+    /**
+     * Called when another collider has stopped touching the trigger.
+     */
     void OnTriggerExit2D(Collider2D collision)
     {
+        // Patrol changes direction after colliding with wall.
         if (collision.name == "Foreground")
         {
             if (isFacingLeft)

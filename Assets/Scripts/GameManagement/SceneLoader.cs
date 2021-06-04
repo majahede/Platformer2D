@@ -10,6 +10,9 @@ public class SceneLoader : MonoBehaviour
 
     private float transisitonTime = 1f;
 
+    /**
+     * Loads the next scene.
+     */
     public void LoadNextScene()
     {
         Time.timeScale = 1f;
@@ -17,6 +20,9 @@ public class SceneLoader : MonoBehaviour
         GameControl.IsGamePaused = false;
     }
 
+    /**
+     * Reloads the active scene.
+     */
     public void LoadActiveScene()
     {
         Time.timeScale = 1f;
@@ -24,11 +30,17 @@ public class SceneLoader : MonoBehaviour
         GameControl.IsGamePaused = false;
     }
 
+    /**
+     * Loads start menu.
+     */
     public void LoadMainMenu()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene("Start Menu");
     }
 
+    /**
+     * Loads scene after a specific time.
+     */
     IEnumerator LoadLevel(int sceneIndex)
     {
         transition.SetTrigger("Start");

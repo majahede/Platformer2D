@@ -9,6 +9,9 @@ public class Pickup : MonoBehaviour
     protected GameSession gameSession;
     protected Player player;
 
+    /**
+     * Start is called before the first frame update.
+     */
     void Start()
     {
         gameSession = FindObjectOfType<GameSession>();
@@ -23,6 +26,9 @@ public class Pickup : MonoBehaviour
         Destroy(gameObject);
     }
 
+    /**
+     * Plays a specified sound.
+     */
     public void PlaySound(string sound)
     {
         FindObjectOfType<GameAudioManager>().Play(sound);

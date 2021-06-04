@@ -36,24 +36,32 @@ public class Player : MonoBehaviour
         EnemyCollision();
     }
 
-    // Save data to game control
+    /**
+     *  Save player data to game control.
+     */
     public void SavePlayer()
     {
         GameControl.Control.currentHealth = currentHealth;
     }
 
+    /**
+     *  Get player health.
+     */
     public int GetCurrentHealth()
     {
         return currentHealth;
     }
 
+    /**
+     *  Set player health.
+     */
     public void SetCurrentHealth(int value)
     {
         currentHealth = value;
     }
 
     /**
-     *  Checks if Player is colliding with enemy.
+     *  Checks if Player is colliding with enemy and makes player take damage continously.
      */
     private void EnemyCollision()
     {
@@ -94,7 +102,7 @@ public class Player : MonoBehaviour
     }
 
     /**
-     * If players health is below 0, player is dead.
+     * If players health is below 0 sets player to dead.
      */
     public bool PlayerDead()
     {

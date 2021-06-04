@@ -14,6 +14,9 @@ public class GameControl : MonoBehaviour
     public int enemyKills;
     public int patrolKills;
 
+    /**
+     * Awake is called when the script instance is being loaded.
+     */
     void Awake()
     {
         if (Control == null)
@@ -27,6 +30,9 @@ public class GameControl : MonoBehaviour
         }
     }
 
+    /**
+     * Update is called once per frame.
+     */
     void Update()
     {
         if (SceneManager.GetActiveScene().buildIndex == 0 && Control != null)
