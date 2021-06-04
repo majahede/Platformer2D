@@ -44,10 +44,12 @@ public class GameOverMenu : MonoBehaviour
     }
 
     /**
-     * Loads main menu.
+     * Loads start menu.
      */
-    public void LoadMainMenu()
+    public void LoadStartMenu()
     {
+        Time.timeScale = 1f;
+        GameControl.IsGamePaused = false;
         sceneLoader.LoadMainMenu();
     }
 
