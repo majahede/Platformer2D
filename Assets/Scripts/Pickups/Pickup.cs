@@ -9,26 +9,27 @@ public class Pickup : MonoBehaviour
     protected GameSession gameSession;
     protected Player player;
 
-    /**
-     * Start is called before the first frame update.
-     */
+    /// <summary>
+    /// Start is called before the first frame update.
+    /// </summary>
     void Start()
     {
         gameSession = FindObjectOfType<GameSession>();
         player = FindObjectOfType<Player>();
     }
 
-    /**
-     * Called when another objects enters a trigger collider attached to this object.
-     */
+    /// <summary>
+    /// Called when another object enters a trigger collider attached to this object.
+    /// </summary>
     public virtual void OnTriggerEnter2D()
     {
         Destroy(gameObject);
     }
 
-    /**
-     * Plays a specified sound.
-     */
+    /// <summary>
+    /// Plays a specified sound.
+    /// </summary>
+    /// <param name="sound">The sound that should be played.</param>
     public void PlaySound(string sound)
     {
         FindObjectOfType<GameAudioManager>().Play(sound);

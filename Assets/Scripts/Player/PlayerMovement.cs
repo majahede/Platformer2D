@@ -23,9 +23,9 @@ public class PlayerMovement : MonoBehaviour
     private int defaultAdditionalJumps = 1;
     private bool facingRight = true;
 
-    /**
-     * Start is called before the first frame update
-     */
+    /// <summary>
+    /// Start is called before the first frame update.
+    /// </summary>
     void Start()
     {
         rb = this.gameObject.GetComponent<Rigidbody2D>();
@@ -34,9 +34,9 @@ public class PlayerMovement : MonoBehaviour
         player = this.gameObject.GetComponent<Player>();
     }
 
-    /**
-     * Update is called once per frame.
-     */
+    /// <summary>
+    /// Update is called once per frame.
+    /// </summary>
     void Update()
     {
         xMovement = Input.GetAxisRaw("Horizontal");
@@ -48,18 +48,18 @@ public class PlayerMovement : MonoBehaviour
         ClimbLadder();
     }
 
-    /**
-     * FixedUpdate is called every fixed frame-rate frame.
-     */
+    /// <summary>
+    /// FixedUpdate is called every fixed frame-rate frame.
+    /// </summary>
     void FixedUpdate()
     {
         Run();
         Flip();
     }
 
-    /**
-     * Makes player jump.
-     */
+    /// <summary>
+    /// Makes player jump.
+    /// </summary>
     public void Jump()
     {
         float jumpForce = 10f;
@@ -72,9 +72,9 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    /**
-     * Makes player run.
-     */
+    /// <summary>
+    /// Makes player run.
+    /// </summary>
     public void Run()
     {
         if (!GameControl.IsGamePaused)
@@ -92,9 +92,9 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    /**
-     * Makes player climb ladder.
-     */
+    /// <summary>
+    /// Makes player climb ladder.
+    /// </summary>
     public void ClimbLadder()
     {
         if (!bodyCollider.IsTouchingLayers(LayerMask.GetMask("Climbing")))
@@ -111,9 +111,9 @@ public class PlayerMovement : MonoBehaviour
         anim.SetBool("isClimbing", true);
     }
 
-    /**
-     * Change gravity scale when falling.
-     */
+    /// <summary>
+    /// Change gravity scale when falling.
+    /// </summary>
     public void ChangeFallSpeed()
     {
         float fallMultiplier = 2.5f;
@@ -135,9 +135,9 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    /**
-     * Player takes damage when falling from heights.
-     */
+    /// <summary>
+    /// Player takes damage when falling from heights.
+    /// </summary>
     public void HighFall()
     {
         if (rb.velocity.y < maxYVelocity)
@@ -152,9 +152,9 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    /**
-     * Checks if player is grounded.
-     */
+    /// <summary>
+    ///  Checks if player is grounded.
+    /// </summary>
     public void IsGrounded()
     {
         float checkGroundRadius = 0.05f;
@@ -177,9 +177,9 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    /**
-     * Rotates player when changing direction.
-     */
+    /// <summary>
+    /// Rotates player when changing direction.
+    /// </summary>
     public void Flip()
     {
         if (!GameControl.IsGamePaused)

@@ -8,9 +8,9 @@ public class PauseMenu : MainMenu
     [SerializeField]
     private GameObject pauseMenuUI;
 
-    /**
-     * Update is called once per frame.
-     */
+    /// <summary>
+    /// Update is called once per frame.
+    /// </summary>
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
@@ -26,9 +26,9 @@ public class PauseMenu : MainMenu
         }
     }
 
-    /*
-     * Sets pause menu as not active an resumes game.
-     */
+    /// <summary>
+    /// Sets pause menu as not active an resumes game.
+    /// </summary>
     public void Resume()
     {
         pauseMenuUI.SetActive(false);
@@ -36,9 +36,9 @@ public class PauseMenu : MainMenu
         GameControl.IsGamePaused = false;
     }
 
-    /*
-     * Sets pause menu as active and pauses game.
-     */
+    /// <summary>
+    /// Sets pause menu as active and pauses game.
+    /// </summary>
     public void Pause()
     {
         pauseMenuUI.SetActive(true);
@@ -46,9 +46,9 @@ public class PauseMenu : MainMenu
         GameControl.IsGamePaused = true;
     }
 
-    /*
-     * Update is called once per frame.
-     */
+    /// <summary>
+    /// Loads start menu.
+    /// </summary>
     public void LoadStartMenu()
     {
         Time.timeScale = 1f;

@@ -7,25 +7,25 @@ public class MainMenu : MonoBehaviour
 {
     protected SceneLoader sceneLoader;
 
-    /**
-     * Start is called before the first frame update.
-     */
+    /// <summary>
+    /// Start is called before the first frame update.
+    /// </summary>
     public virtual void Start()
     {
         sceneLoader = FindObjectOfType<SceneLoader>();
     }
 
-    /**
-     * Starts a new game.
-     */
+    /// <summary>
+    /// Starts a new game.
+    /// </summary>
     public void NewGame()
     {
         sceneLoader.LoadNextScene();
     }
 
-    /**
-     * Quits application.
-     */
+    /// <summary>
+    /// Quits application.
+    /// </summary>
     public void QuitGame()
     {
         #if UNITY_EDITOR

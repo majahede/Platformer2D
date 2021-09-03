@@ -9,9 +9,9 @@ public class LevelExit : MonoBehaviour
     private GameSession gameSession;
     private SceneLoader sceneLoader;
 
-    /**
-     * Start is called before the first frame update.
-     */
+    /// <summary>
+    /// Start is called before the first frame update.
+    /// </summary>
     void Start()
     {
         player = FindObjectOfType<Player>();
@@ -19,9 +19,9 @@ public class LevelExit : MonoBehaviour
         sceneLoader = FindObjectOfType<SceneLoader>();
     }
 
-    /**
-     * Called when another object enters a trigger collider attached to this object.
-     */
+    /// <summary>
+    /// Called when another object enters a trigger collider attached to this object.
+    /// </summary>
     void OnTriggerEnter2D()
     {
         sceneLoader.LoadNextScene();

@@ -10,9 +10,9 @@ public class SceneLoader : MonoBehaviour
 
     private float transisitonTime = 1f;
 
-    /**
-     * Loads the next scene.
-     */
+    /// <summary>
+    /// Loads the next scene.
+    /// </summary>
     public void LoadNextScene()
     {
         Time.timeScale = 1f;
@@ -20,9 +20,9 @@ public class SceneLoader : MonoBehaviour
         GameControl.IsGamePaused = false;
     }
 
-    /**
-     * Reloads the active scene.
-     */
+    /// <summary>
+    /// Reloads the active scene.
+    /// </summary>
     public void LoadActiveScene()
     {
         Time.timeScale = 1f;
@@ -30,17 +30,18 @@ public class SceneLoader : MonoBehaviour
         GameControl.IsGamePaused = false;
     }
 
-    /**
-     * Loads start menu.
-     */
+    /// <summary>
+    /// Loads start menu.
+    /// </summary>
     public void LoadMainMenu()
     {
         SceneManager.LoadScene("Start Menu");
     }
 
-    /**
-     * Loads scene after a specific time.
-     */
+    /// <summary>
+    /// Loads scene after a specific time.
+    /// </summary>
+    /// <param name="sceneIndex">The scene to be loaded</param>
     IEnumerator LoadLevel(int sceneIndex)
     {
         transition.SetTrigger("Start");

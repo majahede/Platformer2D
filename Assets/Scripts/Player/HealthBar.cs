@@ -14,18 +14,20 @@ public class HealthBar : MonoBehaviour
     [SerializeField]
     private Image fill;
 
-    /**
-     * Sets the current health to the health bar.
-     */
+    /// <summary>
+    /// Sets the current health to the health bar.
+    /// </summary>
+    /// <param name="health">The current amount of health.</param>
     public void SetHealth(int health)
     {
         slider.value = health;
         fill.color = gradient.Evaluate(slider.normalizedValue);
     }
 
-    /**
-     * Sets the maximum health.
-     */
+    /// <summary>
+    /// Sets the maximum health.
+    /// </summary>
+    /// <param name="health">The maximum health.</param>
     public void SetMaxHealth(int health)
     {
         slider.maxValue = health;

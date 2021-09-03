@@ -23,9 +23,9 @@ public class GameSession : MonoBehaviour
     [SerializeField]
     private Text patrolKillCount;
 
-    /**
-     * Start is called before the first frame update.
-     */
+    /// <summary>
+    /// Start is called before the first frame update.
+    /// </summary>
     void Start()
     {
         coins = GameControl.Control.coins;
@@ -41,9 +41,9 @@ public class GameSession : MonoBehaviour
         patrolKillCount.text = patrolKills.ToString();
     }
 
-    /**
-     * Saves progress to game control.
-     */
+    /// <summary>
+    /// Saves progress to game control.
+    /// </summary>
     public void SaveProgress()
     {
         GameControl.Control.coins = coins;
@@ -52,44 +52,46 @@ public class GameSession : MonoBehaviour
         GameControl.Control.patrolKills = patrolKills;
     }
 
-    /**
-     * Add point to pickup counter.
-     */
+    /// <summary>
+    /// Add point to pickup counter.
+    /// </summary>
     public void AddCoin()
     {
         coins++;
         coinCount.text = coins.ToString();
     }
 
-    /**
-     * Gets current ammunition count.
-     */
+    /// <summary>
+    /// Gets current ammunition count.
+    /// </summary>
+    /// <returns>Current amount of ammunition</returns>
     public int GetAmmunition()
     {
         return ammunition;
     }
 
-    /**
-     * Adds ammunition.
-     */
+    /// <summary>
+    /// Adds ammunition.
+    /// </summary>
     public void AddAmmunition()
     {
         ammunition += 10;
         ammunitionCount.text = ammunition.ToString();
     }
 
-    /**
-     * Removes ammunition.
-     */
+    /// <summary>
+    /// Removes ammunition.
+    /// </summary>
     public void RemoveAmmunition()
     {
         ammunition--;
         ammunitionCount.text = ammunition.ToString();
     }
 
-    /**
-     * Add kill to count.
-     */
+    /// <summary>
+    /// Add kill to count.
+    /// </summary>
+    /// <param name="type">The type of enemy that is killed.</param>
     public void AddKill(string type)
     {
         if (type == "Patrol")

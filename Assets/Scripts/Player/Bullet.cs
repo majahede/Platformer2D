@@ -9,9 +9,9 @@ public class Bullet : MonoBehaviour
     private Rigidbody2D rb;
     private int damage = 30;
 
-    /**
-     * Start is called before the first frame update.
-     */
+    /// <summary>
+    /// Start is called before the first frame update.
+    /// </summary>
     void Start()
     {
         rb = this.gameObject.GetComponent<Rigidbody2D>();
@@ -20,9 +20,10 @@ public class Bullet : MonoBehaviour
         DestroyBullet(3f);
     }
 
-    /**
-     * Called when another objects enters a trigger collider attached to this object.
-     */
+    /// <summary>
+    /// Called when another object enters a trigger collider attached to this object.
+    /// </summary>
+    /// <param name="collision">The other collider.</param>
     void OnTriggerEnter2D(Collider2D collision)
     {
         var enemy = collision.GetComponent<Enemy>();
@@ -32,9 +33,10 @@ public class Bullet : MonoBehaviour
         DestroyBullet(0f);
     }
 
-    /**
-     * Removes Bullet object after an amount of time..
-     */
+    /// <summary>
+    /// Removes Bullet object after an amount of time.
+    /// </summary>
+    /// <param name="time">The amount of time.</param>
     public void DestroyBullet(float time)
     {
         Destroy(gameObject, time);

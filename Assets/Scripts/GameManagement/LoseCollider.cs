@@ -8,17 +8,17 @@ public class LoseCollider : MonoBehaviour
 {
     private Player player;
 
-    /**
-     * Start is called before the first frame update.
-     */
+    /// <summary>
+    /// Start is called before the first frame update.
+    /// </summary>
     void Start()
     {
         player = FindObjectOfType<Player>();
     }
 
-    /**
-     * Called when another objects enters a trigger collider attached to this object.
-     */
+    /// <summary>
+    /// Called when another object enters a trigger collider attached to this object.
+    /// </summary>
     void OnTriggerEnter2D()
     {
         player.SetCurrentHealth(0);

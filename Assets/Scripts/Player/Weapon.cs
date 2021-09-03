@@ -13,24 +13,25 @@ public class Weapon : MonoBehaviour
 
     private Animator anim;
 
-    /**
-     * Start is called before the first frame update.
-     */
+    /// <summary>
+    /// Start is called before the first frame update.
+    /// </summary>
     void Start()
     {
         anim = this.gameObject.GetComponent<Animator>();
     }
-    /**
-     * Update is called once per frame.
-     */
+
+    /// <summary>
+    /// Update is called once per frame.
+    /// </summary>
     void Update()
     {
         Shoot();
     }
 
-    /**
-     * When pressing fire button, a bullet is spawned.
-     */
+    /// <summary>
+    /// When pressing fire button, a bullet is spawned.
+    /// </summary>
     public void Shoot()
     {
         var gameSession = FindObjectOfType<GameSession>();

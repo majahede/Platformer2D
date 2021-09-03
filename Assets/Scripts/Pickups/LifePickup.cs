@@ -7,9 +7,9 @@ public class LifePickup : Pickup
 {
     private int health = 10;
 
-    /**
-     * Called when another objects enters a trigger collider attached to this object.
-     */
+    /// <summary>
+    /// Called when another object enters a trigger collider attached to this object.
+    /// </summary>
     public override void OnTriggerEnter2D()
     {
         base.OnTriggerEnter2D();

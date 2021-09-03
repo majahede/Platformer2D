@@ -5,11 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class GameAudioManager : AudioManager
 {
+
     public static GameAudioManager Instance;
 
-    /**
-     * Awake is called when the script instance is being loaded.
-     */
+    /// <summary>
+    /// Awake is called when the script instance is being loaded.
+    /// </summary>
     public override void Awake()
     {
         base.Awake();
@@ -26,9 +27,9 @@ public class GameAudioManager : AudioManager
         }
     }
 
-    /**
-     * Start is called before the first frame update
-     */
+    /// <summary>
+    /// Start is called before the first frame update.
+    /// </summary>
     void Start()
     {
         Play("Theme");

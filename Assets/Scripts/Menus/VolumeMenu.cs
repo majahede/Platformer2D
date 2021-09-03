@@ -8,9 +8,10 @@ public class VolumeMenu : MonoBehaviour
     [SerializeField]
     private AudioMixer audioMixer;
 
-    /**
-     * Sets volume.
-     */
+    /// <summary>
+    /// Sets volume.
+    /// </summary>
+    /// <param name="volume">The volume.</param>
     public void SetVolume(float volume)
     {
         audioMixer.SetFloat("Volume", volume);

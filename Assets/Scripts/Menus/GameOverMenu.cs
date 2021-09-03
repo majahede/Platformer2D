@@ -10,18 +10,18 @@ public class GameOverMenu : MainMenu
     [SerializeField]
     private GameObject gameOverMenuUI;
 
-    /**
-     * Start is called before the first frame update.
-     */
+    /// <summary>
+    /// Start is called before the first frame update.
+    /// </summary>
     public override void Start()
     {
         base.Start();
         player = FindObjectOfType<Player>();
     }
 
-    /**
-     * Update is called once per frame.
-     */
+    /// <summary>
+    /// Update is called once per frame.
+    /// </summary>
     void Update()
     {
         coroutine = GameOverDelay(1.0f);
@@ -32,9 +32,9 @@ public class GameOverMenu : MainMenu
         }
     }
 
-    /**
-     * Reloads the current scene and unpauses game.
-     */
+    /// <summary>
+    /// Reloads the current scene and unpauses game.
+    /// </summary>
     public void Retry()
     {
         GameControl.IsGamePaused = false;
@@ -42,9 +42,9 @@ public class GameOverMenu : MainMenu
         sceneLoader.LoadActiveScene();
     }
 
-    /**
-     * Loads start menu.
-     */
+    /// <summary>
+    /// Loads start menu.
+    /// </summary>
     public void LoadStartMenu()
     {
         Time.timeScale = 1f;
@@ -52,9 +52,10 @@ public class GameOverMenu : MainMenu
         sceneLoader.LoadMainMenu();
     }
 
-    /**
-     * Activates game over menu after a specific time.
-     */
+    /// <summary>
+    /// Activates game over menu after a specific time.
+    /// </summary>
+    /// <param name="time">The amount of time.</param>
     private IEnumerator GameOverDelay(float time)
     {
         yield return new WaitForSeconds(time);

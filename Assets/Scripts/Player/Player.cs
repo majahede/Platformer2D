@@ -14,9 +14,9 @@ public class Player : MonoBehaviour
     private Animator anim;
     private float currentTime;
 
-    /**
-     * Start is called before the first frame update
-     */
+    /// <summary>
+    /// Start is called before the first frame update.
+    /// </summary>
     void Start()
     {
         healthBar.SetMaxHealth(maxHealth);
@@ -27,42 +27,44 @@ public class Player : MonoBehaviour
         GameControl.IsGamePaused = false;
     }
 
-    /**
-     *  Update is called once per frame.
-     */
+    /// <summary>
+    /// Update is called once per frame.
+    /// </summary>
     void Update()
     {
         PlayerDead();
         EnemyCollision();
     }
 
-    /**
-     *  Save player data to game control.
-     */
+    /// <summary>
+    /// Save player data to game control.
+    /// </summary>
     public void SavePlayer()
     {
         GameControl.Control.currentHealth = currentHealth;
     }
 
-    /**
-     *  Get player health.
-     */
+    /// <summary>
+    ///  Get player health.
+    /// </summary>
+    /// <returns>The current amount of health</returns>
     public int GetCurrentHealth()
     {
         return currentHealth;
     }
 
-    /**
-     *  Set player health.
-     */
+    /// <summary>
+    /// Set player health.
+    /// </summary>
+    /// <param name="value">The current amount of health</param>
     public void SetCurrentHealth(int value)
     {
         currentHealth = value;
     }
 
-    /**
-     *  Checks if Player is colliding with enemy and makes player take damage continously.
-     */
+    /// <summary>
+    /// Checks if Player is colliding with enemy and makes player take damage continously.
+    /// </summary>
     private void EnemyCollision()
     {
         float nextDamage = 1;
@@ -82,9 +84,10 @@ public class Player : MonoBehaviour
         }
     }
 
-    /**
-     *  When called player takes damage.
-     */
+    /// <summary>
+    /// When called player takes damage.
+    /// </summary>
+    /// <param name="damage">The amount of damage</param>
     public void TakeDamage(int damage)
     {
         FindObjectOfType<GameAudioManager>().Play("Hurt");
@@ -92,18 +95,20 @@ public class Player : MonoBehaviour
         healthBar.SetHealth(currentHealth);
     }
 
-    /**
-     *  Called when player pick up healing object.
-     */
+    /// <summary>
+    /// Called when player pick up healing object.
+    /// </summary>
+    /// <param name="health">The amount of health</param>
     public void IncreaseHealth(int health)
     {
         currentHealth += health;
         healthBar.SetHealth(currentHealth);
     }
 
-    /**
-     * If players health is below 0 sets player to dead.
-     */
+    /// <summary>
+    /// If players health is below 0 sets player to dead.
+    /// </summary>
+    /// <returns>A boolean with information about if the player is dead or not.</returns>
     public bool PlayerDead()
     {
         if (currentHealth <= 0)
